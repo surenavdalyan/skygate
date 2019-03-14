@@ -1,0 +1,467 @@
+@import './variables.css';
+
+.workbench{    
+    height: calc(100% - 40px );
+    box-sizing: border-box;
+    background-color: var(--workbench-bg-color, #D9D9D9);
+    min-width: 450px;
+    position: relative;
+    margin-top: 40px;
+
+    .main-wrapper{
+        height: 100%;
+        width: 100%;
+
+        .section{
+            padding: 0 5px;
+            height: 100%;
+            &:first-child{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .title{
+            background-color: #e6e3de;
+            font-size: 14px;
+            font-weight: 700;
+            border-bottom-color: #333333;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            padding-left: 5px;
+            line-height: 30px;
+            vertical-align: middle;
+            color: #5b5450;
+        }
+        .toolbar{            
+            background-color: #fff;
+            overflow: hidden;
+            min-height: 30px;
+            max-height: 30px;
+            ul{
+                list-style: none;
+                padding: 0;
+                padding-top: 2px;
+                height: 20px;
+                color: #74625f;
+                display: inline-block;
+                li{
+                    display: inline;
+                    &:first-child{
+                        padding-left: 3px;
+                    }
+
+                    &.h-disable-workbench{
+                        opacity: 0.5;
+                        color: #74625f !important;
+                    }
+                    &.haulplan-favorite {
+                        color: #8ac440;
+                        &.h-disble-fav{
+                            color: #74625f;
+                        }
+                        &.h-disable-workbench{
+                            opacity: 0.5;
+                            color: #74625f !important;
+                        }
+                    }
+                }
+                &::first-child{
+                    float: left;
+                }
+                box-sizing: border-box;
+            }
+            .search-box-selection{
+                float: right;
+                input{
+                    padding: 0;
+                    border-radius: 3px;
+                    border: solid 1px #cccccc;
+                    margin-top: -15px;
+                    /* margin-bottom: 4px; */
+                    padding-left: 10px;
+                    font-weight: normal;
+                    width: 150px;
+                    position: relative;
+                    right: 5px;
+                    height: 20px;
+                    
+                }
+                span{
+                    position: relative;
+                    right: -120px;
+                    top: -20px;
+                    cursor: pointer;
+                }
+
+            }
+        }
+        .list-body{
+            height: calc(100vh - 101px);
+            background: #fff;
+            border-top: 1px solid #000;
+            overflow-y: auto;
+            overflow-x: hidden;
+            display: flex;
+            flex: 1 1 auto;
+            flex-direction: column;
+        }
+        .links {
+            color: #fff;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-top: 60px;
+
+            li {
+                line-height: 58px;
+                height: 60px;
+                font-size: 18px;
+                border: 2px solid #cdc4b5;
+                vertical-align: top;
+                padding-left: 12px;
+                padding-right: 5px;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                cursor: pointer;
+
+                &:hover {
+                    /*background: @beta;*/
+                    background-color: rgba(255, 255, 255, 0.1);
+                }
+
+                .btn-tutrials {
+                    float: left;
+                    display: inline-block;
+                    padding-left: 0;
+                    font-size: 32px;
+
+                    &:before {
+                        margin-left: 0px; // remove left margin space
+                        margin-right: 0px; // remove left margin space
+                    }
+                }
+
+                .btn-help {
+                    float: left;
+                    display: inline-block;
+                    padding-left: 0;
+                    font-size: 30px;
+
+                    &:before {
+                        margin-left: 0px; // remove left margin space
+                        margin-right: 0px; // remove left margin space
+                    }
+                }
+
+                .btn-tutorials-title {
+                    padding-left: 12px;
+                }
+            }
+        }
+
+        #links{
+            i{
+                padding-top: 14px;
+            }
+            div{
+                margin-left: 15px;
+            }
+        }
+        #workorder-tabs{
+            
+            li {
+                a{
+                    background-color: transparent;
+                    color: #cdc4b5;
+                    border: none;
+                    cursor: pointer;
+                    
+                }
+                &.active{  
+                    a{                      
+                        color: #8bc53f;
+                        border-bottom: 6px solid #8bc53f;
+                    }
+                }
+                
+            }
+            ul {
+                &.content{
+                    list-style: none;
+                    color: #cdc4b5;
+                    border-bottom: 1px solid #ddd;
+                    margin: 10px 0px;
+                    padding-bottom: 10px;
+                    .title{
+                        background: transparent;
+                        border: none;
+                        color: #fff;
+                        font-weight: 700;
+                        font-size: 16;
+                        margin-left: -3px;
+                        .status{
+                            top:-2px;
+                        }
+
+                    }
+                }
+            }
+        }
+        .tutorials{
+            h4{
+                color: #000;
+            }
+            .modal-header{
+                border-bottom: 2px solid #504744;
+            }
+            .modal-title{
+                text-align: center;
+                font-size: 22px;
+                color: #504744;
+                font-weight: 700;
+            }
+            
+                .modal-dialog{
+                    width: 1280px;
+                    .modal-body{
+                        height: 600px;
+                    }
+                }
+                
+                
+                .video-item{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    height: 100px;
+                    padding-top: 15px;
+                    padding-left: 5px;
+                    box-sizing: border-box;
+                    &.selected{
+                        background: #f3f3f3;
+                    }
+                    &:hover{
+                        background: #ecf5e1;
+                    }
+                }
+                .video-thumb{
+                    img{
+                        width: 115px;
+                        height: 70px;
+                    }
+                }
+                .video-descr{
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 5px;
+                    .video-duration{
+                        background-color: #7f6d6a;
+                        border-radius: 2px;
+                        color: white;
+                        font-style: italic;
+                        padding: 1px 6px;
+                        display: inline;
+                        width: 50px;
+                    }
+                }
+                .videoplayer{
+                    height: 100%;
+                    color: red;
+                }
+            
+            
+        }
+
+        .releasenote-modal{
+                
+
+            .modal-dialog {
+                width: 1000px;
+            }
+
+            .modal-header {
+                height: 63px;
+                border-bottom: 2px solid #504744;
+                text-align: center;
+            }
+
+            .title {
+                padding-top: 10px;
+            }
+
+            .modal-title {
+                font-size: 22px;
+                color: #504744;
+            }
+
+            .dialog-title {
+                text-align: center;
+                font-size: 22px;
+                width: 50%;
+                margin: 18px auto 0;
+            }
+
+            .modal-logo {
+                float: left;
+                width: 175px;
+                height: 43px;
+                //background: url("images/haul-plan-longlogo-withtitle-final.png") no-repeat;
+            }
+
+            .modal-body {
+                position: relative;
+                overflow-y: auto;
+                margin-bottom: 20px;
+                font-size:12px;
+                height: calc(100vh - 160px);
+                p{
+                    font-size:14px;
+                }
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        
+            h3 {
+                font-size: 18px;
+            }
+        
+            .modal-dialog {
+                height: 100%;
+            }
+        
+            .modal-content {
+                height: 90%;
+        
+                .modal-header {
+                    height: 63px;
+                }
+        
+                hr {
+                    border-top: 1px solid #000;
+                }
+            }
+        
+            .title {
+                margin-left: -30px;
+            }
+        
+            .new {
+                color: #339966;
+            }
+        
+            .improve {
+                color: #00ccff;
+            }
+        }
+
+        .properties-wrapper{
+            background-color: #fff;
+            #no-scenario-props {
+                height: 350px;
+            }
+            .scenario-properties{
+               
+                label{
+                    font-weight: 300;
+                }
+            }
+            .properties-section {  
+                .form-group{
+                    height: 20px;
+                    .form-control{
+                        height: 20px;
+                    }
+                }
+                .properties-title {
+                    border-right: 0;
+                    border-left: 0;
+                    border-top: 1px;
+                    border-bottom: 1px;
+                    border-style: solid;
+                    border-color: #333;
+                    padding: 5px;
+                    background-color: #e6e3de;
+                    font-weight: 700;
+                    .icon-collapse, .icon-greater-than{
+                        float: right;
+                        cursor: pointer;
+                    }
+                }
+
+                .editable-control{
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                &:hover{
+                    background-color: #efefef;
+                    &:after{
+                        content: '\E809';
+                        float: right;
+                        font-family: "haulplan-20174";
+                        font-style: normal;
+                        font-weight: normal;
+                        speak: none;
+                        text-decoration: inherit;
+                        width: 1em;                       
+                        text-align: center;
+                        /* opacity: .8; */
+                        font-variant: normal;
+                        text-transform: none;
+                        line-height: 1em;
+                        margin-right: -10px;
+                        top:3px;    
+                        position: absolute;                
+                        right: 12px;
+                        /* font-size: 120%; */
+                        -webkit-font-smoothing: antialiased;
+                    }
+                }
+            }
+            }
+        }
+    }
+
+    
+}
+
+.addnode-modal{
+    width: 500px;
+    height: 200px;
+    .modal-content{
+        border-radius: 0;
+        .modal-header{           
+            padding: 5px 10px;
+            border-radius: 0; 
+            span{
+                font-size: 15px;
+            }
+            font-weight: 700;
+        }
+
+        .move-to{
+            position: absolute;
+            height: 250px;
+            background: white;
+            overflow-y: auto;
+            overflow-x: hidden;
+            z-index: 99;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            padding-top: 10px;
+            .search-icon{
+                position: absolute;
+                top:18px;
+                right: 5px;
+            }
+        }
+        .moveto.search {
+            width: 110%;
+            margin-left: -15px;
+        }
+    } 
+      
+}
+.hide{
+    display: none;
+} 

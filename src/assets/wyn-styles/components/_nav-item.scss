@@ -1,0 +1,134 @@
+%link {
+  color: darken(theme-color('white'), 20%);
+  display: block;
+  font-weight: $font-weight-semibold;
+  line-height: 1.25rem;
+  padding: 9px 0 9px 50px;
+  position: relative;
+}
+
+.wyn {
+  // .wyn-nav-item
+  &-nav-item {
+    position: relative;
+    overflow-x: hidden;
+    &:not(.disabled) {
+      .wyn-nav-link {
+        &:hover {
+          background: lighten(theme-color('gray'), 10%);
+          color: theme-color('white');
+        }
+
+        &:active,
+        &:focus {
+          background: lighten(theme-color('black'), 14%);
+          color: theme-color('primary');
+          text-decoration: none;
+        }
+      }
+    }
+    // item disabled state
+    &.disabled {
+      .wyn-nav-link {
+        color: lighten(theme-color('black'), 50%);
+        cursor: default;
+
+        .item-lbl {
+          color: lighten(theme-color('black'), 40%);
+        }
+      }
+    }
+
+    &.active {
+      & > .wyn-nav-link {
+        color: theme-color('primary');
+
+        &:before {
+          background: theme-color('primary');
+        }
+
+        &:after {
+          background: linear-gradient(90deg, theme-color('primary') 0%, rgba(theme-color('primary'),0) 100%);
+        }
+
+        &:hover {
+          &:before {
+            background: theme-color('white');
+          }
+        }
+      }
+
+      .btn-close {
+        display: block;
+      }
+    }
+
+    .btn-close {
+      display: none;
+    }
+  }
+
+  // .wyn-nav-link
+  &-nav-link {
+    @extend %link;
+
+    &:after,
+    &:before {
+      content: "";
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
+
+    &:before {
+      width: 4px;
+    }
+
+    &:after {
+      left: 4px;
+      opacity: 0.2;
+      width: 0.75rem;
+    }
+
+    &:hover {
+      color: theme-color('white');
+      text-decoration: none;
+
+      .radio {
+        color: darken(theme-color('white'), 20%);
+      }
+    }
+
+    .icon {
+      font-size: 1rem;
+      line-height: 1;
+      position: absolute;
+      left: 1.45rem;
+      text-align: center;
+      top: 9px;
+    }
+  }
+
+  // .wyn-nav-item-radio
+  &-nav-item-radio {
+    position: relative;
+
+    &.active {
+      .radio {
+        background: theme-color('primary');
+        color: theme-color('primary');
+      }
+    }
+
+    .radio {
+      border: 1px solid;
+      border-radius: 0.5rem;
+      height: 0.5rem;
+      left: 17px;
+      position: absolute;
+      top: 3px;
+      width: 0.5rem;
+    }
+  }
+}

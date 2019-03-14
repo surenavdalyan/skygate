@@ -1,0 +1,65 @@
+@charset 'UTF-8';
+
+
+// Configuration and helpers
+@import
+  'vendor/bootstrap_v4/functions', // import bootstrap functions
+  'abstracts/functions',
+  'vendor/bootstrap_v4/variables', // import bootstrap default variables
+  'abstracts/variables'; // overwrite bootstrap variables and indroduce our custom variables here
+
+@import
+  'vendor/bootstrap_v4/mixins', // import bootstrap mixins
+  'mixins';
+
+@import 'vendor/bootstrap_v4/reboot';
+
+// grid related stuff
+
+@import "vendor/bootstrap_v4/mixins/breakpoints";
+@import "vendor/bootstrap_v4/mixins/grid-framework";
+@import "vendor/bootstrap_v4/mixins/grid";
+
+@import "vendor/bootstrap_v4/grid";
+
+
+// Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
+
+
+// Layout-related sections
+@import
+  'layout/canvas',
+  'layout/sidebar',
+  'layout/grid',
+  // 'layout/hp-grid-layout',
+  // 'layout/hp-grid',
+  'layout/panel';
+  
+
+// Components
+@import
+  'vendor/bootstrap_v4/nav',
+  'components/brand',
+  'components/button',
+  'components/nav-item',
+  //'components/dropdown.scss',
+  // 'components/icons',
+  // 'components/react-select',
+  'components/navigation';
+
+// Page-specific styles
+@import
+  'pages/home';
+
+// Themes
+@import
+  'themes/default';
+
+// helpers
+@import 'vendor/bootstrap_v4/utilities';
+@import 'vendor/bootstrap_v4/type';

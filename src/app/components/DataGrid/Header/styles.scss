@@ -1,0 +1,68 @@
+@import "../../../../styles/variables.scss";
+.gridSearchBox{
+    font-size: 14px;
+    color: #1880c0;
+    margin-top: -5px;
+    height: 24px;
+    margin-right: 14px;
+    font-weight: normal;
+    border: 2px #104268;
+    border-radius: 8px;
+    padding-left: 12px;
+    background: #031427!important;
+}
+
+.layoutIcon{
+    display: inline-block;
+  }
+  .showHideControl{
+    display: inline-block;
+    padding: inherit;
+   // background: #194174;
+    margin: 0;
+    div.dropdown {
+      float: none;
+      margin: 0;
+      ul.dropdown-menu
+      {
+      li{
+        display: block;
+        padding: 5px;
+        font-size: 12px;
+        font-weight: normal;
+        & > span.icon-hide.active{
+            opacity: 1;
+        }
+        span.icon-hide.active{
+            padding-right: 5px;
+        }
+        span.icon-hide{
+            opacity: 0.4;
+            padding-right: 5px;
+        }
+      }
+    }
+      #showHideDropdown {
+        color: inherit;
+        font-size: inherit;
+        padding:0px;
+        border-radius: 0;
+        height: 20px;
+        background: transparent;
+        border: none;
+        margin-left: 4px;
+        .caret{
+          display: none;
+        }
+      }
+  }
+  #showHide-dropdown-menu{
+    background: $panebackground;
+  }
+  }
+
+  .active-icon {
+    color: $itemSelected !important;
+  }
+
+  .filter-scrollbar.dropdown-menu{overflow: auto;}

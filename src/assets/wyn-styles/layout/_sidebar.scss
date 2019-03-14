@@ -1,0 +1,48 @@
+@import '../abstracts/_variables.scss';
+.sidebar {
+
+  // .sidebar-nav
+  &-nav {
+    background: theme-color('gray');
+    bottom: 0;
+    color: theme-color('white');
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    transition: width 0.25s;
+    width: $navbar-collapsed-width;
+    z-index: 1;
+
+    // .sidebar-nav-hd, .sidebar-nav-fd
+    &-hd, &-fd {
+      left: 0;
+      position: absolute;
+      right: 0;
+      z-index: 1;
+    }
+
+    // .sidebar-hd
+    &-hd {
+      top: 0;
+    }
+
+    // .sidebar-fd
+    &-fd {
+      bottom: 0;
+    }
+
+    &:hover, &.active {
+      width: $navbar-expanded-width;
+    }
+  }
+}
+
+.pin-sidebar {
+  .sidebar {
+    // .sidebar-nav
+    &-nav {
+      width: $navbar-expanded-width;
+    }
+  }
+}

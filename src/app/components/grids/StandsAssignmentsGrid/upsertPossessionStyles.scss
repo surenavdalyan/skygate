@@ -1,0 +1,83 @@
+@import '../../../../styles/variables.scss';
+
+.modal-add-possession {
+    height: 200px;
+    background-color: #34435C;
+    border-radius: 0;
+    color: #fff;
+    font-size: 12px;
+}
+.add-posses-wrapper {
+    label:not(.checkbox-inline) {
+        width: 75px;
+    }
+}
+.add-posses-controls {
+    height: 26px;
+    width: 190px;
+    display: inline-block;
+    margin: 5px;
+    margin-right: 10px;
+    background: transparent;
+    border: 1px solid #9BD1FF;
+    border-radius: 2px;
+    padding: 0 3px;
+    color: #fff;
+    input {
+        background: transparent;
+        border: 0;
+        height: 26px;
+        color: #fff;
+    }
+    option {
+        color: #000;
+    }
+}
+
+.full-width { width: 100%; }
+
+.possession-modal {
+    width: 1200px;
+   color: #ffffff;
+  .form-control {
+    background-color: #34435C;
+    color: #ffffff;
+  }
+  select {
+    color: #ffffff;
+  }
+}
+
+.canvas-wrapper{z-index:0;}
+
+.possession-modal .form-control{border:solid 1px #98ADD2; border-radius:2px; background:#18243C;}
+.possession-modal textarea{resize: none;}
+.possession-modal label{color:#98ADD2; font-size: 13px; padding-top:10px !important;}
+.possession-modal .customcheckbox{
+  margin:0 0 10px;
+  color:#FFF;
+  padding:0 0 0 26px !important;
+
+  &.disabled {
+    cursor: not-allowed;
+  }
+}
+.possession-modal .rdt{margin:0px;}
+
+.legends-dropdown ul{ background: #34435C !important; border-radius:5px; padding: 20px;}
+.legends-dropdown ul li{padding:5px 0; line-height:18px; color:#98ADD2;}
+.legends-dropdown .filter-scrollbar{ max-height:210px !important; width:230px !important;}
+.circle-color{float:left; display: block; width:18px; height:18px; border-radius:9px; margin:0 10px 0 0;}
+.circle-color.yellow{ background:#FFC200;}
+.circle-color.green{ background:#2CB19F;}
+.circle-color.red{ background:#CB5243;}
+.circle-color.blue{ background:#2C76FF;}
+.circle-color.orange{ background:#DC8900;}
+.circle-color.grey{ background:#939B9A;}
+
+.possessions-recommendation .modal-body{padding:10px 40px; font-size: 12px; line-height: 1.5;}
+.possessions-recommendation .modal-hint{ margin:15px 0; color: #97ADD3;}
+.pr-message{padding:15px;border-radius:5px; background:#29364B; color: #97ADD3;}
+.possessions-recommendation .modal-content{background:#34435C;}
+.pr-message {max-height:160px; height: 100%; width: 100%;} // overflow: auto;
+.pr-message span{ display:block; line-height: 2; padding: 0 15px;}

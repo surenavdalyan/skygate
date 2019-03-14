@@ -1,0 +1,18 @@
+.pane-container {
+    border: 1px solid #AAA;
+    margin-bottom: 10px;
+    .pane-header {
+        padding-left: 25px;
+        height: 21px;
+        background-color: rgba(24, 36, 60, 1);
+        color: #FFF;
+    }
+
+    .pane-content {
+        padding-left: 25px;
+        height: 150px;
+        background-color: #e1dfe8;
+        .filter-item {
+        }
+    }
+}

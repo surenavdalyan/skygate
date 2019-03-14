@@ -1,0 +1,91 @@
+/// Regular font family
+/// @type List
+$font-stack: 'Open Sans', 'Arial', sans-serif !default;
+
+// -----------------------------------------------------------------------------
+// Bootstrap variables
+// -----------------------------------------------------------------------------
+
+$primary:                     #05A792;
+$secondary:                   #ff9500;
+$success:                     #1ec968;
+$info:                        #35a8e0;
+$warning:                     #f17d45;
+$danger:                      #e2445c;
+$black:                       #000000;
+$gray:                        #333333;
+$light-gray:                  #e1e4e5;
+$white:                       #ffffff;
+$light-blue:                  #f2fbff;
+$lighter-blue:                #d9f3ff;
+
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "black":      $black,
+  "gray":       $gray,
+  "light-gray": $light-gray,
+  "white":      $white,
+  "light-blue": $light-blue,
+  "lighter-blue": $lighter-blue
+);
+
+$grid-gutter-width:           10px;
+
+$border-color:                theme-color('light-gray');
+
+$font-size-base:              1.2rem;
+
+$font-family-base:            $font-stack;
+$line-height-base:            1.35;
+
+$nav-link-padding-y:          .5rem;
+$nav-link-padding-x:          1rem;
+
+// $spacers: (
+//     0: 0,
+//     1: ($spacer * .5),
+//     2: ($spacer),
+//     3: ($spacer * 1.5),
+//     4: ($spacer * 2),
+//     5: ($spacer * 2.5)
+// );
+
+// -----------------------------------------------------------------------------
+// Project specific variables
+// -----------------------------------------------------------------------------
+
+
+
+/// Copy text color
+/// @type Color
+$text-color: theme-color('gray') !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: theme-color('primary') !default;
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url:                    '/assets/' !default;
+
+
+// Layout related configs
+//
+// Set layout related configs like width, height etc
+$navbar-expanded-width:               218px;
+$navbar-collapsed-width:              50px;
+$chrome-height:                       25px;
+$canvas-toolbar-height:               31px;
+$canvas-toolbar-bottom-margin:        12px;
+
+// set semibold font weight to variable
+$font-weight-semibold:            600;

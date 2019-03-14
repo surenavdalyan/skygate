@@ -1,0 +1,72 @@
+$btnSave: #6ECF9A;
+$simpleWhiteText: #FFFFFF;
+$background:  #18243C;
+
+// chnage bg color to variable
+.ag-menu {
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+}
+.filters-menu {
+    width: 230px;
+    padding:18px 15px;
+    color: #fff;
+    input[type=text] {
+        width: 85%;
+        border: 1px solid #98ADD2;
+        border: 0;
+        background-color: #34435C;
+    }
+}
+.filters-menu .customcheckbox{margin:0 0 15px; max-width:172px;}
+.filters-body{margin:15px 0;}
+.ag-fresh .ag-menu{border:0px; background: #34435C; max-height:235px;}
+
+.search-wrapper {
+    position: relative;
+    width: 180px;
+    margin:0 0 8px;
+    .closeBtn {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+}
+.search-wrapper input.search-field{
+    width: 100%;
+    padding: 3px 3px 3px 24px;
+    border: 1px solid #98ADD2;
+    border-radius:2px;
+    font-size: 13px;
+}
+.search-wrapper .icon-search{ position: absolute; top:6px; left:3px; color:#FFF; width: 16px;}
+.search-wrapper .icon-search:before{color:#FFF;}
+.search-wrapper .closeBtn{top:-10px; right:-28px; font-weight:300;}
+
+.filters-footer {
+    button {
+        width: 90px;
+    }
+}
+.filters-footer button.btn-success{margin:0px;}
+
+// .btn_common {
+//     border: 2px solid #4E6987;
+//     border-radius: 2px;
+//     height: 25px;
+//     width: 95px;
+//     padding: 0px 12px;
+//     margin-right: 5px;
+// }
+
+// .btn_save {
+//     @extend .btn_common;
+//     background-color: $btnSave;
+//     border: 2px;
+// }
+
+// .btn_close {
+//     @extend .btn_common;
+//     color: $simpleWhiteText;
+//     background-color: $background;
+// }

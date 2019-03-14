@@ -1,0 +1,17 @@
+.brand {
+  background: theme-color('gray');
+  display: block;
+  padding: 10px 0 10px 50px;
+  position: relative;
+  // .brand-icon
+  &-icon {
+    height: 22px;
+    left: 12px;
+    position: absolute;
+    top: 10px;
+  }
+  //.brand-name
+  &-name {
+    height: 22px;
+  }
+}

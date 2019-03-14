@@ -1,0 +1,24 @@
+.canvas-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.hover-header {
+    font-size: 15px;
+    font-weight: bold;
+    color: #BBB;
+    border-bottom: 2px solid #DDD;
+    height: 20px;
+}
+
+.hover-item {
+    font-size: 14px;
+    color: #BBB;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.right-align {
+    text-align: right;
+}

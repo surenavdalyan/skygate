@@ -1,0 +1,116 @@
+@import './themes.scss';
+
+input::before{
+    font-family: "haulplan";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    font-size: 15px;
+    text-align: center;
+    /* opacity: .8; */
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: -.2em;
+    /* font-size: 120%; */
+    -webkit-font-smoothing: antialiased; 
+    background-color: #fff;
+}
+/*Radio button styles*/
+input[type="radio"]{
+    cursor: pointer;
+    top:3px;
+    &::before{
+        visibility: visible;
+        content: '\e89e'
+    }
+    &:checked{
+        color: $primaryColor;
+        &::before{
+            visibility: visible;
+            content: '\e89d';
+        }
+    }
+}
+
+/* Checkbox styles */
+input[type="checkbox"]{
+    cursor: pointer;
+    top:3px;
+    &::before{
+        visibility: visible;
+        content: '\e8a1';                                                               
+    }
+    &:checked{
+        color: $primaryColor;
+        &::before{
+            visibility: visible;
+            content: '\e8a0';  
+        }
+    }
+}
+.icon-check-box-unselected, .icon-check-box-selected{
+    cursor: pointer;
+}
+.modal {
+    input[type="checkbox"]{
+        top:0px;
+    }
+}
+.background-progress{
+    .lds-ellipsis{
+        margin-left: 45%;
+    }
+}
+.lds-ellipsis, .lds-grid{
+    margin-left: 45%;
+}
+.load-data .lds-ellipsis{
+    margin-left: 0;
+}
+.icon-download, .pointer{
+    cursor: pointer;
+}
+.float-right{
+    float: right;
+}
+.right-align{
+    text-align: right;
+}
+.disabled{
+    pointer-events: none;
+    opacity: 0.5;
+    cursor:default;
+}
+
+.btn{
+    &.btnCancel{
+        background-color: white;
+        border: 1px solid $primaryColor;
+        color: $primaryColor;
+        margin: 0 8px;
+        padding: 3px 17px;
+        min-width: 74px;
+        font-size: 12px;
+    }
+    &.btnStyle{ 
+        background-color: $primaryColor;
+        color: white;
+        margin: 0 8px;
+        padding: 3px 17px;
+        min-width: 74px;
+        font-size: 12px;
+    }
+}
+.summary-grid .header{
+    padding: 5px !important;
+    border-bottom: none;
+}
+
+.tethered-select-options{
+    z-index: 9999 !important; /* this fix to handle the summary selection in affected networks*/
+}

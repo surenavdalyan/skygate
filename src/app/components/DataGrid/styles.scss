@@ -1,0 +1,282 @@
+@import "../../../styles/variables.scss";
+.grid-wrapper .ag-fresh {
+  width: 100%;
+  .ag-header,
+  .ag-body,
+  .ag-row {
+    background: none;
+    //background-color: #113053;
+
+    color: #fff;
+    width: 100%;
+    border: none;
+  }
+  .ag-header{
+    background: #324460;
+    background: -moz-linear-gradient(top, #324460 0%, #29384e 100%);
+    background: -webkit-linear-gradient(top, #324460 0%, #29384e 100%);
+    background: linear-gradient(to bottom, #324460 0%, #29384e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(
+        startColorstr="#324460",
+        endColorstr="#29384e",
+        GradientType=0
+      );
+    font-weight: normal;
+  }
+  .ag-header-cell:hover {
+    background: #364c65;
+  }
+  .ag-row-odd {
+    background-color: #105999;
+  }
+  .ag-row {
+    border-bottom: 2px solid #05192f;
+    background-color: #105999;
+    &.ag-row-even{
+      background-color: #105999;
+    }
+  }
+  .ag-ltr .ag-header-cell,
+  .ag-cell-focus,
+  .ag-ltr .ag-cell-no-focus {
+    border: none;
+  }
+  .ag-body {
+    background-color: $gridBGColor;
+  }
+  .ag-cell {
+    padding: 5px;
+  }
+  .ag-header-viewport {
+    //   background-color: #105999;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .ag-header-cell-text {
+    padding: 5px;
+  }
+  .ag-body-container {
+    display: block;
+    margin-bottom: -5px !important;
+  }
+  .ag-root {
+    border: 0px solid #c1c1c1;
+    border-right: 0px;
+  }
+  .ag-react-container {
+    .btn {
+      padding: 0 10px;
+    }
+  }
+  .ag-icon-menu {
+    background: url("../../images/gridfilter.png");
+    width: 14px;
+    height: 14px;
+    background-size: 14px 14px;
+  }
+  .ag-icon-filter {
+    background: url("../../images/gridfilter - Active.png");
+    width: 14px;
+    height: 14px;
+    background-size: 14px 14px;
+  }
+  .ag-header-cell-label .ag-header-icon {
+    margin-top: 7px;
+  }
+  .ag-header-cell-menu-button {
+    margin-top: 7px;
+    margin-right: 10px;
+  }
+}
+
+.grid-wrapper {
+  //border: 1px solid #c1c1c1;
+
+  .ag-fresh {
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 12px;
+
+    .ag-header-icon {
+      fill: #bcff61;
+      color: #bcff61;
+      &.ag-header-cell-menu-button {
+        // position: absolute;
+        // right: 0;
+        cursor: pointer;
+        // align-content: stretch;
+        // margin: auto;
+        // -webkit-order: 2;
+        // -moz-order: 2;
+        // -ms-order: 2;
+        // -o-order: 2;
+        // order: 2;
+      }
+    }
+
+    .dirty-row,
+    .ag-row-hover {
+      .ag-cell {
+        background-color: #103757 !important;
+      }
+    }
+    .ag-row-selected {
+      .ag-cell {
+        background-color: #5c164c !important;
+      }
+    }
+
+    .ag-cell {
+      .cell-modified,
+      &.cell-modified {
+        color: $dirtyCellColor !important;
+      }
+      &.dirty-cell {
+        color: $errorCellColor !important;
+        .haulmax-check-box,
+        .haulmax-check-box-outline-blank {
+          color: $dirtyCellColor !important;
+        }
+      }
+    }
+    .ag-menu{
+      // background-color: #87347B;
+    }
+  }
+}
+
+.dropdown {
+  .Select {
+    top: 3px;
+  }
+  .Select-clear {
+    display: none;
+  }
+  .Select-value {
+    padding-right: 10px !important;
+  }
+  .Select-option:last-child {
+    border-radius: 0px;
+  }
+  .Select-menu-outer {
+    border-radius: 0px;
+  }
+
+  .Select-control,
+  .is-open > .Select-control {
+    border-color: $white;
+    background-color: $darkTabBGColor;
+    color: $white;
+    border-radius: 0px;
+    box-shadow: none;
+    width: 95px;
+    display: inline-table;
+    height: 20px;
+    .Select-value {
+      top: -7px !important;
+      .Select-value-label {
+        color: $white !important;
+        line-height: 37px;
+      }
+    }
+    .Select-arrow-zone {
+      background-color: $tabBGColor;
+      padding-right: 0;
+      .Select-arrow {
+        border-color: $white transparent transparent;
+      }
+    }
+  }
+  .is-open {
+    .Select-arrow {
+      border-color: transparent transparent $white !important;
+    }
+  }
+  .Select-placeholder {
+    line-height: 20px;
+  }
+  .Select-input {
+    height: 20px;
+    input {
+      padding: 0;
+    }
+  }
+  .Select-option {
+    background-color: $darkTabBGColor;
+    color: $white !important;
+    &.is-selected {
+      background-color: $darkTabBGColor;
+    }
+    &.is-focused {
+      background-color: $tabBGColor;
+      color: $white !important;
+    }
+  }
+  .driverDropdown {
+    .Select-control,
+    .is-open > .Select-control {
+      width: 120px;
+    }
+  }
+  .liftgateDropdown {
+    .Select-control,
+    .is-open > .Select-control {
+      width: 80px;
+    }
+  }
+  .trapDropdown {
+    .Select-control,
+    .is-open > .Select-control {
+      width: 80px;
+    }
+  }
+  .routeDropdown {
+    .Select-control,
+    .is-open > .Select-control {
+      width: 85px;
+    }
+  }
+}
+.redHighlight {
+  color: $highlightRed;
+}
+.defaultETAColor {
+  color: $white;
+}
+.grid-wrapper .ag-fresh .ag-cell {
+  padding-left: 7px;
+}
+.rightAlign {
+  text-align: center;
+}
+.ag-cell-edit-input {
+  background: $bgColor;
+  border: 0px;
+  padding-left: 5px;
+}
+.hyperlinkColor {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.grid-icon {
+  font-size: 16px;
+}
+.lm_content {
+  .ag-layout-normal .ag-body-viewport {
+    height: 97.5%;
+    @media (max-width: 1400px) {
+      height: 96%;
+    }
+  }
+}
+.lock-active {
+  color: $accentPrimary;
+}
+.notificationHeaders {
+  color: $white;
+  cursor: pointer;
+  &:hover {
+    color: $white;
+    text-decoration: underline;
+  }
+}

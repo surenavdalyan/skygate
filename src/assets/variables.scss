@@ -1,0 +1,165 @@
+
+$borderWidthInUISkeleton:8px;
+$workbenchWidth:36px;
+$headerHeight: 36px;
+$footerHeight: 50px;
+$infopaneHeight: 24px;
+$workbenchHeight: calc(100vh - 2 * 25px + -#{$borderWidthInUISkeleton});
+$workspaceAreaSub1: 180px;
+$mainbackground:#000F1F;
+$mainpanels:#18243C;
+$workspaceAreaHeight: calc(100vh - 2 * 4px + -#{$headerHeight});
+
+$linkColor:#FFF;
+$linkHoverColor:#69D098;
+
+$body_101:calc(100vh - 1 * 30px - 4 * 4px + -#{$headerHeight});
+
+$body_c1_100:calc(100vh - 5 * 30px - 12 * 4px + -#{$headerHeight});
+$body_c1_50:calc((100vh - 5 * 30px - 12 * 4px + -#{$headerHeight})/2);
+$body_c1_33:calc((100vh - 5 * 30px - 12 * 4px + -#{$headerHeight})/3);
+$body_c1_25:calc((100vh - 5 * 30px - 12 * 4px + -#{$headerHeight})/4);
+$body_c1_20:calc((100vh - 5 * 30px - 12 * 4px + -#{$headerHeight})/5);
+
+$body_c2_100:calc(100vh - 4 * 30px - 10 * 4px + -#{$headerHeight});
+$body_c2_50:calc((100vh - 4 * 30px - 10 * 4px + -#{$headerHeight})/2);
+$body_c2_33:calc((100vh - 4 * 30px - 10 * 4px + -#{$headerHeight})/3);
+$body_c2_25:calc((100vh - 4 * 30px - 10 * 4px + -#{$headerHeight})/4);
+
+$body_c3_100:calc(100vh - 3 * 30px - 8 * 4px + -#{$headerHeight});
+$body_c3_50:calc((100vh - 3 * 30px - 8 * 4px + -#{$headerHeight})/2);
+$body_c3_33:calc((100vh - 3 * 30px - 8 * 4px + -#{$headerHeight})/3);
+
+$body_c4_100:calc(100vh - 2 * 30px - 6 * 4px + -#{$headerHeight});
+$body_c4_50:calc((100vh - 2 * 30px - 6 * 4px + -#{$headerHeight})/2);
+
+$body_c5_100:calc(100vh - 1 * 30px - 4 * 4px + -#{$headerHeight});
+$body_50:calc((100vh - 2 * 30px - 16 * 4px + -#{$headerHeight})/2);
+
+$two-grid-content: calc(50% - 52px);
+
+$iconfont:'rmt';
+
+$button-negative:#FFF;
+$button-neutral:#388ACE;
+$button-positive:#FF874A;
+$button-negative-hover:#F1F1F1;
+$button-neutral-hover:#2C7BBD;
+$button-positive-hover:#EF7639;
+
+$side-panel-width: 160px;
+$containerBColor: #242121;
+$font-path: './fonts';
+$common-font-name: 'common-1212016';
+$app-font-name: 'rmt-fonts';
+$bodyBgColor: #504744;
+$itemSelected: #69D098;
+$itemHovered: #8bc53f;
+$itemActive: #ecf5e1;
+$scrollbarColor: #aeacab;
+$lightblue:#568CB8;
+
+/* Buttons */
+$btnSuccessBackground:#9e4491;
+$btnSuccessBorder:#9e4491;
+$btnSuccessColor:#18243C;
+$btnSuccessHoverBackground:#ac589f;
+$btnSuccessHoverBorder:#ac589f;
+$btnSuccessActiveBackground: #8a5382;
+$btnSuccessActiveBorder: #7c4b75;
+
+
+$btnDefaultBackground:transparent;
+$btnDefaultBorder:#6C8AAB;
+$btnDefaultColor:#FFF;
+$btnDefaultHoverBackground:#48B67A;
+
+/* Header */
+$headerSidePanelColor: #363636;
+$headerSeparator:#34435C;
+$headerLinkColor:#D0D3D8;
+$headerLinkHoverBg:#34435C;
+$headerTextColor:#C3D6E6;
+$headerIconQuantityBg:#FF0505;
+$headerIconQuantityText:#FFF;
+$scheduleIconColor:#69D098;
+
+/* Login / Roles */
+$applyButtonColor:#69D098;
+$buttonClearColor:#FFF;
+
+/* Pane */
+$panebackground:#18243C;
+$paneBorderColor:#34435C;
+$paneHeaderColor:#34435C;
+$paneHeaderTextColor:#CEDEEB;
+$paneContentColor:#FFF;
+$dateRangeButtonColor:#0B3158;
+
+/* Info Pane */
+$infoPaneColor:#C3D6E6;
+$infoPaneLinkColor:#C3D6E6;
+$infoPaneSeparator:#C3D6E6;
+
+/*grid styles*/
+$gridHeader: #292828;
+$rowBottomColor: #272626;
+$gridBColor: #242121;
+$cellColor: #efebeb;
+$headerCellColor: #9e9c9b;
+$tabSelectedBorder:#69D098;
+$tabColor:#CEDEEB;
+$tabSelectedColor:#FFF;
+$resource-table: calc(100% - 45px);
+
+/*Grid*/
+$main_color_bg: #18243C;
+$grid_header_col: #0B3158;
+$row_border: #000F1F;
+$row_color:  #0A2A4D;
+$simpleWhiteText: #FFFFFF;
+$simpleBlackText: #000000;
+$grid_border_box: #000F1F;
+
+/* Sidebar */
+$sidebarLinkColor:#FFF;
+$sidebarLinkColor-active:#FFF;
+$sidebarlinkbg:transparent;
+$sidebarlinkbg-active:#568BB9;
+$sideBarHeight: calc(100vh + -1px + -#{$headerHeight});
+
+/* Notification Bar */
+$notificationBarBg:#1F2D4A;
+$notificationBarText:#FFF;
+$notificationbar: calc(100vh + -#{$headerHeight});
+$notificationBackgroundFrom:#31AFFD;
+$notificationBackgroundTo:#078BD9;
+$notificationWarningBackgroundFrom:#F54B65;
+$notificationWarningBackgroundTo:#CD3950;
+$notificationHeaderBgFrom:#4C3C57;
+$notificationHeaderBgTo:#2E2F4D;
+$searchNotifInputBorder:#20456F;
+$notifBtnBackground:#3C4C68;
+$notifBtnColor:#FFF;
+
+/* DayPicker */
+$calendarBackground:#384863;
+$monthChooserBackground:#FF758A;
+$calendarTextColor:#FFF;
+$calendarFromToBorder:#80ACCB;
+$calendarFromToColor:#FFF;
+$calendarWeekDayColor:#80ACCB;
+
+/* Admin */
+/*User Management*/
+$roleWrapperBorder:#9BD1FF;
+$adminTextColor:#FFF;
+$AccordionHeaderBg:#18243C;
+$collapsedAccordionHeaderBg:#34435C;
+$accordionHeaderColor:#69D098;
+/*Role Management*/
+$adminModalBg:#34435C;
+$roleSettingsTitles:#C3D6E6;
+/*Parameter Settings*/
+$inputTextColor:#69D098;
+$inputBorderColor:#5D759E;

@@ -1,0 +1,58 @@
+@import './themes.scss';
+.terminal-chart{
+    ul.filter-warpper{
+        list-style: none;
+        display: inline-block;
+        padding-left: 0;
+        li{
+            display: inline-block;
+            float: left;
+            margin-left: 10px;
+            &:first-child{
+                margin-left: 0;
+            }
+            &.dropdown{
+                width: 150px;
+                .Select-control{
+                    padding-top: 6px;
+                }
+            }
+        }
+    }
+    .chart-container{
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+    .download{
+        display: block;
+        width: 35px;
+        height: 34px;
+        border: 1px solid #ccc;
+        background: #fff;
+        padding: 8px 8px;
+    }
+}
+.selected{
+    background-color: $primaryColor;
+    color: #fff;
+    &:hover, &:focus{
+        background-color: $primaryColor;
+        color: #fff;
+    }
+}
+
+.chart-holder{
+    height: 300px;
+    background-color: #fff;
+    .lds-ellipsis {
+        margin-top: 5%;
+    }
+    .chart-message{
+        top:100px;
+        position: relative;
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+/* Default Haul PLAN Theme */
+$beta: #74625f;
+$hoverColor: #d8e8c4;
+$selectedColor: #8ac440;
+$keyboardFocusColor: #00EAFF;
+$importSuccessWithIssues: #f68d15;
+$failure : #bf5941;
+$fontSize: 12;
+
+$primaryButton: #8bc53f;
+$secondaryButton: #74625f;
+$defaultButton: #e8dfcf;
+$warningButton: #bf5941;
+
+$headerHeight: 46px;
+$sidebarMinWidth : 50px;
+$sidebarMaxWidth : 240px;
+$errorColor: #8a1d1d;
+$issueColor: #35A8E0;
+
+
+//WYN Themes
+$pageBackgroundColor: #E1E4E6;
+$borderColor: #D9D9D9;
+$headerFontSize: 14;
+$modalDividerColor : #D9D9D9;
+//WYN colors
+$primaryColor: #01A893;
+$secondaryColor: #6F7173;
+$betaColor: #E2445C;
+$validationStepColor: #616161;
+$requiredColor: #F17E43;
+$gridSelectedColor: #CDEDE9;
+$affectedMenuColor: #F7F7F7;
+
+:export{
+    primaryButton: $primaryButton;
+    secondaryButton: $secondaryButton;
+    defaultButton: $defaultButton;
+    warningButton: $warningButton;
+    wynPrimaryColor: $primaryColor;
+    wynBetaColor: $betaColor
+}

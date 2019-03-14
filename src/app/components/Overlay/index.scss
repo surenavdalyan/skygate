@@ -1,0 +1,26 @@
+.overlay-comp {
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    font-size: 14px;
+    line-height: 1.0;
+    background-color: rgba(50, 50, 50, 0.8);
+    color: #BBB;
+    border-radius: 5px;
+    z-index: 20;
+    pointer-events: none;
+    padding: 17px 15px 10px 15px;
+    width: 250px;
+    word-wrap: break-word;
+    letter-spacing: 1px;
+    color: #FFF;
+}
+
+.overlay-comp .title {
+    font-style: italic;
+}
+
+.overlay-comp .title hr {
+    margin: 3px 0px 7px 0px;
+    border-top: 1px dashed #555;
+}

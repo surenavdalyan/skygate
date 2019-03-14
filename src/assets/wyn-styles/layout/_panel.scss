@@ -1,0 +1,11 @@
+.panel {
+  background: theme-color('white');
+  border-radius: $border-radius;
+  box-shadow: 0 5px 10px theme-color('light-gray');
+  height: 100%;
+
+  //.panel-wrap
+  &-wrap {
+    height: calc(100% - #{$canvas-toolbar-height + $canvas-toolbar-bottom-margin});
+  }
+}

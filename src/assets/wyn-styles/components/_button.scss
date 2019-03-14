@@ -1,0 +1,58 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.btn {
+  //.btn-pin-sidebar
+  &-pin-sidebar {
+    color: theme-color('white');
+    padding: 10px 1rem;
+    position: relative;
+
+    .pin-icon {
+      color: theme-color('white');
+      display: inline-block;
+      font-size: 0.875rem;
+      line-height: 1;
+      text-align: center;
+      width: 1.125rem;
+    }
+
+    .item-lbl {
+      position: absolute;
+      right: 50px;
+      top: 10px;
+    }
+
+    &:hover {
+      background: lighten(theme-color('gray'), 10%);
+      .item-lbl {
+          color: darken(theme-color('white'), 20%);
+      }
+    }
+  }
+
+  // .btn-close
+  &-close {
+    line-height: 1;
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    font-size: 0.5rem;
+    padding: 0.5rem;
+
+    &:hover {
+      background: #666666;
+    }
+
+    &:active {
+      background: #262626;
+    }
+  }
+
+  // .btn-round
+  &-round {
+    border-radius: 50%;
+    display: inline-block;
+  }
+}

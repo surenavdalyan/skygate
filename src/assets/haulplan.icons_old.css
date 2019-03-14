@@ -1,0 +1,212 @@
+
+@font-face {
+  font-family: 'haulplan-20174';
+  src: url('fonts/haulplan-20174.eot?90135688');
+  src: url('fonts/haulplan-20174.eot?90135688#iefix') format('embedded-opentype'),
+       url('fonts/haulplan-20174.woff2?90135688') format('woff2'),
+       url('fonts/haulplan-20174.woff?90135688') format('woff'),
+       url('fonts/haulplan-20174.ttf?90135688') format('truetype'),
+       url('fonts/haulplan-20174.svg?90135688#haulplan-20174') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'haulplan-20174';
+    src: url('../font/haulplan-20174.svg?90135688#haulplan-20174') format('svg');
+  }
+}
+*/
+ 
+[class^="haulplan-"]:before, [class*=" haulplan-"]:before {
+  font-family: "haulplan-20174";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.haulplan-split:before { content: '\e800'; } /* '' */
+.haulplan-dock:before { content: '\e801'; } /* '' */
+.haulplan-icons-dot-circled:before { content: '\e802'; } /* '' */
+.haulplan-icons-delete:before { content: '\e803'; } /* '' */
+.haulplan-icons-autorenew:before { content: '\e804'; } /* '' */
+.haulplan-icons-cancel-circled:before { content: '\e805'; } /* '' */
+.haulplan-icons-check-circle:before { content: '\e806'; } /* '' */
+.haulplan-icons-error:before { content: '\e807'; } /* '' */
+.haulplan-icons-warning-1:before { content: '\e808'; } /* '' */
+.haulplan-icons-create:before { content: '\e809'; } /* '' */
+.haulplan-network:before { content: '\e80a'; } /* '' */
+.haulplan-icons-more-vert:before { content: '\e80b'; } /* '' */
+.haulplan-icons-replay:before { content: '\e80c'; } /* '' */
+.haulplan-icons-cancel:before { content: '\e80d'; } /* '' */
+.haulplan-icons-about:before { content: '\e80e'; } /* '' */
+.haulplan-icons-copy:before { content: '\e80f'; } /* '' */
+.haulplan-icons-save:before { content: '\e810'; } /* '' */
+.haulplan-icons-add-circled:before { content: '\e811'; } /* '' */
+.haulplan-share:before { content: '\e813'; } /* '' */
+.haulplan-chart-bar:before { content: '\e814'; } /* '' */
+.haulplan-chart-area:before { content: '\e815'; } /* '' */
+.haulplan-chart-line:before { content: '\e817'; } /* '' */
+.haulplan-sitemap:before { content: '\e818'; } /* '' */
+.haulplan-graduation-cap:before { content: '\e819'; } /* '' */
+.haulplan-layout:before { content: '\e81a'; } /* '' */
+.haulplan-import:before { content: '\e81b'; } /* '' */
+.haulplan-summary:before { content: '\e81c'; } /* '' */
+.haulplan-report:before { content: '\e81d'; } /* '' */
+.haulplan-icons-user:before { content: '\e81e'; } /* '' */
+.haulplan-icons-admin:before { content: '\e81f'; } /* '' */
+.haulplan-expand:before { content: '\e820'; } /* '' */
+.haulplan-collapse:before { content: '\e821'; } /* '' */
+.haulplan-icons-reorder:before { content: '\e822'; } /* '' */
+.haulplan-current-scenario:before { content: '\e823'; } /* '' */
+.haulplan-key:before { content: '\e824'; } /* '' */
+.haulplan-icons-add:before { content: '\e825'; } /* '' */
+.haulplan-icons-check:before { content: '\e826'; } /* '' */
+.haulplan-optimization-mode:before { content: '\e827'; } /* '' */
+.haulplan-icons-close:before { content: '\e828'; } /* '' */
+.haulplan-icons-filter:before { content: '\e829'; } /* '' */
+.haulplan-icones-sorting-down:before { content: '\e82a'; } /* '' */
+.haulplan-icones-sorting-up:before { content: '\e82b'; } /* '' */
+.haulplan-icons-grid:before { content: '\e82c'; } /* '' */
+.haulplan-add-tweak:before { content: '\e82d'; } /* '' */
+.haulplan-delete:before { content: '\e82e'; } /* '' */
+.haulplan-scenario:before { content: '\e830'; } /* '' */
+.haulplan-icons-arrow-forward:before { content: '\e831'; } /* '' */
+.haulplan-lock:before { content: '\e832'; } /* '' */
+.haulplan-unlock:before { content: '\e833'; } /* '' */
+.haulplan-add-scenario:before { content: '\e834'; } /* '' */
+.haulplan-archive:before { content: '\e835'; } /* '' */
+.haulplan-open:before { content: '\e836'; } /* '' */
+.haulplan-move:before { content: '\e837'; } /* '' */
+.haulplan-open-folder:before { content: '\e838'; } /* '' */
+.haulplan-add-folder:before { content: '\e839'; } /* '' */
+.haulplan-folder:before { content: '\e83a'; } /* '' */
+.haulplan-favorite:before { content: '\e83b'; } /* '' */
+.haulplan-tutorials:before { content: '\e83c'; } /* '' */
+.haulplan-release-notes:before { content: '\e83d'; } /* '' */
+.haulplan-engine:before { content: '\e83e'; } /* '' */
+.haulplan-empty-scenario:before { content: '\e83f'; } /* '' */
+.haulplan-engine-running:before { content: '\e840'; } /* '' */
+.haulplan-open-scenario:before { content: '\e841'; } /* '' */
+.haulplan-icons-help:before { content: '\e842'; } /* '' */
+.haulplan-icons-warning:before { content: '\e843'; } /* '' */
+.haulplan-icons-right:before { content: '\e844'; } /* '' */
+.haulplan-undock:before { content: '\e845'; } /* '' */
+.haulplan-private-scenario:before { content: '\e846'; } /* '' */
+.haulplan-active-state:before { content: '\e847'; } /* '' */
+.haulplan-icons-first-page:before { content: '\e848'; } /* '' */
+.haulplan-picons-revious:before { content: '\e849'; } /* '' */
+.haulplan-icons-last-page:before { content: '\e84a'; } /* '' */
+.haulplan-map:before { content: '\e84b'; } /* '' */
+.haulplan-horizontal-split:before { content: '\e84c'; } /* '' */
+.haulplan-vertical-split:before { content: '\e84d'; } /* '' */
+.haulplan-link-1:before { content: '\e84e'; } /* '' */
+.haulplan-unpublish:before { content: '\e84f'; } /* '' */
+.haulplan-engine-running-1:before { content: '\e851'; } /* '' */
+.haulplan-affected-network:before { content: '\e852'; } /* '' */
+.haulplan-icons-down-open:before { content: '\e853'; } /* '' */
+.haulplan-minus:before { content: '\e854'; } /* '' */
+.haulplan-icons-ok-squared:before { content: '\e855'; } /* '' */
+.haulplan-search:before { content: '\e857'; } /* '' */
+.haulplan-icons-circle-empty:before { content: '\e858'; } /* '' */
+.haulplan-arrow-thru:before { content: '\e861'; } /* '' */
+.haulplan-asterisk-square-uncheck:before { content: '\e862'; } /* '' */
+.haulplan-add-square:before { content: '\e863'; } /* '' */
+.haulplan-asterisk-square:before { content: '\e864'; } /* '' */
+.haulplan-ampersand-circle:before { content: '\e865'; } /* '' */
+.haulplan-thru:before { content: '\e866'; } /* '' */
+.haulplan-thru-check:before { content: '\e867'; } /* '' */
+.haulplan-history:before { content: '\e86a'; } /* '' */
+.haulplan-excel:before { content: '\e86b'; } /* '' */
+.haulplan-settings:before { content: '\e86c'; } /* '' */
+.haulplan-load-rearrange-t5:before { content: '\e86d'; } /* '' */
+.haulplan-load-add-t1:before { content: '\e86e'; } /* '' */
+.haulplan-load-add-t2:before { content: '\e86f'; } /* '' */
+.haulplan-load-add-t3:before { content: '\e870'; } /* '' */
+.haulplan-load-add-t4:before { content: '\e871'; } /* '' */
+.haulplan-load-add-t5:before { content: '\e872'; } /* '' */
+.haulplan-load-rearrange-t3:before { content: '\e873'; } /* '' */
+.haulplan-load-rearrange-t4:before { content: '\e874'; } /* '' */
+.haulplan-load-remove-t1:before { content: '\e875'; } /* '' */
+.haulplan-load-remove-t2:before { content: '\e876'; } /* '' */
+.haulplan-load-remove-t3:before { content: '\e877'; } /* '' */
+.haulplan-load-remove-t4:before { content: '\e878'; } /* '' */
+.haulplan-load-remove-t5:before { content: '\e879'; } /* '' */
+.haulplan-upgrade-downgrade:before { content: '\e87a'; } /* '' */
+.haulplan-load-dispatch-plan:before { content: '\e880'; } /* '' */
+.haulplan-purchase-load:before { content: '\e881'; } /* '' */
+.haulplan-save-data-loader:before { content: '\e882'; } /* '' */
+.haulplan-saved-data:before { content: '\e883'; } /* '' */
+.haulplan-rail-load-1:before { content: '\e884'; } /* '' */
+.haulplan-load-plan:before { content: '\e885'; } /* '' */
+.haulplan-download:before { content: '\e888'; } /* '' */
+.haulplan-save-data-[recovered]-02:before { content: '\e88a'; } /* '' */
+.haulplan-ok-squared:before { content: '\e88b'; } /* '' */
+.haulplan-icons-check-empty:before { content: '\e88c'; } /* '' */
+.haulplan-plan-data:before { content: '\e88d'; } /* '' */
+.haulplan-add-tweak-1:before { content: '\e88e'; } /* '' */
+.haulplan-delete-tweak:before { content: '\e88f'; } /* '' */
+.haulplan-map-zoom:before { content: '\e890'; } /* '' */
+.haulplan-import-header:before { content: '\e891'; } /* '' */
+.haulplan-driver-links:before { content: '\e892'; } /* '' */
+.haulplan-trailer-routes:before { content: '\e893'; } /* '' */
+.haulplan-modify:before { content: '\e894'; } /* '' */
+.haulplan-terminal:before { content: '\e89a'; } /* '' */
+.haulplan-link:before { content: '\e89b'; } /* '' */
+.haulplan-load:before { content: '\e89c'; } /* '' */
+.haulplan-service:before { content: '\e89d'; } /* '' */
+.haulplan-purchase:before { content: '\e89e'; } /* '' */
+.haulplan-rail:before { content: '\e89f'; } /* '' */
+.haulplan-rail-load:before { content: '\e8a0'; } /* '' */
+.haulplan-base:before { content: '\e8a1'; } /* '' */
+.haulplan-terminal-update-1:before { content: '\e8a2'; } /* '' */
+.haulplan-tweak-mode:before { content: '\e8a3'; } /* '' */
+.haulplan-schedules:before { content: '\e8a4'; } /* '' */
+.haulplan-trailer:before { content: '\e8a5'; } /* '' */
+.haulplan-shipment:before { content: '\e8a6'; } /* '' */
+.haulplan-terminal-update:before { content: '\e8ae'; } /* '' */
+.haulplan-filter-setting:before { content: '\e8b4'; } /* '' */
+.haulplan-advansed-filter:before { content: '\e8b5'; } /* '' */
+.haulplan-exclude:before { content: '\e8b6'; } /* '' */
+.haulplan-swap:before { content: '\e8b7'; } /* '' */
+.haulplan-include:before { content: '\e8b8'; } /* '' */
+.haulplan-parent:before { content: '\e8c5'; } /* '' */
+.haulplan-itself:before { content: '\e8c6'; } /* '' */
+.haulplan-open-folder-1:before { content: '\e8c9'; } /* '' */
+.haulplan-plus-squared:before { content: '\f0fe'; } /* '' */
+.haulplan-angle-right:before { content: '\f105'; } /* '' */
+.haulplan-angle-up:before { content: '\f106'; } /* '' */
+.haulplan-angle-down:before { content: '\f107'; } /* '' */
+.haulplan-minus-squared:before { content: '\f146'; } /* '' */
+.haulplan-dot-circled:before { content: '\f192'; } /* '' */

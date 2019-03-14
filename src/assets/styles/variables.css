@@ -1,0 +1,16 @@
+
+
+:root{
+    --workbench-bg-color: #EAEAEA;
+    --workbench-section-bg-color: #FFFFFF;
+    --workbench-primary-color: #05A792;
+    --workbench-quick-access-color:#666666;
+    --workbench-quick-access-border-color : #D9D9D9;
+    --workbench-quick-access-bg-color : #E6F6F4;
+    --workbench-links-hover : #057264;
+    --tutorial-selected: #CDEDE9;
+    --workbench-toolbar-active : #4D4D4D;
+    --required-color: #F17E43;
+    --preview-background: #f7f7f7
+
+}

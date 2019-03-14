@@ -1,0 +1,125 @@
+<html>
+  
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="X-UA-Compatible" content="IE=10">  
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Gate Optimizer</title>
+      <base href='/' />
+      <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"> 
+  </head>
+  
+  <body>
+      <div id="app"></div>
+
+  <script id="shader-f-point-tr2d" type="x-shader/x-fragment"> 
+        precision mediump float;
+        uniform sampler2D u_texture;
+
+        varying vec4 v_color;
+        varying vec2 v_texturePos;
+
+        void main() {
+            vec4 textureColor = texture2D(u_texture, v_texturePos);
+            gl_FragColor = v_color + textureColor;
+        }
+  </script>
+
+  <script id="shader-v-point-tr2d" type="x-shader/x-vertex"> 
+    attribute vec2 a_position;
+    attribute vec2 a_relativePosition;
+    attribute vec4 a_color;
+    attribute vec2 a_texturePos;
+    
+    uniform float u_zvalue;
+    uniform vec2 u_resolution;
+    uniform mat3 u_matrix;
+    
+    varying vec4 v_color;
+    varying vec2 v_texturePos;
+    
+    void main() {
+        // Multiply the position by the matrix.
+        vec2 refPosition = (u_matrix * vec3(a_position, 1)).xy;
+        vec2 position = refPosition + a_relativePosition;
+        vec2 zeroToOne = position / u_resolution;
+        vec2 zeroToTwo = zeroToOne * 2.0;
+        vec2 clipspace = zeroToTwo - 1.0;
+        gl_Position = vec4(clipspace* vec2(1, -1), u_zvalue, 1);
+        v_color = a_color;
+        v_texturePos = a_texturePos;
+    }
+</script>
+
+  <script id="shader-fcol2d" type="x-shader/x-fragment"> 
+        precision mediump float;
+        uniform sampler2D u_texture;
+
+        varying vec4 v_color;
+        varying vec2 v_texturePos;
+
+        void main() {
+            vec4 textureColor = texture2D(u_texture, v_texturePos);
+            gl_FragColor = v_color + textureColor;
+        }
+  </script>
+
+  <script id="shader-vcol2d" type="x-shader/x-vertex"> 
+        attribute vec2 a_position;
+        attribute vec4 a_color;
+        attribute vec2 a_texturePos;
+        
+        uniform float u_zvalue;
+        uniform vec2 u_resolution;
+        uniform mat3 u_matrix;
+        
+        varying vec4 v_color;
+        varying vec2 v_texturePos;
+        
+        void main() {
+            // Multiply the position by the matrix.
+            vec2 position = (u_matrix * vec3(a_position, 1)).xy;
+            vec2 zeroToOne = position / u_resolution;
+            vec2 zeroToTwo = zeroToOne * 2.0;
+            vec2 clipspace = zeroToTwo - 1.0;
+            gl_Position = vec4(clipspace* vec2(1, -1), u_zvalue, 1);
+            v_color = a_color;
+            v_texturePos = a_texturePos;
+        }
+  </script>
+
+
+  <script id="shader-ftex" type="x-shader/x-fragment"> 
+          precision mediump float;
+          varying vec2 v_texCoord;
+          uniform sampler2D u_texture;
+
+          void main() {
+              gl_FragColor = texture2D(u_texture, v_texCoord);
+          }
+  </script> 
+
+  <script id="shader-vtex" type="x-shader/x-vertex"> 
+          attribute vec2 a_position;
+          uniform vec2 u_resolution;
+          uniform mat3 u_matrix;
+
+          attribute vec2 a_texCoord;
+          varying vec2 v_texCoord;
+          
+          void main() {
+              // Multiply the position by the matrix.
+              vec2 position = (u_matrix * vec3(a_position, 1)).xy;
+              vec2 zeroToOne = position / u_resolution;
+              vec2 zeroToTwo = zeroToOne * 2.0;
+              vec2 clipspace = zeroToTwo - 1.0;
+              gl_Position = vec4(clipspace* vec2(1, -1), 0, 1);
+
+              v_texCoord = a_texCoord;
+          }
+  </script>
+  
+  </body>
+  
+  </html>
