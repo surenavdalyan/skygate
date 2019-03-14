@@ -1,48 +1,48 @@
-import React from "react";
-import moment from "moment";
-import { Grid, Row, Col } from "react-bootstrap";
-import FilterPane from "../../components/FilterPane";
-import GanttChart from "../../components/Gantt";
-import GridComponent from "../../components/grids/StandsAssignmentsGrid";
+import React from 'react';
+import moment from 'moment';
+import { Grid, Row, Col } from 'react-bootstrap';
 
-import TerminalFilterConfig from "./config/TerminalFilterConfig";
-import AirlinesFilterConfig from "./config/AirlinesFilterConfig";
-import BufferFilterConfig from "./config/BufferFilterConfig";
-import EarlyLateFilterConfig from "./config/EarlyLateFilterConfig";
+import FilterPane from '../../components/FilterPane';
+import GateManager from '../../components/GateManager';
 
-import "./index.scss";
+import TerminalFilterConfig from './config/TerminalFilterConfig';
+import AirlinesFilterConfig from './config/AirlinesFilterConfig';
+import BufferFilterConfig from './config/BufferFilterConfig';
+import EarlyLateFilterConfig from './config/EarlyLateFilterConfig';
+
+import './index.scss';
 
 const ViewType = {
-  GRID: "GRID",
-  GANTT: "GANTT"
+  GRID: 'GRID',
+  GANTT: 'GANTT',
 };
 
 class MainContainer extends React.Component {
   constructor(props) {
     super(props);
-    let date = moment().format("MMM DD[,] YYYY");
-    let day = moment().format("DD");
-    let refreshTime = "Today 11:10 AM";
+    const date = moment().format('MMM DD[,] YYYY');
+    const day = moment().format('DD');
+    const refreshTime = 'Today 11:10 AM';
     this.state = {
       selectedViewType: ViewType.GANTT,
-      date: date,
-      day: day,
-      refreshTime: refreshTime
+      date,
+      day,
+      refreshTime,
     };
   }
 
-  toggleView = selectedViewType => {
+  toggleView = (selectedViewType) => {
     this.setState({ selectedViewType });
   };
 
   render() {
     const { selectedViewType } = this.state;
-    const selectionClass = v => (v === selectedViewType ? "selected-btn" : "");
+    const selectionClass = v => (v === selectedViewType ? 'selected-btn' : '');
     return (
       <div className="view-container">
         <div className="header-area">
           <div className="header-area-left">
-          <span className="span-calendar">{this.state.day}</span>
+            <span className="span-calendar">{this.state.day}</span>
             {/* <img src="../../../assets/images/Calendar.svg" alt="calendar" /> */}
             <span>{this.state.date}</span>
           </div>
@@ -58,7 +58,7 @@ class MainContainer extends React.Component {
               <i className="icon-autorenew" />
             </span>
             <input type="text" placeholder="search" />
-            <span className="span-notify"></span>
+            <span className="span-notify" />
           </div>
         </div>
         <Grid className="content-area">
@@ -71,15 +71,9 @@ class MainContainer extends React.Component {
                 <FilterPane config={EarlyLateFilterConfig} />
               </div>
             </Col>
-            {/* <Col md={10} className="no-padding">
-              <div className="main-area">
-                {selectedViewType === ViewType.GANTT ? (
-                  <GanttChart />
-                ) : (
-                  <GridComponent />
-                )}
-              </div>
-            </Col> */}
+            <Col md={10} className="no-padding main-area-container">
+              <GateManager />
+            </Col>
           </Row>
         </Grid>
       </div>

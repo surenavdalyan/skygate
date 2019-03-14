@@ -1,7 +1,7 @@
-import React from "react";
-import { Checkbox } from "react-bootstrap";
+import React from 'react';
+import { Checkbox } from 'react-bootstrap';
 
-import "./index.scss";
+import './index.scss';
 
 class FilterPane extends React.Component {
   constructor(props) {
@@ -9,24 +9,24 @@ class FilterPane extends React.Component {
     this.state = {
       filterState: props.config.items.map(filterItem => ({
         ...filterItem,
-        selected: false
+        selected: false,
       })),
       header: {
-        "Terminals": "span-header-image-terminal",
-        "Airlines": "span-header-image-airline",
-        "Buffer": "span-header-image-buffer",
-        "Early/Late": "span-header-image-earlyLate"
-      }
+        Terminals: 'span-header-image-terminal',
+        Airlines: 'span-header-image-airline',
+        Buffer: 'span-header-image-buffer',
+        'Early/Late': 'span-header-image-earlyLate',
+      },
     };
   }
 
   onChange = (e, value) => {
     let filterState = [...this.state.filterState];
-    filterState = filterState.map(item => {
+    filterState = filterState.map((item) => {
       if (item.value === value) {
         return {
           ...item,
-          selected: e.target.checked
+          selected: e.target.checked,
         };
       }
       return item;

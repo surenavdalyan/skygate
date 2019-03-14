@@ -16,6 +16,18 @@ const TypetoPointGeometry = (ArrDepType) => {
   return null;
 };
 
+const TimeError = 0;
+
+const showProjectedDetails = (
+  scheduledArrivalTime,
+  scheduledDepartureTime,
+  projectedArrivalTime,
+  projectedDepartureTime,
+) => (
+  Math.abs(scheduledArrivalTime - projectedArrivalTime) +
+    Math.abs(scheduledDepartureTime - projectedDepartureTime) > TimeError
+);
+
 export default (data) => {
   const { TimeData, StandData, AssignmentData } = data;
   return {
@@ -35,8 +47,17 @@ export default (data) => {
       getter: (r) => {
         const scheduledArrivalTime = new Date(r[Fields.SCHEDULED_ARRIVAL_DATETIME]);
         const scheduledDepartureTime = new Date(r[Fields.SCHEDULED_DEPARTURE_DATETIME]);
-        const arrivalTimeHMM = moment(scheduledArrivalTime).format('h:mm');
-        const departureTimeHMM = moment(scheduledDepartureTime).format('h:mm');
+        const arrivalTimeHMM = moment(scheduledArrivalTime).format('H:mm');
+        const departureTimeHMM = moment(scheduledDepartureTime).format('H:mm');
+
+        const projectedArrivalTime = new Date(r[Fields.PROJECTED_ACTUAL_ARRIVAL_TIME]);
+        const projectedDepartureTime = new Date(r[Fields.PROJECTED_ACTUAL_DEPARTURE_TIME]);
+        const shouldShowProjectedDetails = showProjectedDetails(
+          scheduledArrivalTime,
+          scheduledDepartureTime,
+          projectedArrivalTime,
+          projectedDepartureTime,
+        );
 
         // Define what geometry to be drown at left and right sides
         const LeftPointGeometry = TypetoPointGeometry(r[Fields.ARRIVAL_TYPE]);
@@ -56,6 +77,10 @@ export default (data) => {
             RightBottomTag: departureTimeHMM,
             LeftPointGeometry,
             RightPointGeometry,
+            ProjectedDetails: shouldShowProjectedDetails ? {
+              ProjectedStartDate: projectedArrivalTime,
+              ProjectedEndDate: projectedDepartureTime,
+            } : undefined,
           },
         };
       },

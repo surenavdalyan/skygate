@@ -61,6 +61,7 @@ class AssignmentsGrid extends React.Component {
       <div className="view-container">
         <DataGrid
           columnDefs={this.grid.config.columns}
+          defaultColDef={this.grid.config.defaultColDef}
           rowData={this.state.data}
           enableFilter={this.grid.config.enableFilter}
           // gridOptions={this.state.gridOptions}

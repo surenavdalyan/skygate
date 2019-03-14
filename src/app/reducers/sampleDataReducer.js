@@ -1,25 +1,10 @@
 // import * as types from '../actions/actionTypes';
 import { SampleStandAssignment001 } from './SampleInput';
-import Fields from '../constants/Fields';
+import StandsSequence001 from './StandsSequence';
 
-
-const { STAND_ID } = Fields;
-
-// Create Y Data - Processing
-const StandData = [];
-const StandDataHash = {};
-SampleStandAssignment001.forEach((obj) => {
-  if (obj[STAND_ID] && obj[STAND_ID] !== '') {
-    const key = obj[STAND_ID];
-    if (!StandDataHash[key]) {
-      StandData.push({
-        name: obj[STAND_ID],
-      });
-      StandDataHash[key] = true;
-    }
-  }
-});
-
+const StandData = StandsSequence001.map(stnd => ({
+  name: stnd['Stands Sequence']
+}));
 
 const initState = {
   TimeData: {

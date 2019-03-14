@@ -21,6 +21,11 @@ export default class OperationsWrapper extends WorkGroupWrapper {
       shaderPrograms,
       renderConfigGC,
     );
+    this.tsProjectionRenderer = new ObjectRenderer(
+      gl,
+      shaderPrograms,
+      renderConfigGC,
+    );
     this.tsPointObjectRenderer = new ObjectRenderer(
       gl,
       shaderPrograms,
@@ -55,12 +60,14 @@ export default class OperationsWrapper extends WorkGroupWrapper {
     const {
       networkElementWrappers,
       tsObjectRenderer,
+      tsProjectionRenderer,
       tsPointObjectRenderer,
       objLabelsRenderer,
     } = this;
     let yPos = 0;
     const yStepSize = GeneralConfig.CellHeight;
     tsObjectRenderer.clearObjects();
+    tsProjectionRenderer.clearObjects();
     tsPointObjectRenderer.clearObjects();
 
     const clearBox = new TextObject.ClearBox(
@@ -102,7 +109,7 @@ export default class OperationsWrapper extends WorkGroupWrapper {
     tsObj.setColor(Color, 0.8);
     tsObjectRenderer.addObject(tsObj);
 
-    const { LeftPointGeometry, RightPointGeometry } = Properties;
+    const { LeftPointGeometry, RightPointGeometry, ProjectedDetails } = Properties;
     this.addPointGeometry(
       LeftPointGeometry,
       xLeft,
@@ -115,6 +122,32 @@ export default class OperationsWrapper extends WorkGroupWrapper {
       yTop + (0.5 * GeneralConfig.CellHeight),
       GeneralConfig.CellHeight - (2 * GeneralConfig.CellTopPadding),
     );
+
+    if (ProjectedDetails) {
+      const { ProjectedStartDate, ProjectedEndDate } = ProjectedDetails;
+      this.addProjectionGeometry(tsObjWrapper, yTop, ProjectedDetails);
+    }
+  }
+
+  addProjectionGeometry(tsObjWrapper, yTop, ProjectedDetails) {
+    const { Color } = tsObjWrapper;
+    const {
+      ProjectedStartDate, ProjectedEndDate,
+    } = ProjectedDetails;
+    const { tsProjectionRenderer, appTimeTransform } = this;
+    const xLeft = appTimeTransform.timeToScreenX(ProjectedStartDate);
+    const xRight = appTimeTransform.timeToScreenX(ProjectedEndDate);
+    if (Number.isNaN(xLeft)) return;
+    const yOffset = 2;
+    const tsObj = new GeometryGC.BorderedRectangle2D(
+      xLeft,
+      yTop + GeneralConfig.CellTopPadding - yOffset,
+      xRight - xLeft,
+      GeneralConfig.CellHeight - 2 * GeneralConfig.CellTopPadding + 2 * yOffset,
+    );
+    tsObj.setColor(Color, 0.4);
+    tsObj.setBorderColor(Color, 0.8);
+    tsProjectionRenderer.addObject(tsObj);
   }
 
   addPointGeometry(pointGeometry, x, y, h) {
@@ -161,11 +194,13 @@ export default class OperationsWrapper extends WorkGroupWrapper {
       LeftTag, RightTag, LeftBottomTag, RightBottomTag,
     } = Properties;
 
+    const labelOffset = 2;
+
     if (validString(LeftTag)) {
       const leftTag = new TextObject.AssignmentLabel(
         { text: LeftTag },
         refBox.x,
-        refBox.y - LabelBoxHeight,
+        refBox.y - LabelBoxHeight - labelOffset,
         refBox.w,
         LabelBoxHeight,
         'left',
@@ -176,7 +211,7 @@ export default class OperationsWrapper extends WorkGroupWrapper {
       const rightTag = new TextObject.AssignmentLabel(
         { text: RightTag },
         refBox.x,
-        refBox.y - LabelBoxHeight,
+        refBox.y - LabelBoxHeight - labelOffset,
         refBox.w,
         LabelBoxHeight,
         'right',
@@ -188,7 +223,7 @@ export default class OperationsWrapper extends WorkGroupWrapper {
       const leftBottomTag = new TextObject.AssignmentLabel(
         { text: LeftBottomTag },
         refBox.x,
-        refBox.y + refBox.h,
+        refBox.y + LabelBoxHeight,
         refBox.w,
         LabelBoxHeight,
         'left',
@@ -199,7 +234,7 @@ export default class OperationsWrapper extends WorkGroupWrapper {
       const rightBottomTag = new TextObject.AssignmentLabel(
         { text: RightBottomTag },
         refBox.x,
-        refBox.y + refBox.h,
+        refBox.y + LabelBoxHeight,
         refBox.w,
         LabelBoxHeight,
         'right',
@@ -210,12 +245,17 @@ export default class OperationsWrapper extends WorkGroupWrapper {
   }
 
   setupTSRenderer() {
-    const { tsObjectRenderer, tsPointObjectRenderer } = this;
+    const { tsObjectRenderer, tsProjectionRenderer, tsPointObjectRenderer } = this;
     tsObjectRenderer.createBuffers();
+    tsProjectionRenderer.createBuffers();
     tsPointObjectRenderer.createBuffers();
     tsObjectRenderer.setUniformGetter(this.createUniformGetter(
       GeneralConfig.NetworkElementLabelWidth,
       GeneralConfig.WGWrapperShutObjDepth,
+    ));
+    tsProjectionRenderer.setUniformGetter(this.createUniformGetter(
+      GeneralConfig.NetworkElementLabelWidth,
+      GeneralConfig.WGWrapperProjectionDepth,
     ));
     tsPointObjectRenderer.setUniformGetter(this.createUniformGetter(
       GeneralConfig.NetworkElementLabelWidth,
@@ -236,13 +276,16 @@ export default class OperationsWrapper extends WorkGroupWrapper {
     if (!this.visible) return;
     super.render();
     const {
-      tsObjectRenderer, tsPointObjectRenderer, editRenderer, objLabelsRenderer,
+      tsObjectRenderer,
+      tsProjectionRenderer,
+      tsPointObjectRenderer,
+      editRenderer,
     } = this;
 
     tsObjectRenderer.render();
+    tsProjectionRenderer.render();
     tsPointObjectRenderer.render();
     editRenderer.render();
-    // objLabelsRenderer.render();
   }
 
   findOperation = (timeX, networkElementWrapper) => {

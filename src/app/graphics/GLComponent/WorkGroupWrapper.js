@@ -245,7 +245,7 @@ export default class WorkGroupWrapper {
       [0, yPos],
       [GeneralConfig.NetworkElementLabelWidth, yPos],
     );
-    lineNetworkElement2D.setColor(GeneralConfig.MainThemeColor_beta);
+    lineNetworkElement2D.setColor(GeneralConfig.MainThemeColor_beta, GeneralConfig.GridLinesAlpha);
     yAxisRenderer.addObject(lineNetworkElement2D);
 
     const label = new TextObject.NetworkElementBox(
