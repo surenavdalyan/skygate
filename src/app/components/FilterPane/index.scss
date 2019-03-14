@@ -1,18 +1,58 @@
 .pane-container {
-    border: 1px solid #AAA;
-    margin-bottom: 10px;
+    border-bottom: 1px solid #AAA;
+    margin: 10px;
     .pane-header {
         padding-left: 25px;
-        height: 21px;
-        background-color: rgba(24, 36, 60, 1);
-        color: #FFF;
+        height: 20px;
+        // background-color: rgba(24, 36, 60, 1);
+        color: rgb(0, 0, 0);
     }
 
     .pane-content {
         padding-left: 25px;
-        height: 150px;
-        background-color: #e1dfe8;
+        height: 130px;
+        //background-color: #e1dfe8;
         .filter-item {
         }
     }
+}
+
+.span-header-image{
+    background: url("../../../assets/images/Terminal.svg") no-repeat;
+    height: 20px;
+    width: 25px;
+    display: inline-block;
+    background-size: 20px;
+}
+
+.span-header-image-terminal{
+    background: url("../../../assets/images/Terminal.svg") no-repeat;   
+    height: 20px;
+    width: 25px;
+    display: inline-block;
+    background-size: 20px;
+}
+
+.span-header-image-airline{
+    background: url("../../../assets/images/Airlines.svg") no-repeat;   
+    height: 20px;
+    width: 25px;
+    display: inline-block;
+    background-size: 20px;
+}
+
+.span-header-image-buffer{
+    background: url("../../../assets/images/Buffer.svg") no-repeat;   
+    height: 20px;
+    width: 25px;
+    display: inline-block;
+    background-size: 20px;
+}
+
+.span-header-image-earlyLate{
+    background: url("../../../assets/images/Early_late.png") no-repeat;  
+    height: 20px;
+    width: 25px;
+    display: inline-block;
+    background-size: 20px; 
 }
