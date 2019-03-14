@@ -1,9 +1,7 @@
-import moment from 'moment';
 import constants from '../constants';
 import { identifyRowChanges } from '../../DataGrid/editHelper';
 import Fields from '../../../constants/Fields';
-
-const timeFormatter = data => moment(data.value).format('mm/dd HH:mm');
+import { timeFormatterMMDDHHmm } from '../../Utils';
 
 class GridConfig {
   constructor(configuration) {
@@ -47,14 +45,14 @@ class GridConfig {
           editable: false,
           field: Fields.SCHEDULED_ARRIVAL_DATETIME,
           headerName: 'In Time Scheduled',
-          valueFormatter: timeFormatter,
+          valueFormatter: timeFormatterMMDDHHmm,
         },
         {
           cellType: constants.STRING,
           editable: false,
           field: Fields.PROJECTED_ACTUAL_ARRIVAL_TIME,
           headerName: 'In Time Projected',
-          valueFormatter: timeFormatter,
+          valueFormatter: timeFormatterMMDDHHmm,
         },
         {
           cellType: constants.STRING,
@@ -73,12 +71,14 @@ class GridConfig {
           editable: false,
           field: Fields.SCHEDULED_DEPARTURE_DATETIME,
           headerName: 'Out Time Scheduled',
+          valueFormatter: timeFormatterMMDDHHmm,
         },
         {
           cellType: constants.STRING,
           editable: false,
           field: Fields.PROJECTED_ACTUAL_DEPARTURE_TIME,
           headerName: 'Out Time Projected',
+          valueFormatter: timeFormatterMMDDHHmm,
         },
         {
           cellType: constants.STRING,
@@ -105,52 +105,6 @@ class GridConfig {
           headerName: 'Notes',
         },
       ],
-      headerConfig: {
-        menu: [
-          {
-            tooltip: 'Legends',
-            name: 'LEGENDS',
-            isVisible: true,
-            icon: 'icon-legends',
-            onClick: '',
-          },
-          {
-            tooltip: 'Add new Shutdown',
-            name: 'ADD',
-            isVisible: true,
-            icon: 'icon-add-outline',
-            onClick: 'onAdd',
-          },
-          {
-            tooltip: 'Remove',
-            name: 'REMOVE',
-            isVisible: true,
-            icon: 'icon-remove',
-            onClick: 'onRemove',
-          },
-          {
-            tooltip: 'Show Grid View',
-            name: 'SHOW_GRID_VIEW',
-            isVisible: true,
-            icon: 'icon-grid-view',
-            onClick: 'onShowGridView',
-          },
-          {
-            tooltip: 'Show Gantt Chart',
-            name: 'SHOW_GANTT_CHART',
-            isVisible: true,
-            icon: 'icon-graph',
-            onClick: 'onShowGanttChart',
-          },
-          {
-            tooltip: 'Edit',
-            name: 'EDIT',
-            isVisible: true,
-            icon: 'icon-edit',
-            onClick: 'onEdit',
-          },
-        ],
-      },
       enableFilter: true,
       gridName: 'StandsAssignmentData',
       entityName: 'StandsAssignment',
