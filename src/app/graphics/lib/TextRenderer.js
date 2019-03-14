@@ -215,7 +215,7 @@ const TextRenderer = class {
       case TextAlignment.LeftCenter:
         {
           let boxTop = box.top;
-          if (box.altTop && textWidth >= (box.right - box.left) * 0.5) {
+          if (box.altTop && textWidth >= (box.right - box.left) * 0.5 - 3) {
             boxTop = box.altTop;
           }
           const x0 = box.left + offset;
@@ -232,7 +232,7 @@ const TextRenderer = class {
       case TextAlignment.RightCenter:
         {
           let boxTop = box.top;
-          if (box.altTop && textWidth >= (box.right - box.left) * 0.5) {
+          if (box.altTop && textWidth >= (box.right - box.left) * 0.5 - 3) {
             boxTop = box.altTop;
           }
           const x0 = box.right - textWidth - offset;

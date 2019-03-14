@@ -1,6 +1,9 @@
+import moment from 'moment';
 import constants from '../constants';
 import { identifyRowChanges } from '../../DataGrid/editHelper';
 import Fields from '../../../constants/Fields';
+
+const timeFormatter = data => moment(data.value).format('mm/dd HH:mm');
 
 class GridConfig {
   constructor(configuration) {
@@ -31,13 +34,7 @@ class GridConfig {
           cellType: constants.STRING,
           editable: false,
           field: Fields.STAND_ID,
-          headerName: 'Stand Id',
-        },
-        {
-          cellType: constants.STRING,
-          editable: false,
-          field: Fields.EQUIPMENT_TYPE,
-          headerName: 'Equipment Type',
+          headerName: 'Gate/Stand',
         },
         {
           cellType: constants.STRING,
@@ -49,7 +46,15 @@ class GridConfig {
           cellType: constants.STRING,
           editable: false,
           field: Fields.SCHEDULED_ARRIVAL_DATETIME,
-          headerName: 'In Time',
+          headerName: 'In Time Scheduled',
+          valueFormatter: timeFormatter,
+        },
+        {
+          cellType: constants.STRING,
+          editable: false,
+          field: Fields.PROJECTED_ACTUAL_ARRIVAL_TIME,
+          headerName: 'In Time Projected',
+          valueFormatter: timeFormatter,
         },
         {
           cellType: constants.STRING,
@@ -67,13 +72,37 @@ class GridConfig {
           cellType: constants.STRING,
           editable: false,
           field: Fields.SCHEDULED_DEPARTURE_DATETIME,
-          headerName: 'Out Time',
+          headerName: 'Out Time Scheduled',
+        },
+        {
+          cellType: constants.STRING,
+          editable: false,
+          field: Fields.PROJECTED_ACTUAL_DEPARTURE_TIME,
+          headerName: 'Out Time Projected',
         },
         {
           cellType: constants.STRING,
           editable: false,
           field: Fields.DEPARTURE_TYPE,
           headerName: 'Out Type',
+        },
+        {
+          cellType: constants.STRING,
+          editable: false,
+          field: Fields.EQUIPMENT_TYPE,
+          headerName: 'Aircraft Type',
+        },
+        {
+          cellType: constants.STRING,
+          editable: false,
+          field: Fields.BUFFER,
+          headerName: 'Buffer',
+        },
+        {
+          cellType: constants.STRING,
+          editable: false,
+          field: '',
+          headerName: 'Notes',
         },
       ],
       headerConfig: {
@@ -130,8 +159,9 @@ class GridConfig {
       title: 'Stands Assignment Data',
       domLayout: 'autoHeight',
       defaultColDef: {
-        headerClass: "grid-header-class"
-      }
+        headerClass: 'grid-header-class',
+        cellClass: 'grid-cell-class',
+      },
     };
   }
 }

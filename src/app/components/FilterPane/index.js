@@ -43,7 +43,7 @@ class FilterPane extends React.Component {
         <div className="pane-content">
           {
             filterState.map(item => (
-              <div className="filter-item">
+              <div className="filter-item" key={item.value}>
                 <Checkbox checked={item.selected} onChange={e => this.onChange(e, item.value)}>{item.label}</Checkbox>
               </div>
                 ))

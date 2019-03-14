@@ -1,8 +1,7 @@
 import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import FilterPane from '../../components/FilterPane';
-import GanttChart from '../../components/Gantt';
-import GridComponent from '../../components/grids/StandsAssignmentsGrid';
+import GateManager from '../../components/GateManager';
 
 import TerminalFilterConfig from './config/TerminalFilterConfig';
 import AirlinesFilterConfig from './config/AirlinesFilterConfig';
@@ -52,13 +51,8 @@ class MainContainer extends React.Component {
                 <FilterPane config={EarlyLateFilterConfig} />
               </div>
             </Col>
-            <Col md={10} className="no-padding">
-              <div className="main-area" >
-                {
-                  selectedViewType === ViewType.GANTT ?
-                  (<GanttChart />) : (<GridComponent />)
-                }
-              </div>
+            <Col md={10} className="no-padding main-area-container">
+              <GateManager />
             </Col>
           </Row>
         </Grid>

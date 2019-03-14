@@ -28,6 +28,7 @@ export default class OpTimelineHeader extends TimelineHeader {
         GeneralConfig.CellWidth,
         y3 - y0,
       );
+      label.color = 'rgb(80, 80, 80)';
       timeAxisTextRenderer.addObject(label);
     });
 
@@ -50,7 +51,7 @@ export default class OpTimelineHeader extends TimelineHeader {
       this.height,
     );
     const dayLabel = new TextObject.CenterLabelBox(
-      { text: 'Time' },
+      { text: '' },
       0,
       y0,
       yLabelWidth,

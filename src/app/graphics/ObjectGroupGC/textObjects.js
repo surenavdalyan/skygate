@@ -73,7 +73,7 @@ TextObject.NetworkElementBox = class extends TextObject.BoxText {
       box: this.getBoundingBox(),
       offset: 10,
       styleObject: {
-        color: '#FFF',
+        color: 'rgb(80, 80, 80)',
         font: '12px Open Sans',
       },
     };

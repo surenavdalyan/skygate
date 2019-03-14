@@ -4,7 +4,6 @@ $sidepanelWidth: 200px;
 .header-area, .left-panel-area, .main-area {
     padding: 0;
     margin: 0;
-    // border: 1px solid red;
 }
 
 .header-area {
@@ -61,12 +60,26 @@ $sidepanelWidth: 200px;
 .main-area {
     display: inline-block;
     vertical-align: top;
-    height: calc(100% - #{$headerHeight + 20});
+    height: 100%;
     width: 100%;
-    padding-top: 5px;
     margin: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid rgba(51, 51, 51, 0.6);
+
+    canvas {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
 
     .no-padding {
         padding: 0 !important;
     }
+}
+
+.main-area-container {
+    width: 1600px;
+    height: 850px;
+    padding: 0 !important;
+    margin-top: 5px;
 }
