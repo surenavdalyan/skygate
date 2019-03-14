@@ -1,5 +1,7 @@
 import React from 'react';
+import moment from 'moment';
 import { Grid, Row, Col } from 'react-bootstrap';
+
 import FilterPane from '../../components/FilterPane';
 import GateManager from '../../components/GateManager';
 
@@ -18,8 +20,14 @@ const ViewType = {
 class MainContainer extends React.Component {
   constructor(props) {
     super(props);
+    const date = moment().format('MMM DD[,] YYYY');
+    const day = moment().format('DD');
+    const refreshTime = 'Today 11:10 AM';
     this.state = {
       selectedViewType: ViewType.GANTT,
+      date,
+      day,
+      refreshTime,
     };
   }
 
@@ -29,22 +37,34 @@ class MainContainer extends React.Component {
 
   render() {
     const { selectedViewType } = this.state;
-    const selectionClass = v => v===selectedViewType ? "selected-btn" : "";
+    const selectionClass = v => (v === selectedViewType ? 'selected-btn' : '');
     return (
       <div className="view-container">
-        <div className="header-area" >
-          <div className="app-title">
-            <span className="title">Gate Manager</span>
+        <div className="header-area">
+          <div className="header-area-left">
+            <span className="span-calendar">{this.state.day}</span>
+            {/* <img src="../../../assets/images/Calendar.svg" alt="calendar" /> */}
+            <span>{this.state.date}</span>
           </div>
-          <div className="btn-panel-right pull-right">
-            <i className={`fa fa-th ${selectionClass(ViewType.GANTT)}`} onClick={() => this.toggleView(ViewType.GANTT)} />
-            <i className={`fa fa-list-alt ${selectionClass(ViewType.GRID)}`} onClick={() => this.toggleView(ViewType.GRID)} />
+          <div className="header-area-center">
+            <img
+              src="../../../assets/images/SkyGATE Logo-01.png"
+              alt="skygatelogo"
+            />
+          </div>
+          <div className="header-area-right">
+            <span>
+              Refreshed:{this.state.refreshTime}
+              <i className="icon-autorenew" />
+            </span>
+            <input type="text" placeholder="search" />
+            <span className="span-notify" />
           </div>
         </div>
         <Grid className="content-area">
           <Row>
             <Col md={2}>
-              <div className="left-panel-area" >
+              <div className="left-panel-area">
                 <FilterPane config={TerminalFilterConfig} />
                 <FilterPane config={AirlinesFilterConfig} />
                 <FilterPane config={BufferFilterConfig} />
@@ -56,7 +76,6 @@ class MainContainer extends React.Component {
             </Col>
           </Row>
         </Grid>
-
       </div>
     );
   }

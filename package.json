@@ -90,7 +90,7 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
     "lodash": "^4.17.10",
-    "moment": "^2.22.1",
+    "moment": "^2.24.0",
     "nanomatch": "^1.2.13",
     "npm-font-open-sans": "^1.1.0",
     "prop-types": "^15.6.1",
