@@ -2,6 +2,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../assets/haulplan.icons.css';
 
 import 'npm-font-open-sans/open-sans.scss';
 import 'font-awesome/scss/font-awesome.scss';

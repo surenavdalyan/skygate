@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'haulplan';
-  src: url('./fonts/haulplan.eot?71219394');
-  src: url('./fonts/haulplan.eot?71219394#iefix') format('embedded-opentype'),
-       url('./fonts/haulplan.woff2?71219394') format('woff2'),
-       url('./fonts/haulplan.woff?71219394') format('woff'),
-       url('./fonts/haulplan.ttf?71219394') format('truetype'),
-       url('./fonts/haulplan.svg?71219394#haulplan') format('svg');
+  src: url('./HaulplanFonts/haulplan.eot?71219394');
+  src: url('./HaulplanFonts/haulplan.eot?71219394#iefix') format('embedded-opentype'),
+       url('./HaulplanFonts/haulplan.woff2?71219394') format('woff2'),
+       url('./HaulplanFonts/haulplan.woff?71219394') format('woff'),
+       url('./HaulplanFonts/haulplan.ttf?71219394') format('truetype'),
+       url('./HaulplanFonts/haulplan.svg?71219394#haulplan') format('svg');
   font-weight: normal;
   font-style: normal;
 }
