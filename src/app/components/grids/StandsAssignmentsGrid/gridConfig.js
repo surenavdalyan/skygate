@@ -2,6 +2,7 @@ import constants from '../constants';
 import { identifyRowChanges } from '../../DataGrid/editHelper';
 import Fields from '../../../constants/Fields';
 import { timeFormatterMMDDHHmm } from '../../Utils';
+import { AssignmentColorMapping } from '../../../constants/ColorPalette';
 
 class GridConfig {
   constructor(configuration) {
@@ -125,6 +126,14 @@ class GridConfig {
         width: 150,
         headerClass: 'grid-header-class',
         cellClass: 'grid-cell-class',
+      },
+      gridOptions: {
+        getRowClass(params) {
+          if (!params.node.data[Fields.FILTERED_STATE]) {
+            return 'shaded-rows';
+          }
+          return '';
+        },
       },
     };
   }

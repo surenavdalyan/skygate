@@ -85,10 +85,10 @@ class AssignmentsGrid extends React.Component {
           rowData={this.state.data}
           filters={this.props.filters}
           // enableFilter={this.grid.config.enableFilter}
-          // gridOptions={this.state.gridOptions}
+          gridOptions={this.grid.config.gridOptions}
           // getRowStyle={this.state.getRowStyle}
           // deltaRowDataMode
-          rowClass={this.state.rowClass}
+          // rowClass={this.state.rowClass}
           // onGridInitialize={e => this.onDataGridReady(e)}
           // onGridEditStart={grid => this.onGridEditStart(grid)}
           // onGridEditStop={grid => this.onGridEditStop(grid)}
