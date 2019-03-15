@@ -1,7 +1,9 @@
 import Fields from '../../../constants/Fields';
+import FilterType from '../../../constants/FilterType';
 
 export default {
   title: 'Early/Late',
+  defaultFilterType: FilterType.HIGHLIGHT_FILTER,
   items: [
     {
       label: 'Early',
@@ -22,4 +24,5 @@ export default {
     }
     return true;
   },
+  headerIconClass:'span-header-image-earlyLate'
 };

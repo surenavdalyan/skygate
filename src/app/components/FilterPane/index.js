@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Checkbox } from 'react-bootstrap';
 import { bindActionCreators } from 'redux';
 import { applyFilter } from '../../actions';
+import FIlterType from '../../constants/FilterType';
 
 import './index.scss';
 
@@ -14,13 +15,7 @@ class FilterPane extends React.Component {
         ...filterItem,
         selected: false,
       })),
-      filterVisibilityFlag: true,
-      header: {
-        Terminals: 'span-header-image-terminal',
-        Airlines: 'span-header-image-airline',
-        Buffer: 'span-header-image-buffer',
-        'Early/Late': 'span-header-image-earlyLate',
-      },
+      filterVisibilityFlag: props.config.defaultFilterType === FIlterType.HIGHLIGHT_FILTER,      
     };
   }
 
@@ -68,7 +63,7 @@ class FilterPane extends React.Component {
     return (
       <div className="pane-container">
         <div className="pane-header">
-          <span className={this.state.header[this.props.config.title]} />
+          <span className={this.props.config.headerIconClass} />
           <span>{this.props.config.title}</span>
           <i className={visibilityIcon} onClick={this.filterVisibilityChanged} />
         </div>
