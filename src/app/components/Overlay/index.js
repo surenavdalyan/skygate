@@ -63,7 +63,7 @@ class Overlay extends React.Component {
       if (hoverMenuY < 0) hoverMenuY = 10;
       if (hoverMenuX < 0) hoverMenuX = 10;
 
-      console.log(hoverMenuX, hoverMenuY);
+      // console.log(hoverMenuX, hoverMenuY);
 
       this.load(content, hoverMenuX, hoverMenuY);
     } else {
