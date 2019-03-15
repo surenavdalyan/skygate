@@ -71,9 +71,9 @@ class MainContainer extends React.Component {
                 <FilterPane config={EarlyLateFilterConfig} />
               </div>
             </Col>
-            <Col md={10} className="no-padding main-area-container">
+            {/* <Col md={10} className="no-padding main-area-container">
               <GateManager />
-            </Col>
+            </Col> */}
           </Row>
         </Grid>
       </div>

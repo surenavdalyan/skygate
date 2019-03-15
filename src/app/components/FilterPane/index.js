@@ -47,7 +47,7 @@ class FilterPane extends React.Component {
       <div className="pane-container">
         <div className="pane-header">
           <span className={this.state.header[this.props.config.title]} />
-          <span>{this.props.config.title}</span>
+          <span className="span-header-text">{this.props.config.title}</span>
         </div>
         <div className="pane-content">
           {filterState.map(item => (
