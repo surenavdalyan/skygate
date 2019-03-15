@@ -18,10 +18,25 @@
     height: 20px;
     margin-top: 5px;
 
-    i {
+    .left-margin {
         margin-left: 10px;
+    }
+
+    .right-margin {
         margin-right: 10px;
     }
+
+    i.arrival {
+        transform: rotate(90deg);
+    }
+}
+
+.font-green {
+    color: rgb(157, 228, 157);
+}
+
+.font-red {
+    color: rgb(228, 143, 143);
 }
 
 .right-align {

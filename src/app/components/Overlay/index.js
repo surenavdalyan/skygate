@@ -14,10 +14,16 @@ class Overlay extends React.Component {
       content: null,
       left: 100,
       top: 100,
+      scrollY: 0,
     };
     this.lazyDrop = new LazyEvent();
     GanttEvent.on(GanttEventNames.AssignmentHover, this.onHover);
+    GanttEvent.on(GanttEventNames.YScroll, this.onScroll);
   }
+
+  onScroll = ({ scrollY = 0 }) => {
+    this.setState({ scrollY });
+  };
 
   onHover = (info) => {
     if (info) {
@@ -40,8 +46,10 @@ class Overlay extends React.Component {
       );
       */
 
+      const { scrollY } = this.state;
+
       let hoverMenuX = xRight + 100;
-      let hoverMenuY = yPos;
+      let hoverMenuY = scrollY + yPos + 100;
 
       const spaceOnRight = canvasWidth - xRight;
       const spaceBelow = canvasHeight - yPos;
@@ -49,8 +57,13 @@ class Overlay extends React.Component {
         hoverMenuX = xLeft - OverlayWidth;
       }
       if (spaceBelow < OverlayHeight) {
-        hoverMenuY = yPos - OverlayHeight;
+        hoverMenuY -= OverlayHeight;
       }
+
+      if (hoverMenuY < 0) hoverMenuY = 10;
+      if (hoverMenuX < 0) hoverMenuX = 10;
+
+      console.log(hoverMenuX, hoverMenuY);
 
       this.load(content, hoverMenuX, hoverMenuY);
     } else {

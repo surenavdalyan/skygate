@@ -9,6 +9,7 @@ import OpTimelineHeader from './OpTimelineHeader';
 import TimeTransform from './../TimeTransform';
 import MouseEventManager from './../lib/MouseEventManager';
 import { GeneralConfig } from './mainConfig';
+import { GanttEventNames, GanttEvent } from '../Events';
 
 // GanttChartView Layer
 export default class GanttChartView extends Base {
@@ -283,7 +284,9 @@ export default class GanttChartView extends Base {
 
       scrolledY = Math.min(scrolledY, yScrollMax);
       this.yScrollOffset = scrolledY;
+      GanttEvent.emit(GanttEventNames.YScroll, { scrollY: this.yScrollOffset });
       this.render();
+      // console.log(this.yScrollOffset);
     }
   }
 
