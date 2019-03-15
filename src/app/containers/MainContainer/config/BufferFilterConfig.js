@@ -1,4 +1,5 @@
 import Fields from '../../../constants/Fields';
+import FilterType from '../../../constants/FilterType';
 
 const FilterForValue = {
   LessThan30Min: m => m >= 0 && m < 30,
@@ -8,6 +9,7 @@ const FilterForValue = {
 
 export default {
   title: 'Buffer',
+  defaultFilterType: FilterType.HIGHLIGHT_FILTER,
   items: [
     {
       label: '<30 min',
@@ -34,4 +36,5 @@ export default {
     }
     return true;
   },
+  headerIconClass:'span-header-image-buffer'
 };

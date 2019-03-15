@@ -1,7 +1,9 @@
 import Fields from '../../../constants/Fields';
+import FilterType from '../../../constants/FilterType';
 
 export default {
   title: 'Terminals',
+  defaultFilterType: FilterType.ABSOLUTE_FILTER,
   items: [
     {
       label: 'A',
@@ -26,4 +28,5 @@ export default {
     }
     return true;
   },
+  headerIconClass:'span-header-image-terminal'
 };
