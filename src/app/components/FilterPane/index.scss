@@ -1,9 +1,10 @@
 .pane-container {
     border-bottom: 1px solid #AAA;
-    margin: 10px;
+    margin: 5px 10px;
+    padding: 5px 0;
     .pane-header {
-        padding-left: 5px;
-        height: 18px;
+        padding-left: 15px;
+        height: 25px;
         color: black;
 
         i {
@@ -15,11 +16,16 @@
     }
 
     .pane-content {
-        padding-left: 25px;
+        padding-left: 15px;
         height: 115px;
-        margin-top: 10px;
+        margin-top: 5px;
         overflow-y: auto;
         .filter-item {
+        }
+
+        .checkbox{
+            margin-top: 5px;
+            margin-bottom: 5px;
         }
     }
 }
@@ -57,7 +63,7 @@
 }
 
 .span-header-image-earlyLate{
-    background: url("../../../assets/images/Early_late.png") no-repeat;  
+    background: url("../../../assets/images/Early_late.svg") no-repeat;  
     height: 20px;
     width: 25px;
     display: inline-block;
