@@ -4,6 +4,7 @@ import GridConfig from './gridConfig';
 import DataGrid from '../../DataGrid/index';
 import Fields from '../../../constants/Fields';
 import loadash from 'lodash';
+import { applyFilters } from '../../Utils';
 
 import './index.scss';
 
@@ -28,9 +29,20 @@ class AssignmentsGrid extends React.Component {
   componentDidMount() {
     if (this.props.sampleData && this.props.sampleData.AssignmentData) {
       const { data } = this.props.sampleData.AssignmentData;
-      if (!loadash.isEqual(data, this.state.data)) {
-        this.setState({ data });
-      }
+      this.loadData(data);
+    }
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.props.sampleData && !loadash.isEqual(this.props.sampleData, prevProps.sampleData)) {
+      const { data } = this.props.sampleData.AssignmentData;
+      this.loadData(data);
+      return;
+    }
+    if (this.props.filters && !loadash.isEqual(this.props.filters, prevProps.filters)) {
+      const { data } = this.props.sampleData.AssignmentData;
+      this.loadData(data);
+      return;
     }
   }
 
@@ -56,6 +68,14 @@ class AssignmentsGrid extends React.Component {
 
   getRowNodeId = data => data[Fields.EQUIPMENT_TYPE];
 
+  loadData = (data) => {
+    const filteredData = applyFilters(data, this.props.filters);
+    if (!loadash.isEqual(filteredData, this.state.data)) {
+      this.setState({ data: filteredData });
+      // this.forceUpdate();
+    }
+  };
+
   render() {
     return (
       <div className="view-container">
@@ -63,7 +83,8 @@ class AssignmentsGrid extends React.Component {
           columnDefs={this.grid.config.columns}
           defaultColDef={this.grid.config.defaultColDef}
           rowData={this.state.data}
-          enableFilter={this.grid.config.enableFilter}
+          filters={this.props.filters}
+          // enableFilter={this.grid.config.enableFilter}
           // gridOptions={this.state.gridOptions}
           // getRowStyle={this.state.getRowStyle}
           // deltaRowDataMode
@@ -84,9 +105,9 @@ class AssignmentsGrid extends React.Component {
   }
 }
 
-function mapStateToProps({ sampleData }) {
+function mapStateToProps({ sampleData, filters }) {
   return {
-    sampleData,
+    sampleData, filters,
   };
 }
 

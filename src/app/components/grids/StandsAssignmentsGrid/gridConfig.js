@@ -114,7 +114,7 @@ class GridConfig {
           headerName: 'Notes',
         },
       ],
-      enableFilter: true,
+      enableFilter: false,
       gridName: 'StandsAssignmentData',
       entityName: 'StandsAssignment',
       keyColumn: 'Id',

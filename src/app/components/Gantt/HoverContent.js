@@ -38,8 +38,8 @@ export default ({ obj }) => {
         {arrivalInfo}
       </div>
       <div className="hover-item">{arrivalType}</div>
-      <div className="hover-item">{arrivalTimeScheduled}</div>
-      <div className={`hover-item ${arrivalTimeClass}`}>{arrivalTimeProjected}</div>
+      <div className="hover-item">Sched: {arrivalTimeScheduled}</div>
+      <div className={`hover-item ${arrivalTimeClass}`}>Proj: {arrivalTimeProjected}</div>
 
       <div className="pull-right right-align">
         <div className="hover-item">
@@ -47,8 +47,8 @@ export default ({ obj }) => {
           { departurePlaneIcon && <i className="fa fa-plane left-margin" /> }
         </div>
         <div className="hover-item">{departureType}</div>
-        <div className="hover-item">{departureTimeScheduled}</div>
-        <div className={`hover-item ${departureTimeClass}`}>{departureTimeProjected}</div>
+        <div className="hover-item">Sched: {departureTimeScheduled}</div>
+        <div className={`hover-item ${departureTimeClass}`}>Proj: {departureTimeProjected}</div>
       </div>
     </React.Fragment>
   );

@@ -62,6 +62,8 @@ class Overlay extends React.Component {
 
       if (hoverMenuY < 0) hoverMenuY = 10;
       if (hoverMenuX < 0) hoverMenuX = 10;
+      if (hoverMenuX + OverlayWidth > canvasWidth) hoverMenuX = canvasWidth - OverlayWidth;
+      if (hoverMenuY + OverlayHeight > canvasHeight) hoverMenuY = canvasHeight - OverlayHeight;
 
       // console.log(hoverMenuX, hoverMenuY);
 

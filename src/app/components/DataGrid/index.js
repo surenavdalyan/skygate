@@ -2,7 +2,6 @@ import React from 'react';
 import { AgGridReact } from 'ag-grid-react';
 import { Clearfix } from 'react-bootstrap';
 import { setTimeout } from 'timers';
-import isequal from 'lodash/isEqual';
 import 'ag-grid/dist/styles/ag-grid.css';
 import 'ag-grid/dist/styles/theme-fresh.css';
 import { connect } from 'react-redux';
@@ -22,17 +21,7 @@ class DataGrid extends React.Component {
     };
   }
   componentDidMount() {}
-  componentWillReceiveProps(nextProps) {
-    if (!isequal(this.props, nextProps) && this.gridApi) {
-      if (nextProps && nextProps.lockedEntities) {
-        this.gridApi.gridOptionsWrapper.gridConfig.lockedEntities =
-          nextProps.lockedEntities;
-      }
-      if (!isequal(this.props.data, nextProps.data)) {
-        this.gridApi.setRowData(nextProps.data);
-      }
-    }
-  }
+  
   componentWillUnmount() {}
   onReady = ({ api }) => {
     this.gridApi = api;
@@ -106,11 +95,10 @@ class DataGrid extends React.Component {
             <AgGridReact
               onGridReady={this.onReady}
               getRowHeight={e => this.setRowHeight(e)}
-              enableSorting
-              enableFilter
+              // enableSorting
+              // enableFilter
               suppressMovableColumns
               enableColResize="true"
-              deltaRowDataMode="true"
               rowHeight={appConstants.GRID_ROW_HEIGHT}
               headerHeight={appConstants.GRID_HEADER_HEIGHT}
               onRowDoubleClicked={this.onRowEditingStarted}
@@ -124,6 +112,7 @@ class DataGrid extends React.Component {
                                       <span class="msg"><h4>No Data Available.</h4></span>
                                     </span>`}
               {...this.props}
+              rowData={this.props.rowData}
             />
             {this.state.hasFailed ? <h3>Spmething went wrong !</h3> : null}
           </div>
