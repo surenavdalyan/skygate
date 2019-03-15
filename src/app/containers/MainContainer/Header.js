@@ -1,21 +1,33 @@
-import React from 'react';
-import moment from 'moment';
+import React from "react";
+import moment from "moment";
 
-import './index.scss';
+import "./index.scss";
+import DateRangePicker from "../../components/DateRange/DateRangePicker";
 
-const formattedDate = date => moment(date).format('MMM DD[,] YYYY');
-const formattedDay = date => moment(date).format('DD');
+const formattedDate = date => moment(date).format("MMM DD[,] YYYY");
+const formattedDay = date => moment(date).format("DD");
 
 class Header extends React.Component {
   constructor(props) {
     super(props);
-    const refreshTime = 'Today 11:10 AM';
+    const refreshTime = "Today 11:10 AM";
     this.state = {
-      StartTime: '2019-04-01T00:00:00',
-      EndTime: '2019-04-08T00:00:00',
+      StartTime: "2019-04-01T00:00:00",
+      EndTime: "2019-04-08T00:00:00",
       refreshTime,
+      showDateRange: false
     };
   }
+  showHideRange = () => {
+    console.log(this);
+    this.setState({ showDateRange: !this.state.showDateRange });
+  };
+  onDateRangeSelect = (StartTime, EndTime) => {
+    this.setState({
+      StartTime,
+      EndTime
+    });
+  };
 
   render() {
     const startDate = formattedDate(this.state.StartTime);
@@ -25,11 +37,18 @@ class Header extends React.Component {
     return (
       <div className="header-area">
         <div className="header-area-left">
-          <span className="span-calendar">{startDay}</span>
-          <span>{startDate}</span>
-          - - - - - -
-          <span className="span-calendar">{endDay}</span>
-          <span>{endDate}</span>
+          <span className="date-range-wrapper" onClick={this.showHideRange}>
+            <span className="span-calendar">{startDay}</span>
+            <span>{startDate}</span>
+            <span className="span-space">-</span>
+            <span className="span-calendar">{endDay}</span>
+            <span>{endDate}</span>
+          </span>
+          <DateRangePicker
+            show={this.state.showDateRange}
+            onHide={this.showHideRange}
+            onSelect={this.onDateRangeSelect}
+          />
         </div>
         <div className="header-area-center">
           <img
@@ -39,7 +58,7 @@ class Header extends React.Component {
         </div>
         <div className="header-area-right">
           <span>
-              Refreshed:{this.state.refreshTime}
+            Refreshed:{this.state.refreshTime}
             <i className="icon-autorenew" />
           </span>
           <input type="text" placeholder="search" />
