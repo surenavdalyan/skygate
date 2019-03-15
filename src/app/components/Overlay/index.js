@@ -54,7 +54,7 @@ class Overlay extends React.Component {
 
       this.load(content, hoverMenuX, hoverMenuY);
     } else {
-      // this.lazyDrop.lazyCall(() => this.hide());
+      this.lazyDrop.lazyCall(() => this.hide());
     }
   };
 
