@@ -96,6 +96,13 @@ TextObject.AssignmentLabel = class extends TextObject.BoxText {
 
     this.renderCallbackMainLabel = this.renderCallbackMainLabel.bind(this);
     super.addRenderCallback(this.renderCallbackMainLabel);
+
+    this.color = 'rgba(68, 68, 68, 1)';
+    this.font = 'bold 11px Open Sans';
+  }
+
+  setAlpha(alpha) {
+    this.color = `rgba(68, 68, 68, ${alpha})`;
   }
 
   renderCallbackMainLabel() {
@@ -105,8 +112,8 @@ TextObject.AssignmentLabel = class extends TextObject.BoxText {
       box: this.getBoundingBox(),
       offset: 0,
       styleObject: {
-        color: '#444',
-        font: 'bold 11px Open Sans',
+        color: this.color,
+        font: this.font,
       },
     };
   }

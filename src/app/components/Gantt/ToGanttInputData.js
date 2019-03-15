@@ -5,6 +5,39 @@ import PointGeometryType from '../../constants/PointGeometryType';
 import ValueType from '../../constants/ValueType';
 import HoverContent from './HoverContent';
 
+// Applying all filters
+const applyFilterList = (data, filterList = [], show = false) => {
+  const shouldPass = r => filterList.every((filterObj) => {
+    if (filterObj.filterLogic) {
+      return filterObj.filterLogic(r);
+    }
+    return true;
+  });
+  if (data && data.length > 0) {
+    if (show) {
+      return data.map(r => ({
+        ...r,
+        [Fields.FILTERED_STATE]: shouldPass(r),
+      }));
+    }
+    return data.filter(r => shouldPass(r));
+  }
+  return [];
+};
+
+const applyFilters = (data, filters) => {
+  const allFilters = Object.values(filters);
+  const coreFilters = allFilters.filter(f => !f.filterVisibilityFlag);
+  const highlightFilters = allFilters.filter(f => f.filterVisibilityFlag);
+  const dataAfterApplyingCoreFilters = applyFilterList(data, coreFilters);
+  const dataAfterApplyingHighlightFilters = applyFilterList(
+    dataAfterApplyingCoreFilters,
+    highlightFilters,
+    true,
+  );
+  return dataAfterApplyingHighlightFilters;
+};
+
 const TypetoPointGeometry = (ArrDepType) => {
   switch (ArrDepType) {
     case ValueType.DOMESTIC: return PointGeometryType.DIMOND;
@@ -28,8 +61,9 @@ const showProjectedDetails = (
     Math.abs(scheduledDepartureTime - projectedDepartureTime) > TimeError
 );
 
-export default (data) => {
+export default (data, filters) => {
   const { TimeData, StandData, AssignmentData } = data;
+  const filterAppliedData = applyFilters(AssignmentData.data, filters);
   return {
     YData: {
       data: StandData.data,
@@ -43,7 +77,7 @@ export default (data) => {
       EndTime: new Date(TimeData.EndTime),
     },
     TSData: {
-      data: Object.values(AssignmentData.data),
+      data: Object.values(filterAppliedData),
       getter: (r) => {
         const scheduledArrivalTime = new Date(r[Fields.SCHEDULED_ARRIVAL_DATETIME]);
         const scheduledDepartureTime = new Date(r[Fields.SCHEDULED_DEPARTURE_DATETIME]);
@@ -63,6 +97,10 @@ export default (data) => {
         const LeftPointGeometry = TypetoPointGeometry(r[Fields.ARRIVAL_TYPE]);
         const RightPointGeometry = TypetoPointGeometry(r[Fields.DEPARTURE_TYPE]);
 
+        let Alpha = null;
+        if (Fields.FILTERED_STATE in r && !r[Fields.FILTERED_STATE]) {
+          Alpha = 0.2;
+        }
         return {
           Y: r[Fields.STAND_ID],
           StartDate: scheduledArrivalTime,
@@ -77,6 +115,7 @@ export default (data) => {
             RightBottomTag: departureTimeHMM,
             LeftPointGeometry,
             RightPointGeometry,
+            Alpha,
             ProjectedDetails: shouldShowProjectedDetails ? {
               ProjectedStartDate: projectedArrivalTime,
               ProjectedEndDate: projectedDepartureTime,

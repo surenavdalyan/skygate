@@ -1,7 +1,7 @@
+import moment from 'moment';
 import GeometryGC from '../ObjectGroupGC/objects';
 import TextObject from '../ObjectGroupGC/textObjects';
 import { GeneralConfig } from './mainConfig';
-import Utils from '../AppUtils';
 import TimelineHeader from './TimelineHeader';
 
 export default class OpTimelineHeader extends TimelineHeader {
@@ -17,26 +17,38 @@ export default class OpTimelineHeader extends TimelineHeader {
       appTimeTransform,
     } = this;
 
-    // Vertical lines
+    // Time Labels
     timeLabels.forEach((timeLabel) => {
       const t = appTimeTransform.timeToScreenX(timeLabel.datetime);
 
       const label = new TextObject.CenterLabelBox(
         timeLabel,
         t,
-        y0,
+        y0 + 10,
         GeneralConfig.CellWidth,
         y3 - y0,
       );
       label.color = 'rgb(80, 80, 80)';
       timeAxisTextRenderer.addObject(label);
+      if (timeLabel.hours === 12) {
+        const dateText = moment(timeLabel.datetime).format('ddd, MM/DD');
+        const dayLabel = new TextObject.CenterLabelBox(
+          { text: dateText },
+          t,
+          y0,
+          GeneralConfig.CellWidth,
+          (y3 - y0) * 0.4,
+        );
+        dayLabel.color = 'rgb(80, 80, 80)';
+        timeAxisTextRenderer.addObject(dayLabel);
+      }
     });
 
     timeAxisRenderer.createBuffers();
     timeAxisRenderer.setUniformGetter(this.createUniformGetter(
-        GeneralConfig.NetworkElementLabelWidth,
-        GeneralConfig.THeaderTimeAxisDepth,
-      ),);
+      GeneralConfig.NetworkElementLabelWidth,
+      GeneralConfig.THeaderTimeAxisDepth,
+    ));
   }
 
   addYAxisObjects(y0, y1, y2, y3) {
@@ -76,7 +88,7 @@ export default class OpTimelineHeader extends TimelineHeader {
 
     // Create buffers and uniform getter
     yAxisRenderer.createBuffers();
-    yAxisRenderer.setUniformGetter(this.createUniformGetter(0, GeneralConfig.THeaderYAxisDepth, true),);
+    yAxisRenderer.setUniformGetter(this.createUniformGetter(0, GeneralConfig.THeaderYAxisDepth, true));
   }
 
   handleMousePan(dx, dy) {

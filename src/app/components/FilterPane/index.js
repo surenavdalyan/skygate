@@ -1,5 +1,8 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { Checkbox } from 'react-bootstrap';
+import { bindActionCreators } from 'redux';
+import { applyFilter } from '../../actions';
 
 import './index.scss';
 
@@ -11,6 +14,7 @@ class FilterPane extends React.Component {
         ...filterItem,
         selected: false,
       })),
+      filterVisibilityFlag: true,
       header: {
         Terminals: 'span-header-image-terminal',
         Airlines: 'span-header-image-airline',
@@ -32,22 +36,41 @@ class FilterPane extends React.Component {
       return item;
     });
     this.setState({ filterState }, () => {
-      const selectedValues = filterState
-        .filter(item => item.selected)
-        .map(i => i.value);
-      console.log(selectedValues);
+      this.applyFilter();
     });
-
     // console.log(e.target.checked);
   };
 
+  applyFilter = () => {
+    const { filterState, filterVisibilityFlag } = this.state;
+    const selectedValues = filterState
+      .filter(item => item.selected)
+      .map(i => i.value);
+    // console.log(selectedValues);
+    const filterLogic = r => this.props.config.filterLogic(r, selectedValues);
+    this.props.applyFilter({
+      filterLogic,
+      filterKey: this.props.config.title,
+      filterVisibilityFlag,
+    });
+  };
+
+  filterVisibilityChanged = () => {
+    const filterVisibilityFlag = !this.state.filterVisibilityFlag;
+    this.setState({ filterVisibilityFlag }, () => {
+      this.applyFilter();
+    });
+  };
+
   render() {
-    const { filterState } = this.state;
+    const { filterState, filterVisibilityFlag } = this.state;
+    const visibilityIcon = filterVisibilityFlag ? 'fa fa-eye' : 'fa fa-eye-slash';
     return (
       <div className="pane-container">
         <div className="pane-header">
           <span className={this.state.header[this.props.config.title]} />
           <span>{this.props.config.title}</span>
+          <i className={visibilityIcon} onClick={this.filterVisibilityChanged} />
         </div>
         <div className="pane-content">
           {filterState.map(item => (
@@ -66,4 +89,8 @@ class FilterPane extends React.Component {
   }
 }
 
-export default FilterPane;
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ applyFilter }, dispatch);
+}
+
+export default connect(null, mapDispatchToProps)(FilterPane);

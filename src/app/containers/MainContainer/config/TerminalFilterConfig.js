@@ -1,3 +1,5 @@
+import Fields from '../../../constants/Fields';
+
 export default {
   title: 'Terminals',
   items: [
@@ -18,5 +20,10 @@ export default {
       value: 'E',
     },
   ],
-  filterLogic: (r) => {},
+  filterLogic: (r, selectedValues) => {
+    if (selectedValues && selectedValues.length > 0) {
+      return selectedValues.some(val => r[Fields.TERMINAL_CODE] === val);
+    }
+    return true;
+  },
 };

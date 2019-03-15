@@ -1,12 +1,3 @@
-const WorkTypeColorPalette = {
-  Routine: [44, 177, 159],
-  Grinding: [44, 118, 255],
-  Rerail: [255, 194, 0],
-  Renewal: [203, 82, 67],
-  Other: [147, 155, 154],
-  Bundled: [220, 137, 0]
-};
-
 // GANTT CHART CONFIGURATION
 const GeneralConfig = {
   MainThemeColor_alpha: [9, 42, 77],
@@ -23,9 +14,9 @@ const GeneralConfig = {
   WarningYGap: 3,
 
   NetworkElementLabelWidth: 60,
-  CellHeight: 55,
+  CellHeight: 65,
   CellWidth: 40,
-  CellTopPadding: 22,
+  CellTopPadding: 27,
   GridLinesAlpha: 0.6,
   LabelBoxHeight: 12,
 

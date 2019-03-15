@@ -1,174 +1,15 @@
-import Utils from '../AppUtils';
 import GanttChartView from './GanttChartView';
 import OperationsWrapper from './OperationsWrapper';
 import { GeneralConfig } from './mainConfig';
 import RenderTypes from '../RenderTypes';
 
-const sampleData = [
-  {
-    WorkOrderId: 340,
-    WorkOrderRefereceId: null,
-    OperationId: 10,
-    Description: '4M Major Service SW Mooka ET',
-    FromKmMarker: '28.2455',
-    ToKmMarker: '31.1997',
-    FromTrackName: 'NML-ET',
-    ToTrackName: 'NML-ET',
-    Duration: 4,
-    StartTime: '2018-08-01T00:00:00',
-    EndTime: '2018-08-02T23:00:00',
-    ResourceWorkCenterId: 36,
-    ResourceWorkCenter: 'MN20-L35',
-    MainWorkCenter: 'MN21',
-    NumberOfResources: 4,
-    PlannerGroup: 'I46',
-    AssignmentPossessionId: null,
-    ReferenceWorkOperationId: 42,
-    TimeOffset: 24,
-    Type: 'SS',
-    AssignmentDate: '2018-08-01T00:00:00',
-    IsLocked: false,
-    Id: 111,
-  },
-  {
-    WorkOrderId: 340,
-    WorkOrderRefereceId: null,
-    OperationId: 10,
-    Description: '4M Major Service SW Mooka ET',
-    FromKmMarker: '28.2455',
-    ToKmMarker: '31.1997',
-    FromTrackName: 'NML-ET',
-    ToTrackName: 'NML-ET',
-    Duration: 4,
-    StartTime: '2018-08-02T00:00:00',
-    EndTime: '2018-08-02T23:00:00',
-    ResourceWorkCenterId: 36,
-    ResourceWorkCenter: 'MN20-L35',
-    MainWorkCenter: 'MN21',
-    NumberOfResources: 4,
-    PlannerGroup: 'I46',
-    AssignmentPossessionId: null,
-    ReferenceWorkOperationId: 42,
-    TimeOffset: 24,
-    Type: 'SS',
-    AssignmentDate: '2018-08-02T00:00:00',
-    IsLocked: false,
-    Id: 111,
-  },
-  {
-    WorkOrderId: 340,
-    WorkOrderRefereceId: null,
-    OperationId: 10,
-    Description: '4M Major Service SW Mooka ET',
-    FromKmMarker: '28.2455',
-    ToKmMarker: '31.1997',
-    FromTrackName: 'NML-ET',
-    ToTrackName: 'NML-ET',
-    Duration: 4,
-    StartTime: '2018-08-03T00:00:00',
-    EndTime: '2018-08-03T23:00:00',
-    ResourceWorkCenterId: 36,
-    ResourceWorkCenter: 'MN20-L35',
-    MainWorkCenter: 'MN21',
-    NumberOfResources: 4,
-    PlannerGroup: 'I46',
-    AssignmentPossessionId: null,
-    ReferenceWorkOperationId: 42,
-    TimeOffset: 24,
-    Type: 'SS',
-    AssignmentDate: '2018-08-03T00:00:00',
-    IsLocked: false,
-    Id: 111,
-  },
-  {
-    WorkOrderId: 340,
-    WorkOrderRefereceId: null,
-    OperationId: 10,
-    Description: '4M Major Service SW Mooka ET',
-    FromKmMarker: '28.2455',
-    ToKmMarker: '31.1997',
-    FromTrackName: 'NML-ET',
-    ToTrackName: 'NML-ET',
-    Duration: 4,
-    StartTime: '2018-08-04T00:00:00',
-    EndTime: '2018-08-04T23:00:00',
-    ResourceWorkCenterId: 36,
-    ResourceWorkCenter: 'MN20-L35',
-    MainWorkCenter: 'MN21',
-    NumberOfResources: 4,
-    PlannerGroup: 'I46',
-    AssignmentPossessionId: null,
-    ReferenceWorkOperationId: 42,
-    TimeOffset: 24,
-    Type: 'SS',
-    AssignmentDate: '2018-08-04T00:00:00',
-    IsLocked: false,
-    Id: 111,
-  },
-  {
-    WorkOrderId: 340,
-    WorkOrderRefereceId: null,
-    OperationId: 10,
-    Description: '4M Major Service SW Mooka ET',
-    FromKmMarker: '28.2455',
-    ToKmMarker: '31.1997',
-    FromTrackName: 'NML-ET',
-    ToTrackName: 'NML-ET',
-    Duration: 4,
-    StartTime: '2018-08-01T00:00:00',
-    EndTime: '2018-08-02T23:00:00',
-    ResourceWorkCenterId: 36,
-    ResourceWorkCenter: 'MN20-L35',
-    MainWorkCenter: 'MN21',
-    NumberOfResources: 4,
-    PlannerGroup: 'I46',
-    AssignmentPossessionId: null,
-    ReferenceWorkOperationId: 42,
-    TimeOffset: 24,
-    Type: 'SS',
-    AssignmentDate: '2018-08-01T00:00:00',
-    IsLocked: false,
-    Id: 111,
-  },
-  {
-    WorkOrderId: 340,
-    WorkOrderRefereceId: null,
-    OperationId: 10,
-    Description: '4M Major Service SW Mooka ET',
-    FromKmMarker: '28.2455',
-    ToKmMarker: '31.1997',
-    FromTrackName: 'NML-ET',
-    ToTrackName: 'NML-ET',
-    Duration: 4,
-    StartTime: '2018-08-01T00:00:00',
-    EndTime: '2018-08-02T23:00:00',
-    ResourceWorkCenterId: 36,
-    ResourceWorkCenter: 'MN20-L35',
-    MainWorkCenter: 'MN21',
-    NumberOfResources: 4,
-    PlannerGroup: 'I46',
-    AssignmentPossessionId: null,
-    ReferenceWorkOperationId: 42,
-    TimeOffset: 24,
-    Type: 'SS',
-    AssignmentDate: '2018-08-01T00:00:00',
-    IsLocked: false,
-    Id: 111,
-  },
-];
-
-  // Gantt01 Layer
+// Gantt01 Layer
 export default class Gantt01 extends GanttChartView {
   // Construct canvas and webgl context
   constructor(wrapperElem, canvas) {
     super(wrapperElem, canvas);
     this.defaultRenderType = RenderTypes.GANTT_CHART_01;
     this.ctxObjLabels = this.newCanvas2D();
-  }
-
-  // override setData method
-  setData(inputData) {
-    super.setData(inputData);
   }
 
   // timeStep is in minutes
@@ -200,6 +41,7 @@ export default class Gantt01 extends GanttChartView {
           x: xVal,
           text: timeText,
           datetime: new Date(dateVar),
+          hours,
         });
       }
       dateVar.setMinutes(minutes + timeStep);

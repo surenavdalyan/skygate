@@ -39,6 +39,7 @@ class GridConfig {
           editable: false,
           field: Fields.ARRIVAL_INFO,
           headerName: 'In Flight',
+          width: 100,
         },
         {
           cellType: constants.STRING,
@@ -46,6 +47,7 @@ class GridConfig {
           field: Fields.SCHEDULED_ARRIVAL_DATETIME,
           headerName: 'In Time Scheduled',
           valueFormatter: timeFormatterMMDDHHmm,
+          width: 180,
         },
         {
           cellType: constants.STRING,
@@ -53,18 +55,21 @@ class GridConfig {
           field: Fields.PROJECTED_ACTUAL_ARRIVAL_TIME,
           headerName: 'In Time Projected',
           valueFormatter: timeFormatterMMDDHHmm,
+          width: 180,
         },
         {
           cellType: constants.STRING,
           editable: false,
           field: Fields.ARRIVAL_TYPE,
           headerName: 'In Type',
+          width: 100,
         },
         {
           cellType: constants.STRING,
           editable: false,
           field: Fields.DEPARTURE_INFO,
           headerName: 'Out Flight',
+          width: 100,
         },
         {
           cellType: constants.STRING,
@@ -72,6 +77,7 @@ class GridConfig {
           field: Fields.SCHEDULED_DEPARTURE_DATETIME,
           headerName: 'Out Time Scheduled',
           valueFormatter: timeFormatterMMDDHHmm,
+          width: 180,
         },
         {
           cellType: constants.STRING,
@@ -79,12 +85,14 @@ class GridConfig {
           field: Fields.PROJECTED_ACTUAL_DEPARTURE_TIME,
           headerName: 'Out Time Projected',
           valueFormatter: timeFormatterMMDDHHmm,
+          width: 180,
         },
         {
           cellType: constants.STRING,
           editable: false,
           field: Fields.DEPARTURE_TYPE,
           headerName: 'Out Type',
+          width: 100,
         },
         {
           cellType: constants.STRING,
@@ -97,6 +105,7 @@ class GridConfig {
           editable: false,
           field: Fields.BUFFER,
           headerName: 'Buffer',
+          width: 100,
         },
         {
           cellType: constants.STRING,
@@ -113,6 +122,7 @@ class GridConfig {
       title: 'Stands Assignment Data',
       domLayout: 'autoHeight',
       defaultColDef: {
+        width: 150,
         headerClass: 'grid-header-class',
         cellClass: 'grid-cell-class',
       },

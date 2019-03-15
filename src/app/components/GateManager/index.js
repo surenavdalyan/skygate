@@ -36,12 +36,11 @@ class GateManager extends React.Component {
             <i className={`fa fa-list-alt ${selectionClass(ViewType.GRID)}`} onClick={() => this.toggleView(ViewType.GRID)} />
           </div>
         </div>
-        <div className="main-content-area">
-          {
-            selectedViewType === ViewType.GANTT ?
-            (<GanttChart />) : (<GridComponent />)
-          }
-        </div>
+        {
+          selectedViewType === ViewType.GANTT ?
+          (<GanttChart className="main-content-area" />) :
+          (<GridComponent />)
+        }
       </div>
     );
   }

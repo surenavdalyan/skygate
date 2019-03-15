@@ -94,8 +94,18 @@ export default class OperationsWrapper extends WorkGroupWrapper {
 
   addObjectGeometry(tsObjWrapper, yTop) {
     const {
-      StartDate, EndDate, Color, Properties,
+      StartDate,
+      EndDate,
+      Color,
+      Properties,
     } = tsObjWrapper;
+    const {
+      LeftPointGeometry,
+      RightPointGeometry,
+      ProjectedDetails,
+      Alpha,
+    } = Properties;
+    const appliedAlpha = Alpha || 0.8;
     const { tsObjectRenderer, appTimeTransform } = this;
     const xLeft = appTimeTransform.timeToScreenX(StartDate);
     const xRight = appTimeTransform.timeToScreenX(EndDate);
@@ -106,30 +116,30 @@ export default class OperationsWrapper extends WorkGroupWrapper {
       xRight - xLeft,
       GeneralConfig.CellHeight - 2 * GeneralConfig.CellTopPadding,
     );
-    tsObj.setColor(Color, 0.8);
+    tsObj.setColor(Color, appliedAlpha);
     tsObjectRenderer.addObject(tsObj);
 
-    const { LeftPointGeometry, RightPointGeometry, ProjectedDetails } = Properties;
     this.addPointGeometry(
       LeftPointGeometry,
       xLeft,
       yTop + (0.5 * GeneralConfig.CellHeight),
       GeneralConfig.CellHeight - (2 * GeneralConfig.CellTopPadding),
+      appliedAlpha,
     );
     this.addPointGeometry(
       RightPointGeometry,
       xRight,
       yTop + (0.5 * GeneralConfig.CellHeight),
       GeneralConfig.CellHeight - (2 * GeneralConfig.CellTopPadding),
+      appliedAlpha,
     );
 
     if (ProjectedDetails) {
-      const { ProjectedStartDate, ProjectedEndDate } = ProjectedDetails;
-      this.addProjectionGeometry(tsObjWrapper, yTop, ProjectedDetails);
+      this.addProjectionGeometry(tsObjWrapper, yTop, ProjectedDetails, Alpha);
     }
   }
 
-  addProjectionGeometry(tsObjWrapper, yTop, ProjectedDetails) {
+  addProjectionGeometry(tsObjWrapper, yTop, ProjectedDetails, Alpha) {
     const { Color } = tsObjWrapper;
     const {
       ProjectedStartDate, ProjectedEndDate,
@@ -145,24 +155,24 @@ export default class OperationsWrapper extends WorkGroupWrapper {
       xRight - xLeft,
       GeneralConfig.CellHeight - 2 * GeneralConfig.CellTopPadding + 2 * yOffset,
     );
-    tsObj.setColor(Color, 0.4);
-    tsObj.setBorderColor(Color, 0.8);
+    tsObj.setColor(Color, Alpha || 0.4);
+    tsObj.setBorderColor(Color, Alpha || 0.8);
     tsProjectionRenderer.addObject(tsObj);
   }
 
-  addPointGeometry(pointGeometry, x, y, h) {
+  addPointGeometry(pointGeometry, x, y, h, appliedAlpha) {
     const { tsPointObjectRenderer } = this;
     if (pointGeometry === PointGeometryType.DIMOND) {
       const pointObj = new PointGeometryGC.FixedDimond2D(x, y, 5, h);
-      pointObj.setColor(GeneralConfig.DARK_BLUE);
+      pointObj.setColor(GeneralConfig.DARK_BLUE, appliedAlpha);
       tsPointObjectRenderer.addObject(pointObj);
     } else if (pointGeometry === PointGeometryType.BAR) {
       const pointObj = new PointGeometryGC.FixedRectangle2D(x, y, 3, h);
-      pointObj.setColor(GeneralConfig.BLACK);
+      pointObj.setColor(GeneralConfig.BLACK, appliedAlpha);
       tsPointObjectRenderer.addObject(pointObj);
     } else if (pointGeometry === PointGeometryType.THREE_DOTS) {
       const pointObj = new PointGeometryGC.FixedRectDots2D(x, y, 5, h);
-      pointObj.setColor(GeneralConfig.DARK_YELLOW);
+      pointObj.setColor(GeneralConfig.DARK_YELLOW, appliedAlpha);
       tsPointObjectRenderer.addObject(pointObj);
     }
   }
@@ -187,11 +197,12 @@ export default class OperationsWrapper extends WorkGroupWrapper {
       refBox.w,
       refBox.h,
     );
+    label.font = '11px Open Sans';
     objLabelsRenderer.addObject(label);
 
     const { LabelBoxHeight } = GeneralConfig;
     const {
-      LeftTag, RightTag, LeftBottomTag, RightBottomTag,
+      LeftTag, RightTag, LeftBottomTag, RightBottomTag, Alpha,
     } = Properties;
 
     const labelOffset = 2;
@@ -205,6 +216,7 @@ export default class OperationsWrapper extends WorkGroupWrapper {
         LabelBoxHeight,
         'left',
       );
+      leftTag.setAlpha(Alpha || 1);
       objLabelsRenderer.addObject(leftTag);
     }
     if (validString(RightTag)) {
@@ -216,6 +228,7 @@ export default class OperationsWrapper extends WorkGroupWrapper {
         LabelBoxHeight,
         'right',
       );
+      rightTag.setAlpha(Alpha || 1);
       rightTag.moveUpOnCollide = Boolean(validString(LeftTag));
       objLabelsRenderer.addObject(rightTag);
     }
@@ -228,6 +241,7 @@ export default class OperationsWrapper extends WorkGroupWrapper {
         LabelBoxHeight,
         'left',
       );
+      leftBottomTag.setAlpha(Alpha || 1);
       objLabelsRenderer.addObject(leftBottomTag);
     }
     if (validString(RightBottomTag)) {
@@ -239,6 +253,7 @@ export default class OperationsWrapper extends WorkGroupWrapper {
         LabelBoxHeight,
         'right',
       );
+      rightBottomTag.setAlpha(Alpha || 1);
       rightBottomTag.moveDownOnCollide = Boolean(validString(LeftBottomTag));
       objLabelsRenderer.addObject(rightBottomTag);
     }
@@ -434,7 +449,6 @@ export default class OperationsWrapper extends WorkGroupWrapper {
   };
 
   handleHover = (x, y, elemStyle) => {
-
     super.handleHover(x, y);
     if (elemStyle) {
       elemStyle.cursor = 'default';

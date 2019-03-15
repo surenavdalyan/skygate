@@ -515,6 +515,8 @@ export default class WorkGroupWrapper {
         xLeft,
         xRight,
         yPos,
+        canvasWidth: this.canvas.width,
+        canvasHeight: this.canvas.height,
       });
     } else {
       // Mouse not falling on valid objects.

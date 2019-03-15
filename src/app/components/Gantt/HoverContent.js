@@ -1,6 +1,6 @@
 import React from 'react';
-import Fields from '../../constants/Fields';
 import moment from 'moment';
+import Fields from '../../constants/Fields';
 
 const timeFormatter = date => moment(date).format('MM/DD HH:mm');
 
@@ -22,15 +22,21 @@ export default ({ obj }) => {
 
   return (
     <React.Fragment>
-      <div className="hover-header">{title} ({stand}) </div>
+      <div className="hover-header">{title} <span className="pull-right">({stand})</span> </div>
 
-      <div className="hover-item">{arrivalInfo}</div>
+      <div className="hover-item">
+        <i className="fa fa-plane" />
+        {arrivalInfo}
+      </div>
       <div className="hover-item">{arrivalType}</div>
       <div className="hover-item">{arrivalTimeScheduled}</div>
       <div className="hover-item">{arrivalTimeProjected}</div>
 
       <div className="pull-right right-align">
-        <div className="hover-item">{departureInfo}</div>
+        <div className="hover-item">
+          {departureInfo}
+          <i className="fa fa-plane" />
+        </div>
         <div className="hover-item">{departureType}</div>
         <div className="hover-item">{departureTimeScheduled}</div>
         <div className="hover-item">{departureTimeProjected}</div>

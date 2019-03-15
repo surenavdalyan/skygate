@@ -24,11 +24,16 @@ class GanttView extends React.Component {
   componentDidUpdate(prevProps) {
     if (this.props.sampleData && !lodash.isEqual(this.props.sampleData, prevProps.sampleData)) {
       this.initCanvas(this.props.sampleData);
+      return;
+    }
+    if (this.props.filters && !lodash.isEqual(this.props.filters, prevProps.filters)) {
+      this.initCanvas(this.props.sampleData);
+      return;
     }
   }
 
   initCanvas = (data) => {
-    const GanttData = ToGanttInputData(data);
+    const GanttData = ToGanttInputData(data, this.props.filters);
     setTimeout(() => {
       if (!this.glController) {
         this.glController = new GLController(
@@ -42,27 +47,25 @@ class GanttView extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
-        <div className="view-container">
-          <div
-            className="canvas-wrapper"
-            ref={
+      <div className={`view-container ${this.props.className}`}>
+        <div
+          className="canvas-wrapper"
+          ref={
               (elm) => {
                     this.canvasWrapper = elm;
                   }
               }
-          />
-          { /* <CustomPopOver /> */ }
-        </div>
+        />
         <Overlay />
-      </React.Fragment>
+      </div>
     );
   }
 }
 
-function mapStateToProps({ sampleData }) {
+function mapStateToProps({ sampleData, filters }) {
   return {
     sampleData,
+    filters,
   };
 }
 

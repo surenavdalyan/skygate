@@ -2,16 +2,23 @@
     border-bottom: 1px solid #AAA;
     margin: 10px;
     .pane-header {
-        padding-left: 25px;
-        height: 20px;
-        // background-color: rgba(24, 36, 60, 1);
-        color: rgb(0, 0, 0);
+        padding-left: 5px;
+        height: 18px;
+        color: black;
+
+        i {
+            margin-left: 10px;
+            font-size: 20px;
+            color: #666;
+            cursor: pointer;
+        }
     }
 
     .pane-content {
         padding-left: 25px;
-        height: 130px;
-        //background-color: #e1dfe8;
+        height: 115px;
+        margin-top: 10px;
+        overflow-y: auto;
         .filter-item {
         }
     }

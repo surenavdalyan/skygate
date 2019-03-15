@@ -1,3 +1,5 @@
+import Fields from '../../../constants/Fields';
+
 export default {
   title: 'Early/Late',
   items: [
@@ -7,12 +9,17 @@ export default {
     },
     {
       label: 'Late',
-      value: 'Late',
+      value: 'Delay',
     },
     {
       label: 'On-Time',
-      value: 'OnTime',
+      value: 'On Time',
     },
   ],
-  filterLogic: (r) => {},
+  filterLogic: (r, selectedValues) => {
+    if (selectedValues && selectedValues.length > 0) {
+      return selectedValues.some(val => r[Fields.ARRIVAL_STATUS] === val);
+    }
+    return true;
+  },
 };
