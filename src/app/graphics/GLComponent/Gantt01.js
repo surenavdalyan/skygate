@@ -10,6 +10,7 @@ export default class Gantt01 extends GanttChartView {
     super(wrapperElem, canvas);
     this.defaultRenderType = RenderTypes.GANTT_CHART_01;
     this.ctxObjLabels = this.newCanvas2D();
+    this.syncTimeline = true;
   }
 
   // timeStep is in minutes

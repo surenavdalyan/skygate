@@ -34,9 +34,9 @@ export default class TimeTransform {
   applyZoom(zoomIncrFactor, wheelDelta, x0, viewportWidth) {
     let newZoomFactor = 1;
     if (wheelDelta < 0) {
-      newZoomFactor = Math.min(this.zoomFactor + zoomIncrFactor, 5.0);
+      newZoomFactor = Math.min(this.zoomFactor + zoomIncrFactor, 3.0);
     } else {
-      newZoomFactor = Math.max(this.zoomFactor - zoomIncrFactor, 0.7);
+      newZoomFactor = Math.max(this.zoomFactor - zoomIncrFactor, 1.0);
     }
 
     this.tx =

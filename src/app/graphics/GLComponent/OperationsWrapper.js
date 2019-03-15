@@ -339,7 +339,7 @@ export default class OperationsWrapper extends WorkGroupWrapper {
     }
   }
 
-  handleWheel(x, y, delta) {}
+  // handleWheel(x, y, delta) {}
 
   handleDragStart(x, y) {
     const { appTimeTransform } = this;
