@@ -64,7 +64,7 @@ class FilterPane extends React.Component {
       <div className="pane-container">
         <div className="pane-header">
           <span className={this.props.config.headerIconClass} />
-          <span>{this.props.config.title}</span>
+          <span className="pane-header-title">{this.props.config.title}</span>
           <i className={visibilityIcon} onClick={this.filterVisibilityChanged} />
         </div>
         <div className="pane-content">

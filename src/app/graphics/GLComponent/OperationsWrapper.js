@@ -105,7 +105,7 @@ export default class OperationsWrapper extends WorkGroupWrapper {
       ProjectedDetails,
       Alpha,
     } = Properties;
-    const appliedAlpha = Alpha || 0.8;
+    const appliedAlpha = Alpha || 1.0;
     const { tsObjectRenderer, appTimeTransform } = this;
     const xLeft = appTimeTransform.timeToScreenX(StartDate);
     const xRight = appTimeTransform.timeToScreenX(EndDate);
