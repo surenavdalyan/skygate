@@ -1,22 +1,27 @@
-import React from "react";
-import moment from "moment";
+import React from 'react';
+import moment from 'moment';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { applyFilter } from '../../actions';
+import LazyEvent from '../../graphics/lib/LazyEvent';
 
-import "./index.scss";
-import DateRangePicker from "../../components/DateRange/DateRangePicker";
+import './index.scss';
+import DateRangePicker from '../../components/DateRange/DateRangePicker';
 
-const formattedDate = date => moment(date).format("MMM DD[,] YYYY");
-const formattedDay = date => moment(date).format("DD");
+const formattedDate = date => moment(date).format('MMM DD[,] YYYY');
+const formattedDay = date => moment(date).format('DD');
 
 class Header extends React.Component {
   constructor(props) {
     super(props);
-    const refreshTime = "Today 11:10 AM";
+    const refreshTime = 'Today 11:10 AM';
     this.state = {
-      StartTime: "2019-04-01T00:00:00",
-      EndTime: "2019-04-08T00:00:00",
+      StartTime: '2019-04-01T00:00:00',
+      EndTime: '2019-04-08T00:00:00',
       refreshTime,
-      showDateRange: false
+      showDateRange: false,
     };
+    this.lazySearch = new LazyEvent();
   }
   showHideRange = () => {
     console.log(this);
@@ -25,8 +30,22 @@ class Header extends React.Component {
   onDateRangeSelect = (StartTime, EndTime) => {
     this.setState({
       StartTime,
-      EndTime
+      EndTime,
     });
+  };
+
+  onSearchInput = (e) => {
+    // console.log(e.target.value);
+    const { value } = e.target;
+    const includesInTheField = (r, val, field) => r[field] && r[field].includes(val);
+    const SearchFilterConfig = v => ({
+      filterLogic: r => includesInTheField(r, v, 'Aircraft Type'),
+      filterKey: 'SearchInput',
+      filterVisibilityFlag: true,
+    });
+    this.lazySearch.lazyCall(() => {
+      this.props.applyFilter(SearchFilterConfig(value));
+    }, 1000);
   };
 
   render() {
@@ -61,7 +80,7 @@ class Header extends React.Component {
             Refreshed:{this.state.refreshTime}
             <i className="icon-autorenew" />
           </span>
-          <input type="text" placeholder="search" />
+          <input type="text" placeholder="search" onChange={this.onSearchInput} />
           <span className="span-notify" />
         </div>
       </div>
@@ -69,4 +88,8 @@ class Header extends React.Component {
   }
 }
 
-export default Header;
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ applyFilter }, dispatch);
+}
+
+export default connect(null, mapDispatchToProps)(Header);
