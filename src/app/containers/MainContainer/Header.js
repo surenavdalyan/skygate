@@ -87,7 +87,9 @@ class Header extends React.Component {
             onClick={() => {
               this.onSetSidebarOpen(true);
             }}
-          />
+          >
+            <span className="notification-counter" >3</span>
+          </span>
         </div>
         {this.state.sidebarOpen && (
           <Sidebar
