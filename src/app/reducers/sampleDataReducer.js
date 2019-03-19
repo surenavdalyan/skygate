@@ -2,6 +2,7 @@
 import { SampleStandAssignment001 } from './SampleInput';
 import StandsSequence001 from './StandsSequence';
 import AirlineCodes from './AirlineCodes';
+import NotificationInput from './NotificationInput';
 
 const StandData = StandsSequence001.map(stnd => ({
   name: stnd['Stands Sequence'],
@@ -21,6 +22,7 @@ const initState = {
     data: SampleStandAssignment001,
   },
   AirlineCodeData,
+  NotificationInput,
 };
 
 export default function sampleDataReducer() {
