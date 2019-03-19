@@ -1,38 +1,33 @@
-import React from 'react';
-import moment from 'moment';
-import Sidebar from 'react-sidebar';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import { applyFilter } from '../../actions';
-import LazyEvent from '../../graphics/lib/LazyEvent';
-import DateRangePicker from '../../components/DateRange/DateRangePicker';
-import NotificationList from '../../components/NotificationList';
+import React from "react";
+import moment from "moment";
+import Sidebar from "react-sidebar";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import { applyFilter } from "../../actions";
+import LazyEvent from "../../graphics/lib/LazyEvent";
+import DateRangePicker from "../../components/DateRange/DateRangePicker";
+import NotificationList from "../../components/NotificationList";
 
-import './index.scss';
+import "./index.scss";
 
-const formattedDate = date => moment(date).format('MMM DD[,] YYYY');
-const formattedDay = date => moment(date).format('DD');
+const formattedDate = date => moment(date).format("MMM DD[,] YYYY");
+const formattedDay = date => moment(date).format("DD");
 
 class Header extends React.Component {
   constructor(props) {
     super(props);
-    const refreshTime = 'Today 11:10 AM';
+    const refreshTime = "Today 11:10 AM";
     this.state = {
-      StartTime: '2019-04-01T00:00:00',
-      EndTime: '2019-04-08T00:00:00',
+      StartTime: "2019-04-01T00:00:00",
+      EndTime: "2019-04-08T00:00:00",
       refreshTime,
       showDateRange: false,
-      sidebarOpen: false,
-      texts: [
-        'This is first fake notification.',
-        'This is yet another fake notification but much much longer than the first notification.',
-        'I am third notification!!',
-      ],
+      sidebarOpen: false
     };
     this.lazySearch = new LazyEvent();
   }
 
-  onSetSidebarOpen = (open) => {
+  onSetSidebarOpen = open => {
     this.setState({ sidebarOpen: open });
   };
 
@@ -48,18 +43,22 @@ class Header extends React.Component {
   onDateRangeSelect = (StartTime, EndTime) => {
     this.setState({
       StartTime,
-      EndTime,
+      EndTime
     });
   };
 
-  onSearchInput = (e) => {
+  onSearchInput = e => {
     // console.log(e.target.value);
     const { value } = e.target;
-    const includesInTheField = (r, val, field) => r[field] && r[field].includes(val);
+    const includesInTheField = (r, val, field) =>
+      r[field] && r[field].toLowerCase().includes(val.toLowerCase());
     const SearchFilterConfig = v => ({
-      filterLogic: r => includesInTheField(r, v, 'Aircraft Type'),
-      filterKey: 'SearchInput',
-      filterVisibilityFlag: true,
+      filterLogic: r =>
+        includesInTheField(r, v, "Aircraft Type") ||
+        includesInTheField(r, v, "Arrival Info") ||
+        includesInTheField(r, v, "Departure Info"),
+      filterKey: "SearchInput",
+      filterVisibilityFlag: true
     });
     this.lazySearch.lazyCall(() => {
       this.props.applyFilter(SearchFilterConfig(value));
@@ -98,26 +97,31 @@ class Header extends React.Component {
             Refreshed:{this.state.refreshTime}
             <i className="icon-autorenew" />
           </span>
-          <input type="text" placeholder="search" onChange={this.onSearchInput} />
+          <input
+            type="text"
+            placeholder="Search"
+            onChange={this.onSearchInput}
+          />
           <span
             className="span-notify"
             onClick={() => {
               this.onSetSidebarOpen(true);
             }}
           >
-            <span className="notification-counter" >3</span>
+            <span className="notification-counter">3</span>
           </span>
         </div>
         {this.state.sidebarOpen && (
           <Sidebar
-            sidebar={<NotificationList texts={this.state.texts} />}
+            sidebar={<NotificationList />}
             open={this.state.sidebarOpen}
             onSetOpen={this.onSetSidebarOpen}
             styles={{
               sidebar: {
-                background: '#093a63',
-                width: '350px',
-              },
+                zIndex: 100,
+                background: "#093a63",
+                width: "350px"
+              }
             }}
             pullRight
           />
@@ -131,4 +135,7 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators({ applyFilter }, dispatch);
 }
 
-export default connect(null, mapDispatchToProps)(Header);
+export default connect(
+  null,
+  mapDispatchToProps
+)(Header);

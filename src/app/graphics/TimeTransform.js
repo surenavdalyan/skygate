@@ -17,12 +17,12 @@ export default class TimeTransform {
     this.timeWindow = new Utils.TimeWindow(tStart0, tEnd0);
 
     // initial zoom, translation
-    this.zoomFactor = 1.0;
+    this.zoomFactor = 1.8;
     this.tx = 0.0;
     this.ty = 0.0;
 
     // Identity Matrix
-    this.matrix = [1, 0, 0, 0, 1, 0, 0, 0, 1];
+    this.matrix = [this.zoomFactor, 0, 0, 0, 1, 0, 0, 0, 1];
 
     this.updateCallback = updateCallback;
   }

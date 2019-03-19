@@ -10,7 +10,7 @@ import BufferFilterConfig from './config/BufferFilterConfig';
 import EarlyLateFilterConfig from './config/EarlyLateFilterConfig';
 import StandFilterConfig from './config/StandFilterConfig';
 
-import Header from './Header';
+import Header from '../../components/Header';
 
 import './index.scss';
 
