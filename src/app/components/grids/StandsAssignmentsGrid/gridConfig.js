@@ -34,6 +34,8 @@ class GridConfig {
           editable: false,
           field: Fields.STAND_ID,
           headerName: 'Gate/Stand',
+         cellClass: 'textalign-center',
+         headerClass: 'textalign-center',
         },
         {
           cellType: constants.STRING,
@@ -41,6 +43,7 @@ class GridConfig {
           field: Fields.ARRIVAL_INFO,
           headerName: 'In Flight',
           width: 100,
+         cellClass: 'textalign-center',           headerClass: 'textalign-center',
         },
         {
           cellType: constants.STRING,
@@ -49,6 +52,7 @@ class GridConfig {
           headerName: 'In Time Scheduled',
           valueFormatter: timeFormatterMMDDHHmm,
           width: 180,
+         cellClass: 'textalign-center',           headerClass: 'textalign-center',
         },
         {
           cellType: constants.STRING,
@@ -57,6 +61,7 @@ class GridConfig {
           headerName: 'In Time Projected',
           valueFormatter: timeFormatterMMDDHHmm,
           width: 180,
+         cellClass: 'textalign-center',           headerClass: 'textalign-center',
         },
         {
           cellType: constants.STRING,
@@ -64,6 +69,7 @@ class GridConfig {
           field: Fields.ARRIVAL_TYPE,
           headerName: 'In Type',
           width: 100,
+         cellClass: 'textalign-center',           headerClass: 'textalign-center',
         },
         {
           cellType: constants.STRING,
@@ -71,6 +77,7 @@ class GridConfig {
           field: Fields.DEPARTURE_INFO,
           headerName: 'Out Flight',
           width: 100,
+         cellClass: 'textalign-center',           headerClass: 'textalign-center',
         },
         {
           cellType: constants.STRING,
@@ -79,6 +86,7 @@ class GridConfig {
           headerName: 'Out Time Scheduled',
           valueFormatter: timeFormatterMMDDHHmm,
           width: 180,
+         cellClass: 'textalign-center',           headerClass: 'textalign-center',
         },
         {
           cellType: constants.STRING,
@@ -87,6 +95,7 @@ class GridConfig {
           headerName: 'Out Time Projected',
           valueFormatter: timeFormatterMMDDHHmm,
           width: 180,
+         cellClass: 'textalign-center',           headerClass: 'textalign-center',
         },
         {
           cellType: constants.STRING,
@@ -94,12 +103,14 @@ class GridConfig {
           field: Fields.DEPARTURE_TYPE,
           headerName: 'Out Type',
           width: 100,
+         cellClass: 'textalign-center',           headerClass: 'textalign-center',
         },
         {
           cellType: constants.STRING,
           editable: false,
           field: Fields.EQUIPMENT_TYPE,
           headerName: 'Aircraft Type',
+         cellClass: 'textalign-center',           headerClass: 'textalign-center',
         },
         {
           cellType: constants.STRING,
@@ -107,12 +118,14 @@ class GridConfig {
           field: Fields.BUFFER,
           headerName: 'Buffer',
           width: 100,
+         cellClass: 'textalign-center',           headerClass: 'textalign-center',
         },
         {
           cellType: constants.STRING,
           editable: false,
           field: '',
           headerName: 'Notes',
+         cellClass: 'textalign-center',           headerClass: 'textalign-center',
         },
       ],
       enableFilter: false,

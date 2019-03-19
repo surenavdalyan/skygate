@@ -14,3 +14,18 @@
 .shaded-rows {
     opacity: 0.4;
 }
+.textalign-center{
+    text-align: center;
+    .ag-header-cell-label{
+        justify-content: center;
+        font-weight: 600;
+    }
+}
+
+.ag-fresh{
+    font-family: "Open Sans";
+    .ag-header-cell{
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+}

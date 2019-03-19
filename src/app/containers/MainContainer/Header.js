@@ -1,12 +1,14 @@
 import React from 'react';
 import moment from 'moment';
+import Sidebar from 'react-sidebar';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { applyFilter } from '../../actions';
 import LazyEvent from '../../graphics/lib/LazyEvent';
+import DateRangePicker from '../../components/DateRange/DateRangePicker';
+import NotificationList from '../../components/NotificationList';
 
 import './index.scss';
-import DateRangePicker from '../../components/DateRange/DateRangePicker';
 
 const formattedDate = date => moment(date).format('MMM DD[,] YYYY');
 const formattedDay = date => moment(date).format('DD');
@@ -20,13 +22,29 @@ class Header extends React.Component {
       EndTime: '2019-04-08T00:00:00',
       refreshTime,
       showDateRange: false,
+      sidebarOpen: false,
+      texts: [
+        'This is first fake notification.',
+        'This is yet another fake notification but much much longer than the first notification.',
+        'I am third notification!!',
+      ],
     };
     this.lazySearch = new LazyEvent();
   }
+
+  onSetSidebarOpen = (open) => {
+    this.setState({ sidebarOpen: open });
+  };
+
+  showHideNotification = () => {
+    this.setState({ showNotificationPanel: !this.state.showNotificationPanel });
+  };
+
   showHideRange = () => {
-    console.log(this);
+    // console.log(this);
     this.setState({ showDateRange: !this.state.showDateRange });
   };
+
   onDateRangeSelect = (StartTime, EndTime) => {
     this.setState({
       StartTime,
@@ -81,8 +99,29 @@ class Header extends React.Component {
             <i className="icon-autorenew" />
           </span>
           <input type="text" placeholder="search" onChange={this.onSearchInput} />
-          <span className="span-notify" />
+          <span
+            className="span-notify"
+            onClick={() => {
+              this.onSetSidebarOpen(true);
+            }}
+          >
+            <span className="notification-counter" >3</span>
+          </span>
         </div>
+        {this.state.sidebarOpen && (
+          <Sidebar
+            sidebar={<NotificationList texts={this.state.texts} />}
+            open={this.state.sidebarOpen}
+            onSetOpen={this.onSetSidebarOpen}
+            styles={{
+              sidebar: {
+                background: '#093a63',
+                width: '350px',
+              },
+            }}
+            pullRight
+          />
+        )}
       </div>
     );
   }

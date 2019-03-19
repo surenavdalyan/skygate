@@ -1,101 +1,5 @@
 const SampleStandAssignment001 = [
 	{
-		"Stand Id": "E12",
-		"Terminal": "E",
-		"Arrival Airline Code": "BA",
-		"Arrival Airline": "British Airways",
-		"Arrival Info": "BA239",
-		"Arrival Type": "Domestic",
-		"Departure Airline Code": "BA",
-		"Departure Airline": "British Airways",
-		"Departure Info": "BA238",
-		"Departure Type": "Domestic",
-		"Aircraft Type": "772",
-		"Color": "BLUE",
-		"Scheduled Arrival DateTime": "2019-03-31T22:25:00",
-		"Scheduled Departure DateTime": "2019-04-01T07:45:00",
-		"Projected Arrival Time": "2019-03-31T22:25:00",
-		"Projected Departure Time": "2019-04-01T07:45:00",
-		"Arrival Status": "On Time",
-		"Departure Status": "On Time",
-		"Arrival Delay": "0",
-		"Departure Delay": "0",
-		"Buffer": "9:19",
-		"": ""
-	},
-	{
-		"Stand Id": "E7",
-		"Terminal": "E",
-		"Arrival Airline Code": "PD",
-		"Arrival Airline": "Porter Airlines",
-		"Arrival Info": "PD951",
-		"Arrival Type": "Domestic",
-		"Departure Airline Code": "PD",
-		"Departure Airline": "Porter Airlines",
-		"Departure Info": "PD936",
-		"Departure Type": "Domestic",
-		"Aircraft Type": "DH4",
-		"Color": "YELLOW",
-		"Scheduled Arrival DateTime": "2019-03-31T22:40:00",
-		"Scheduled Departure DateTime": "2019-04-01T06:25:00",
-		"Projected Arrival Time": "2019-03-31T22:40:00",
-		"Projected Departure Time": "2019-04-01T06:25:00",
-		"Arrival Status": "On Time",
-		"Departure Status": "On Time",
-		"Arrival Delay": "0",
-		"Departure Delay": "0",
-		"Buffer": "7:44",
-		"": ""
-	},
-	{
-		"Stand Id": "E9",
-		"Terminal": "E",
-		"Arrival Airline Code": "VS",
-		"Arrival Airline": "Virgin Atlantic",
-		"Arrival Info": "VS157",
-		"Arrival Type": "Domestic",
-		"Departure Airline Code": "JL",
-		"Departure Airline": "Japan Airlines",
-		"Departure Info": "JL7",
-		"Departure Type": "Domestic",
-		"Aircraft Type": "333",
-		"Color": "VIOLET",
-		"Scheduled Arrival DateTime": "2019-03-31T22:40:00",
-		"Scheduled Departure DateTime": "2019-04-01T08:15:00",
-		"Projected Arrival Time": "2019-03-31T22:40:00",
-		"Projected Departure Time": "2019-04-01T08:15:00",
-		"Arrival Status": "On Time",
-		"Departure Status": "On Time",
-		"Arrival Delay": "0",
-		"Departure Delay": "0",
-		"Buffer": "9:34",
-		"": ""
-	},
-	{
-		"Stand Id": "E7",
-		"Terminal": "E",
-		"Arrival Airline Code": "PD",
-		"Arrival Airline": "Porter Airlines",
-		"Arrival Info": "PD937",
-		"Arrival Type": "Domestic",
-		"Departure Airline Code": "PD",
-		"Departure Airline": "Porter Airlines",
-		"Departure Info": "PD938",
-		"Departure Type": "Domestic",
-		"Aircraft Type": "DH4",
-		"Color": "YELLOW",
-		"Scheduled Arrival DateTime": "2019-04-01T08:20:00",
-		"Scheduled Departure DateTime": "2019-04-01T09:05:00",
-		"Projected Arrival Time": "2019-04-01T08:20:00",
-		"Projected Departure Time": "2019-04-01T09:05:00",
-		"Arrival Status": "On Time",
-		"Departure Status": "On Time",
-		"Arrival Delay": "0",
-		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
-	},
-	{
 		"Stand Id": "E7",
 		"Terminal": "E",
 		"Arrival Airline Code": "PD",
@@ -116,8 +20,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:49",
-		"": ""
+		"Buffer": "01:25"
 	},
 	{
 		"Stand Id": "E2",
@@ -140,8 +43,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "04:44"
 	},
 	{
 		"Stand Id": "E12",
@@ -162,34 +64,9 @@ const SampleStandAssignment001 = [
 		"Projected Departure Time": "2019-04-01T19:05:00",
 		"Arrival Status": "Early",
 		"Departure Status": "Early",
-		"Arrival Delay": "15",
-		"Departure Delay": "10",
-		"Buffer": "5:40",
-		"": ""
-	},
-	{
-		"Stand Id": "E10",
-		"Terminal": "E",
-		"Arrival Airline Code": "CX",
-		"Arrival Airline": "Cathay Pacific Airlines",
-		"Arrival Info": "CX812",
-		"Arrival Type": "Domestic",
-		"Departure Airline Code": "",
-		"Departure Airline": "",
-		"Departure Info": "NC3A",
-		"Departure Type": "Parking",
-		"Aircraft Type": "773",
-		"Color": "GREY",
-		"Scheduled Arrival DateTime": "2019-03-31T22:20:00",
-		"Scheduled Departure DateTime": "2019-04-01T01:50:00",
-		"Projected Arrival Time": "2019-03-31T22:20:00",
-		"Projected Departure Time": "2019-04-01T01:50:00",
-		"Arrival Status": "On Time",
-		"Departure Status": "On Time",
-		"Arrival Delay": "0",
-		"Departure Delay": "0",
-		"Buffer": "3:30",
-		"": ""
+		"Arrival Delay": "14.99999999650754",
+		"Departure Delay": "10.000000001164153",
+		"Buffer": "05:49"
 	},
 	{
 		"Stand Id": "E1",
@@ -212,8 +89,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:20",
-		"": ""
+		"Buffer": "06:09"
 	},
 	{
 		"Stand Id": "E4",
@@ -234,10 +110,9 @@ const SampleStandAssignment001 = [
 		"Projected Departure Time": "2019-04-01T17:45:00",
 		"Arrival Status": "Delay",
 		"Departure Status": "Delay",
-		"Arrival Delay": "-25",
-		"Departure Delay": "-25",
-		"Buffer": "2:44",
-		"": ""
+		"Arrival Delay": "-24.999999997671694",
+		"Departure Delay": "-25.000000008149073",
+		"Buffer": "02:20"
 	},
 	{
 		"Stand Id": "E6",
@@ -260,8 +135,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "01:09"
 	},
 	{
 		"Stand Id": "E5",
@@ -284,8 +158,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:34",
-		"": ""
+		"Buffer": "00:53"
 	},
 	{
 		"Stand Id": "E10",
@@ -308,8 +181,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:00",
-		"": ""
+		"Buffer": "01:14"
 	},
 	{
 		"Stand Id": "E7",
@@ -332,8 +204,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:00",
-		"": ""
+		"Buffer": "00:43"
 	},
 	{
 		"Stand Id": "E8",
@@ -356,8 +227,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:40",
-		"": ""
+		"Buffer": "00:45"
 	},
 	{
 		"Stand Id": "E9",
@@ -380,32 +250,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:04",
-		"": ""
-	},
-	{
-		"Stand Id": "NC8",
-		"Terminal": "E",
-		"Arrival Airline Code": "PD",
-		"Arrival Airline": "Porter Airlines",
-		"Arrival Info": "PD949",
-		"Arrival Type": "Domestic",
-		"Departure Airline Code": "PD",
-		"Departure Airline": "Porter Airlines",
-		"Departure Info": "PD936",
-		"Departure Type": "Domestic",
-		"Aircraft Type": "DH4",
-		"Color": "YELLOW",
-		"Scheduled Arrival DateTime": "2019-03-31T20:34:00",
-		"Scheduled Departure DateTime": "2019-04-01T06:25:00",
-		"Projected Arrival Time": "2019-03-31T20:34:00",
-		"Projected Departure Time": "2019-04-01T06:25:00",
-		"Arrival Status": "On Time",
-		"Departure Status": "On Time",
-		"Arrival Delay": "0",
-		"Departure Delay": "0",
-		"Buffer": "9:50",
-		"": ""
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "NC6A",
@@ -428,8 +273,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:00",
-		"": ""
+		"Buffer": "16:30"
 	},
 	{
 		"Stand Id": "E2",
@@ -452,8 +296,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:46",
-		"": ""
+		"Buffer": "17:04"
 	},
 	{
 		"Stand Id": "E6",
@@ -476,8 +319,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:34",
-		"": ""
+		"Buffer": "01:30"
 	},
 	{
 		"Stand Id": "NC21",
@@ -500,8 +342,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:04",
-		"": ""
+		"Buffer": "17:49"
 	},
 	{
 		"Stand Id": "E7",
@@ -524,8 +365,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:29",
-		"": ""
+		"Buffer": "01:09"
 	},
 	{
 		"Stand Id": "E8",
@@ -548,8 +388,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:09",
-		"": ""
+		"Buffer": "01:19"
 	},
 	{
 		"Stand Id": "E10",
@@ -572,8 +411,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:45",
-		"": ""
+		"Buffer": "01:19"
 	},
 	{
 		"Stand Id": "E11",
@@ -596,8 +434,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:09",
-		"": ""
+		"Buffer": "00:23"
 	},
 	{
 		"Stand Id": "E9",
@@ -620,8 +457,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:39",
-		"": ""
+		"Buffer": "00:40"
 	},
 	{
 		"Stand Id": "E3",
@@ -644,8 +480,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:15",
-		"": ""
+		"Buffer": "01:24"
 	},
 	{
 		"Stand Id": "E2",
@@ -668,8 +503,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:59",
-		"": ""
+		"Buffer": "01:05"
 	},
 	{
 		"Stand Id": "E6",
@@ -692,8 +526,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:44",
-		"": ""
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "E12",
@@ -716,8 +549,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:55",
-		"": ""
+		"Buffer": "00:29"
 	},
 	{
 		"Stand Id": "NC19",
@@ -740,8 +572,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "03:55"
 	},
 	{
 		"Stand Id": "E4",
@@ -764,8 +595,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:50",
-		"": ""
+		"Buffer": "00:10"
 	},
 	{
 		"Stand Id": "NC6A",
@@ -788,8 +618,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:59",
-		"": ""
+		"Buffer": "01:30"
 	},
 	{
 		"Stand Id": "E5",
@@ -812,8 +641,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:54",
-		"": ""
+		"Buffer": "00:45"
 	},
 	{
 		"Stand Id": "E10",
@@ -836,8 +664,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:45",
-		"": ""
+		"Buffer": "00:09"
 	},
 	{
 		"Stand Id": "E1",
@@ -860,8 +687,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:29",
-		"": ""
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "NC8",
@@ -884,8 +710,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "9:50",
-		"": ""
+		"Buffer": "14:09"
 	},
 	{
 		"Stand Id": "E8",
@@ -908,8 +733,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:50",
-		"": ""
+		"Buffer": "00:30"
 	},
 	{
 		"Stand Id": "E3",
@@ -930,34 +754,9 @@ const SampleStandAssignment001 = [
 		"Projected Departure Time": "2019-04-02T00:30:00",
 		"Arrival Status": "Delay",
 		"Departure Status": "Delay",
-		"Arrival Delay": "-50",
+		"Arrival Delay": "-50.000000005820766",
 		"Departure Delay": "-45",
-		"Buffer": "1:35",
-		"": ""
-	},
-	{
-		"Stand Id": "E10",
-		"Terminal": "E",
-		"Arrival Airline Code": "CX",
-		"Arrival Airline": "Cathay Pacific Airlines",
-		"Arrival Info": "CX812",
-		"Arrival Type": "Domestic",
-		"Departure Airline Code": "",
-		"Departure Airline": "",
-		"Departure Info": "NC6A",
-		"Departure Type": "Parking",
-		"Aircraft Type": "773",
-		"Color": "GREY",
-		"Scheduled Arrival DateTime": "2019-04-01T22:20:00",
-		"Scheduled Departure DateTime": "2019-04-02T01:50:00",
-		"Projected Arrival Time": "2019-04-01T22:20:00",
-		"Projected Departure Time": "2019-04-02T01:50:00",
-		"Arrival Status": "On Time",
-		"Departure Status": "On Time",
-		"Arrival Delay": "0",
-		"Departure Delay": "0",
-		"Buffer": "3:30",
-		"": ""
+		"Buffer": "01:05"
 	},
 	{
 		"Stand Id": "E12",
@@ -980,8 +779,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "9:19",
-		"": ""
+		"Buffer": "00:45"
 	},
 	{
 		"Stand Id": "E7",
@@ -1004,8 +802,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "7:50",
-		"": ""
+		"Buffer": "00:44"
 	},
 	{
 		"Stand Id": "E9",
@@ -1026,10 +823,9 @@ const SampleStandAssignment001 = [
 		"Projected Departure Time": "2019-04-02T08:15:00",
 		"Arrival Status": "Delay",
 		"Departure Status": "On Time",
-		"Arrival Delay": "-40",
+		"Arrival Delay": "-39.999999994179234",
 		"Departure Delay": "0",
-		"Buffer": "9:34",
-		"": ""
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "E7",
@@ -1052,32 +848,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
-	},
-	{
-		"Stand Id": "E11",
-		"Terminal": "E",
-		"Arrival Airline Code": "KE",
-		"Arrival Airline": "Korean Air",
-		"Arrival Info": "KE91",
-		"Arrival Type": "Domestic",
-		"Departure Airline Code": "",
-		"Departure Airline": "",
-		"Departure Info": "NC3A",
-		"Departure Type": "Parking",
-		"Aircraft Type": "789",
-		"Color": "GREY",
-		"Scheduled Arrival DateTime": "2019-04-02T10:50:00",
-		"Scheduled Departure DateTime": "2019-04-02T13:25:00",
-		"Projected Arrival Time": "2019-04-02T10:50:00",
-		"Projected Departure Time": "2019-04-02T13:25:00",
-		"Arrival Status": "On Time",
-		"Departure Status": "On Time",
-		"Arrival Delay": "0",
-		"Departure Delay": "0",
-		"Buffer": "2:35",
-		"": ""
+		"Buffer": "01:54"
 	},
 	{
 		"Stand Id": "E2",
@@ -1100,8 +871,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "04:44"
 	},
 	{
 		"Stand Id": "E12",
@@ -1124,8 +894,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "5:40",
-		"": ""
+		"Buffer": "05:49"
 	},
 	{
 		"Stand Id": "E4",
@@ -1148,8 +917,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:44",
-		"": ""
+		"Buffer": "02:20"
 	},
 	{
 		"Stand Id": "E6",
@@ -1172,8 +940,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "01:09"
 	},
 	{
 		"Stand Id": "E5",
@@ -1196,8 +963,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:34",
-		"": ""
+		"Buffer": "00:53"
 	},
 	{
 		"Stand Id": "E10",
@@ -1220,8 +986,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:00",
-		"": ""
+		"Buffer": "01:14"
 	},
 	{
 		"Stand Id": "E7",
@@ -1244,8 +1009,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:00",
-		"": ""
+		"Buffer": "00:43"
 	},
 	{
 		"Stand Id": "E9",
@@ -1268,8 +1032,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:40",
-		"": ""
+		"Buffer": "00:45"
 	},
 	{
 		"Stand Id": "E8",
@@ -1292,8 +1055,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:04",
-		"": ""
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "NC6A",
@@ -1316,8 +1078,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:00",
-		"": ""
+		"Buffer": "21:59"
 	},
 	{
 		"Stand Id": "E2",
@@ -1340,8 +1101,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:46",
-		"": ""
+		"Buffer": "03:23"
 	},
 	{
 		"Stand Id": "E6",
@@ -1364,8 +1124,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:34",
-		"": ""
+		"Buffer": "01:30"
 	},
 	{
 		"Stand Id": "NC21",
@@ -1388,8 +1147,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:04",
-		"": ""
+		"Buffer": "21:55"
 	},
 	{
 		"Stand Id": "E7",
@@ -1412,8 +1170,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:29",
-		"": ""
+		"Buffer": "01:09"
 	},
 	{
 		"Stand Id": "E10",
@@ -1436,8 +1193,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:45",
-		"": ""
+		"Buffer": "01:19"
 	},
 	{
 		"Stand Id": "E9",
@@ -1460,8 +1216,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:39",
-		"": ""
+		"Buffer": "01:40"
 	},
 	{
 		"Stand Id": "E3",
@@ -1484,8 +1239,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:15",
-		"": ""
+		"Buffer": "01:24"
 	},
 	{
 		"Stand Id": "E2",
@@ -1508,8 +1262,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:59",
-		"": ""
+		"Buffer": "01:05"
 	},
 	{
 		"Stand Id": "E1",
@@ -1532,8 +1285,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:15",
-		"": ""
+		"Buffer": "00:55"
 	},
 	{
 		"Stand Id": "E11",
@@ -1556,8 +1308,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:10",
-		"": ""
+		"Buffer": "01:02"
 	},
 	{
 		"Stand Id": "E6",
@@ -1580,8 +1331,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:44",
-		"": ""
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "E12",
@@ -1604,8 +1354,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:55",
-		"": ""
+		"Buffer": "00:29"
 	},
 	{
 		"Stand Id": "NC19",
@@ -1628,8 +1377,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "03:55"
 	},
 	{
 		"Stand Id": "E4",
@@ -1652,8 +1400,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:50",
-		"": ""
+		"Buffer": "00:10"
 	},
 	{
 		"Stand Id": "NC6A",
@@ -1676,8 +1423,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:59",
-		"": ""
+		"Buffer": "01:30"
 	},
 	{
 		"Stand Id": "E5",
@@ -1700,8 +1446,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:54",
-		"": ""
+		"Buffer": "00:45"
 	},
 	{
 		"Stand Id": "E10",
@@ -1724,8 +1469,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:45",
-		"": ""
+		"Buffer": "00:09"
 	},
 	{
 		"Stand Id": "NC8",
@@ -1748,8 +1492,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "9:50",
-		"": ""
+		"Buffer": "14:09"
 	},
 	{
 		"Stand Id": "E8",
@@ -1772,8 +1515,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:50",
-		"": ""
+		"Buffer": "00:59"
 	},
 	{
 		"Stand Id": "E3",
@@ -1796,8 +1538,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:35",
-		"": ""
+		"Buffer": "01:05"
 	},
 	{
 		"Stand Id": "E10",
@@ -1820,8 +1561,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:30",
-		"": ""
+		"Buffer": "00:14"
 	},
 	{
 		"Stand Id": "E12",
@@ -1844,8 +1584,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "9:19",
-		"": ""
+		"Buffer": "00:45"
 	},
 	{
 		"Stand Id": "E7",
@@ -1868,8 +1607,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "7:50",
-		"": ""
+		"Buffer": "00:44"
 	},
 	{
 		"Stand Id": "E9",
@@ -1892,8 +1630,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "9:34",
-		"": ""
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "E7",
@@ -1916,8 +1653,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "01:54"
 	},
 	{
 		"Stand Id": "E7",
@@ -1940,8 +1676,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:25",
-		"": ""
+		"Buffer": "01:30"
 	},
 	{
 		"Stand Id": "E2",
@@ -1964,8 +1699,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "04:44"
 	},
 	{
 		"Stand Id": "E12",
@@ -1988,8 +1722,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "5:40",
-		"": ""
+		"Buffer": "05:49"
 	},
 	{
 		"Stand Id": "E4",
@@ -2012,8 +1745,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:44",
-		"": ""
+		"Buffer": "02:20"
 	},
 	{
 		"Stand Id": "E1",
@@ -2036,8 +1768,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "00:34"
 	},
 	{
 		"Stand Id": "E6",
@@ -2060,8 +1791,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "01:09"
 	},
 	{
 		"Stand Id": "E5",
@@ -2084,8 +1814,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:34",
-		"": ""
+		"Buffer": "00:53"
 	},
 	{
 		"Stand Id": "E10",
@@ -2108,8 +1837,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:00",
-		"": ""
+		"Buffer": "01:14"
 	},
 	{
 		"Stand Id": "E7",
@@ -2132,8 +1860,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:00",
-		"": ""
+		"Buffer": "00:43"
 	},
 	{
 		"Stand Id": "E9",
@@ -2156,8 +1883,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:40",
-		"": ""
+		"Buffer": "00:45"
 	},
 	{
 		"Stand Id": "E11",
@@ -2180,8 +1906,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:00",
-		"": ""
+		"Buffer": "01:15"
 	},
 	{
 		"Stand Id": "NC6A",
@@ -2204,8 +1929,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:00",
-		"": ""
+		"Buffer": "18:30"
 	},
 	{
 		"Stand Id": "E2",
@@ -2228,8 +1952,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:46",
-		"": ""
+		"Buffer": "03:23"
 	},
 	{
 		"Stand Id": "E1",
@@ -2252,8 +1975,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:34",
-		"": ""
+		"Buffer": "01:30"
 	},
 	{
 		"Stand Id": "E6",
@@ -2276,8 +1998,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:34",
-		"": ""
+		"Buffer": "01:30"
 	},
 	{
 		"Stand Id": "E8",
@@ -2300,8 +2021,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:04",
-		"": ""
+		"Buffer": "00:24"
 	},
 	{
 		"Stand Id": "NC21",
@@ -2324,8 +2044,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:04",
-		"": ""
+		"Buffer": "21:55"
 	},
 	{
 		"Stand Id": "E7",
@@ -2348,8 +2067,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:29",
-		"": ""
+		"Buffer": "01:09"
 	},
 	{
 		"Stand Id": "E10",
@@ -2372,8 +2090,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:45",
-		"": ""
+		"Buffer": "01:19"
 	},
 	{
 		"Stand Id": "E9",
@@ -2396,8 +2113,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:39",
-		"": ""
+		"Buffer": "01:40"
 	},
 	{
 		"Stand Id": "E3",
@@ -2420,8 +2136,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:15",
-		"": ""
+		"Buffer": "01:24"
 	},
 	{
 		"Stand Id": "E2",
@@ -2444,8 +2159,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:59",
-		"": ""
+		"Buffer": "01:05"
 	},
 	{
 		"Stand Id": "E11",
@@ -2468,8 +2182,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:15",
-		"": ""
+		"Buffer": "00:34"
 	},
 	{
 		"Stand Id": "E6",
@@ -2492,8 +2205,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:44",
-		"": ""
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "E12",
@@ -2516,8 +2228,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:55",
-		"": ""
+		"Buffer": "00:29"
 	},
 	{
 		"Stand Id": "NC19",
@@ -2540,8 +2251,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "03:55"
 	},
 	{
 		"Stand Id": "E4",
@@ -2564,8 +2274,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:50",
-		"": ""
+		"Buffer": "00:10"
 	},
 	{
 		"Stand Id": "NC6A",
@@ -2588,8 +2297,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:59",
-		"": ""
+		"Buffer": "01:30"
 	},
 	{
 		"Stand Id": "E5",
@@ -2612,8 +2320,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:54",
-		"": ""
+		"Buffer": "00:45"
 	},
 	{
 		"Stand Id": "E10",
@@ -2636,8 +2343,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:45",
-		"": ""
+		"Buffer": "00:09"
 	},
 	{
 		"Stand Id": "E1",
@@ -2660,8 +2366,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:29",
-		"": ""
+		"Buffer": "01:11"
 	},
 	{
 		"Stand Id": "NC8",
@@ -2684,8 +2389,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "9:50",
-		"": ""
+		"Buffer": "14:09"
 	},
 	{
 		"Stand Id": "E8",
@@ -2708,8 +2412,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:50",
-		"": ""
+		"Buffer": "01:05"
 	},
 	{
 		"Stand Id": "E3",
@@ -2732,32 +2435,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:35",
-		"": ""
-	},
-	{
-		"Stand Id": "E10",
-		"Terminal": "E",
-		"Arrival Airline Code": "CX",
-		"Arrival Airline": "Cathay Pacific Airlines",
-		"Arrival Info": "CX812",
-		"Arrival Type": "Domestic",
-		"Departure Airline Code": "",
-		"Departure Airline": "",
-		"Departure Info": "NC6A",
-		"Departure Type": "Parking",
-		"Aircraft Type": "773",
-		"Color": "GREY",
-		"Scheduled Arrival DateTime": "2019-04-03T22:20:00",
-		"Scheduled Departure DateTime": "2019-04-04T01:50:00",
-		"Projected Arrival Time": "2019-04-03T22:20:00",
-		"Projected Departure Time": "2019-04-04T01:50:00",
-		"Arrival Status": "On Time",
-		"Departure Status": "On Time",
-		"Arrival Delay": "0",
-		"Departure Delay": "0",
-		"Buffer": "3:30",
-		"": ""
+		"Buffer": "01:05"
 	},
 	{
 		"Stand Id": "E12",
@@ -2780,8 +2458,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "9:19",
-		"": ""
+		"Buffer": "00:45"
 	},
 	{
 		"Stand Id": "E7",
@@ -2804,8 +2481,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "7:50",
-		"": ""
+		"Buffer": "00:44"
 	},
 	{
 		"Stand Id": "E9",
@@ -2828,8 +2504,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "9:34",
-		"": ""
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "E7",
@@ -2852,8 +2527,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:49",
-		"": ""
+		"Buffer": "01:54"
 	},
 	{
 		"Stand Id": "E2",
@@ -2876,8 +2550,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "04:44"
 	},
 	{
 		"Stand Id": "E12",
@@ -2900,8 +2573,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "5:40",
-		"": ""
+		"Buffer": "05:49"
 	},
 	{
 		"Stand Id": "E4",
@@ -2924,8 +2596,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:44",
-		"": ""
+		"Buffer": "02:20"
 	},
 	{
 		"Stand Id": "E6",
@@ -2948,8 +2619,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "01:09"
 	},
 	{
 		"Stand Id": "E5",
@@ -2972,32 +2642,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:34",
-		"": ""
-	},
-	{
-		"Stand Id": "E10",
-		"Terminal": "E",
-		"Arrival Airline Code": "LH",
-		"Arrival Airline": "Lufthansa",
-		"Arrival Info": "LH422",
-		"Arrival Type": "Domestic",
-		"Departure Airline Code": "",
-		"Departure Airline": "",
-		"Departure Info": "NC21",
-		"Departure Type": "Parking",
-		"Aircraft Type": "748",
-		"Color": "GREY",
-		"Scheduled Arrival DateTime": "2019-04-04T15:05:00",
-		"Scheduled Departure DateTime": "2019-04-04T17:05:00",
-		"Projected Arrival Time": "2019-04-04T15:05:00",
-		"Projected Departure Time": "2019-04-04T17:05:00",
-		"Arrival Status": "On Time",
-		"Departure Status": "On Time",
-		"Arrival Delay": "0",
-		"Departure Delay": "0",
-		"Buffer": "2:00",
-		"": ""
+		"Buffer": "00:53"
 	},
 	{
 		"Stand Id": "E7",
@@ -3020,8 +2665,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:00",
-		"": ""
+		"Buffer": "00:43"
 	},
 	{
 		"Stand Id": "E8",
@@ -3044,8 +2688,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:04",
-		"": ""
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "NC6A",
@@ -3068,8 +2711,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:00",
-		"": ""
+		"Buffer": "18:30"
 	},
 	{
 		"Stand Id": "E2",
@@ -3092,8 +2734,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:46",
-		"": ""
+		"Buffer": "03:23"
 	},
 	{
 		"Stand Id": "E6",
@@ -3116,8 +2757,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:34",
-		"": ""
+		"Buffer": "01:30"
 	},
 	{
 		"Stand Id": "NC21",
@@ -3140,8 +2780,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:04",
-		"": ""
+		"Buffer": "21:55"
 	},
 	{
 		"Stand Id": "E7",
@@ -3164,8 +2803,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:29",
-		"": ""
+		"Buffer": "01:09"
 	},
 	{
 		"Stand Id": "E10",
@@ -3188,8 +2826,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:45",
-		"": ""
+		"Buffer": "00:14"
 	},
 	{
 		"Stand Id": "E3",
@@ -3212,8 +2849,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:15",
-		"": ""
+		"Buffer": "01:24"
 	},
 	{
 		"Stand Id": "E2",
@@ -3236,8 +2872,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:59",
-		"": ""
+		"Buffer": "01:05"
 	},
 	{
 		"Stand Id": "E11",
@@ -3260,8 +2895,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:10",
-		"": ""
+		"Buffer": "01:02"
 	},
 	{
 		"Stand Id": "E6",
@@ -3284,8 +2918,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:44",
-		"": ""
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "E12",
@@ -3308,8 +2941,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:55",
-		"": ""
+		"Buffer": "00:29"
 	},
 	{
 		"Stand Id": "NC19",
@@ -3332,8 +2964,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "03:55"
 	},
 	{
 		"Stand Id": "E4",
@@ -3356,8 +2987,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:50",
-		"": ""
+		"Buffer": "00:10"
 	},
 	{
 		"Stand Id": "NC6A",
@@ -3380,32 +3010,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:59",
-		"": ""
-	},
-	{
-		"Stand Id": "E8",
-		"Terminal": "E",
-		"Arrival Airline Code": "AF",
-		"Arrival Airline": "Air France",
-		"Arrival Info": "AF322",
-		"Arrival Type": "Domestic",
-		"Departure Airline Code": "AF",
-		"Departure Airline": "Air France",
-		"Departure Info": "AF321",
-		"Departure Type": "Domestic",
-		"Aircraft Type": "772",
-		"Color": "ORANGE",
-		"Scheduled Arrival DateTime": "2019-04-04T20:15:00",
-		"Scheduled Departure DateTime": "2019-04-04T22:10:00",
-		"Projected Arrival Time": "2019-04-04T20:15:00",
-		"Projected Departure Time": "2019-04-04T22:10:00",
-		"Arrival Status": "On Time",
-		"Departure Status": "On Time",
-		"Arrival Delay": "0",
-		"Departure Delay": "0",
-		"Buffer": "1:54",
-		"": ""
+		"Buffer": "01:30"
 	},
 	{
 		"Stand Id": "E5",
@@ -3428,8 +3033,30 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:54",
-		"": ""
+		"Buffer": "00:45"
+	},
+	{
+		"Stand Id": "E8",
+		"Terminal": "E",
+		"Arrival Airline Code": "AF",
+		"Arrival Airline": "Air France",
+		"Arrival Info": "AF322",
+		"Arrival Type": "Domestic",
+		"Departure Airline Code": "AF",
+		"Departure Airline": "Air France",
+		"Departure Info": "AF321",
+		"Departure Type": "Domestic",
+		"Aircraft Type": "772",
+		"Color": "ORANGE",
+		"Scheduled Arrival DateTime": "2019-04-04T20:15:00",
+		"Scheduled Departure DateTime": "2019-04-04T22:10:00",
+		"Projected Arrival Time": "2019-04-04T20:15:00",
+		"Projected Departure Time": "2019-04-04T22:10:00",
+		"Arrival Status": "On Time",
+		"Departure Status": "On Time",
+		"Arrival Delay": "0",
+		"Departure Delay": "0",
+		"Buffer": "00:45"
 	},
 	{
 		"Stand Id": "E10",
@@ -3452,8 +3079,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:45",
-		"": ""
+		"Buffer": "00:09"
 	},
 	{
 		"Stand Id": "E1",
@@ -3476,8 +3102,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:29",
-		"": ""
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "NC8",
@@ -3500,8 +3125,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "9:50",
-		"": ""
+		"Buffer": "14:09"
 	},
 	{
 		"Stand Id": "E3",
@@ -3524,8 +3148,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:35",
-		"": ""
+		"Buffer": "01:05"
 	},
 	{
 		"Stand Id": "E10",
@@ -3548,8 +3171,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:30",
-		"": ""
+		"Buffer": "00:14"
 	},
 	{
 		"Stand Id": "E12",
@@ -3572,8 +3194,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "9:19",
-		"": ""
+		"Buffer": "00:45"
 	},
 	{
 		"Stand Id": "E7",
@@ -3596,8 +3217,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "7:50",
-		"": ""
+		"Buffer": "00:44"
 	},
 	{
 		"Stand Id": "E9",
@@ -3620,8 +3240,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "9:34",
-		"": ""
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "E7",
@@ -3644,8 +3263,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:49",
-		"": ""
+		"Buffer": "01:54"
 	},
 	{
 		"Stand Id": "E9",
@@ -3668,8 +3286,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:55",
-		"": ""
+		"Buffer": "02:15"
 	},
 	{
 		"Stand Id": "E2",
@@ -3692,8 +3309,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "04:44"
 	},
 	{
 		"Stand Id": "E12",
@@ -3716,8 +3332,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "5:40",
-		"": ""
+		"Buffer": "05:49"
 	},
 	{
 		"Stand Id": "E1",
@@ -3740,8 +3355,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:20",
-		"": ""
+		"Buffer": "05:52"
 	},
 	{
 		"Stand Id": "E4",
@@ -3764,8 +3378,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:44",
-		"": ""
+		"Buffer": "02:20"
 	},
 	{
 		"Stand Id": "E6",
@@ -3788,32 +3401,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
-	},
-	{
-		"Stand Id": "E7",
-		"Terminal": "E",
-		"Arrival Airline Code": "SK",
-		"Arrival Airline": "SK ",
-		"Arrival Info": "SK927",
-		"Arrival Type": "Domestic",
-		"Departure Airline Code": "SK",
-		"Departure Airline": "SK ",
-		"Departure Info": "SK928",
-		"Departure Type": "Domestic",
-		"Aircraft Type": "343",
-		"Color": "ORANGE",
-		"Scheduled Arrival DateTime": "2019-04-05T14:55:00",
-		"Scheduled Departure DateTime": "2019-04-05T17:30:00",
-		"Projected Arrival Time": "2019-04-05T14:55:00",
-		"Projected Departure Time": "2019-04-05T17:30:00",
-		"Arrival Status": "On Time",
-		"Departure Status": "On Time",
-		"Arrival Delay": "0",
-		"Departure Delay": "0",
-		"Buffer": "2:34",
-		"": ""
+		"Buffer": "01:09"
 	},
 	{
 		"Stand Id": "E5",
@@ -3836,8 +3424,30 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:34",
-		"": ""
+		"Buffer": "00:53"
+	},
+	{
+		"Stand Id": "E7",
+		"Terminal": "E",
+		"Arrival Airline Code": "SK",
+		"Arrival Airline": "SK ",
+		"Arrival Info": "SK927",
+		"Arrival Type": "Domestic",
+		"Departure Airline Code": "SK",
+		"Departure Airline": "SK ",
+		"Departure Info": "SK928",
+		"Departure Type": "Domestic",
+		"Aircraft Type": "343",
+		"Color": "ORANGE",
+		"Scheduled Arrival DateTime": "2019-04-05T14:55:00",
+		"Scheduled Departure DateTime": "2019-04-05T17:30:00",
+		"Projected Arrival Time": "2019-04-05T14:55:00",
+		"Projected Departure Time": "2019-04-05T17:30:00",
+		"Arrival Status": "On Time",
+		"Departure Status": "On Time",
+		"Arrival Delay": "0",
+		"Departure Delay": "0",
+		"Buffer": "01:20"
 	},
 	{
 		"Stand Id": "E10",
@@ -3860,8 +3470,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:00",
-		"": ""
+		"Buffer": "01:14"
 	},
 	{
 		"Stand Id": "E8",
@@ -3884,8 +3493,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:40",
-		"": ""
+		"Buffer": "00:45"
 	},
 	{
 		"Stand Id": "E11",
@@ -3908,8 +3516,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:04",
-		"": ""
+		"Buffer": "00:40"
 	},
 	{
 		"Stand Id": "NC6A",
@@ -3932,8 +3539,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:00",
-		"": ""
+		"Buffer": "18:30"
 	},
 	{
 		"Stand Id": "E2",
@@ -3956,8 +3562,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:46",
-		"": ""
+		"Buffer": "03:23"
 	},
 	{
 		"Stand Id": "E6",
@@ -3980,8 +3585,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:34",
-		"": ""
+		"Buffer": "01:30"
 	},
 	{
 		"Stand Id": "NC21",
@@ -4004,8 +3608,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:04",
-		"": ""
+		"Buffer": "21:55"
 	},
 	{
 		"Stand Id": "E7",
@@ -4028,8 +3631,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:29",
-		"": ""
+		"Buffer": "00:50"
 	},
 	{
 		"Stand Id": "E10",
@@ -4052,8 +3654,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:45",
-		"": ""
+		"Buffer": "01:19"
 	},
 	{
 		"Stand Id": "E11",
@@ -4076,8 +3677,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:09",
-		"": ""
+		"Buffer": "00:30"
 	},
 	{
 		"Stand Id": "E9",
@@ -4100,8 +3700,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:39",
-		"": ""
+		"Buffer": "03:05"
 	},
 	{
 		"Stand Id": "E3",
@@ -4124,8 +3723,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:15",
-		"": ""
+		"Buffer": "01:24"
 	},
 	{
 		"Stand Id": "E2",
@@ -4148,8 +3746,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:59",
-		"": ""
+		"Buffer": "01:05"
 	},
 	{
 		"Stand Id": "E6",
@@ -4172,8 +3769,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:44",
-		"": ""
+		"Buffer": "03:24"
 	},
 	{
 		"Stand Id": "E12",
@@ -4196,8 +3792,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:55",
-		"": ""
+		"Buffer": "00:29"
 	},
 	{
 		"Stand Id": "E8",
@@ -4220,8 +3815,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "NC19",
@@ -4244,8 +3838,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "03:55"
 	},
 	{
 		"Stand Id": "E4",
@@ -4268,8 +3861,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:50",
-		"": ""
+		"Buffer": "00:10"
 	},
 	{
 		"Stand Id": "NC6A",
@@ -4292,8 +3884,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:59",
-		"": ""
+		"Buffer": "01:30"
 	},
 	{
 		"Stand Id": "E5",
@@ -4316,8 +3907,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:54",
-		"": ""
+		"Buffer": "00:45"
 	},
 	{
 		"Stand Id": "E10",
@@ -4340,8 +3930,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:45",
-		"": ""
+		"Buffer": "00:09"
 	},
 	{
 		"Stand Id": "E1",
@@ -4364,8 +3953,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:29",
-		"": ""
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "NC8",
@@ -4388,8 +3976,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "9:50",
-		"": ""
+		"Buffer": "14:09"
 	},
 	{
 		"Stand Id": "E3",
@@ -4412,8 +3999,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:35",
-		"": ""
+		"Buffer": "01:05"
 	},
 	{
 		"Stand Id": "E10",
@@ -4436,8 +4022,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:30",
-		"": ""
+		"Buffer": "00:14"
 	},
 	{
 		"Stand Id": "E12",
@@ -4460,8 +4045,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "9:19",
-		"": ""
+		"Buffer": "00:45"
 	},
 	{
 		"Stand Id": "E7",
@@ -4484,32 +4068,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "9:20",
-		"": ""
-	},
-	{
-		"Stand Id": "E8",
-		"Terminal": "E",
-		"Arrival Airline Code": "VS",
-		"Arrival Airline": "Virgin Atlantic",
-		"Arrival Info": "VS157",
-		"Arrival Type": "Domestic",
-		"Departure Airline Code": "VS",
-		"Departure Airline": "Virgin Atlantic",
-		"Departure Info": "VS158",
-		"Departure Type": "Domestic",
-		"Aircraft Type": "333",
-		"Color": "VIOLET",
-		"Scheduled Arrival DateTime": "2019-04-05T22:40:00",
-		"Scheduled Departure DateTime": "2019-04-06T08:15:00",
-		"Projected Arrival Time": "2019-04-05T22:40:00",
-		"Projected Departure Time": "2019-04-06T08:15:00",
-		"Arrival Status": "On Time",
-		"Departure Status": "On Time",
-		"Arrival Delay": "0",
-		"Departure Delay": "0",
-		"Buffer": "9:34",
-		"": ""
+		"Buffer": "00:44"
 	},
 	{
 		"Stand Id": "E9",
@@ -4532,8 +4091,30 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "9:34",
-		"": ""
+		"Buffer": "00:20"
+	},
+	{
+		"Stand Id": "E8",
+		"Terminal": "E",
+		"Arrival Airline Code": "VS",
+		"Arrival Airline": "Virgin Atlantic",
+		"Arrival Info": "VS157",
+		"Arrival Type": "Domestic",
+		"Departure Airline Code": "VS",
+		"Departure Airline": "Virgin Atlantic",
+		"Departure Info": "VS158",
+		"Departure Type": "Domestic",
+		"Aircraft Type": "333",
+		"Color": "VIOLET",
+		"Scheduled Arrival DateTime": "2019-04-05T23:40:00",
+		"Scheduled Departure DateTime": "2019-04-06T08:15:00",
+		"Projected Arrival Time": "2019-04-05T23:40:00",
+		"Projected Departure Time": "2019-04-06T08:15:00",
+		"Arrival Status": "On Time",
+		"Departure Status": "On Time",
+		"Arrival Delay": "0",
+		"Departure Delay": "0",
+		"Buffer": "00:34"
 	},
 	{
 		"Stand Id": "E9",
@@ -4556,8 +4137,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "00:24"
 	},
 	{
 		"Stand Id": "E2",
@@ -4580,8 +4160,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "04:44"
 	},
 	{
 		"Stand Id": "E12",
@@ -4604,8 +4183,30 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "5:40",
-		"": ""
+		"Buffer": "05:49"
+	},
+	{
+		"Stand Id": "E4",
+		"Terminal": "E",
+		"Arrival Airline Code": "IB",
+		"Arrival Airline": "Iberia",
+		"Arrival Info": "IB6165",
+		"Arrival Type": "Domestic",
+		"Departure Airline Code": "IB",
+		"Departure Airline": "Iberia",
+		"Departure Info": "IB6166",
+		"Departure Type": "Domestic",
+		"Aircraft Type": "330",
+		"Color": "LIGHT PINK",
+		"Scheduled Arrival DateTime": "2019-04-06T14:35:00",
+		"Scheduled Departure DateTime": "2019-04-06T17:20:00",
+		"Projected Arrival Time": "2019-04-06T14:35:00",
+		"Projected Departure Time": "2019-04-06T17:20:00",
+		"Arrival Status": "On Time",
+		"Departure Status": "On Time",
+		"Arrival Delay": "0",
+		"Departure Delay": "0",
+		"Buffer": "02:20"
 	},
 	{
 		"Stand Id": "E7",
@@ -4628,8 +4229,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:59",
-		"": ""
+		"Buffer": "00:08"
 	},
 	{
 		"Stand Id": "E8",
@@ -4652,32 +4252,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:44",
-		"": ""
-	},
-	{
-		"Stand Id": "E4",
-		"Terminal": "E",
-		"Arrival Airline Code": "IB",
-		"Arrival Airline": "Iberia",
-		"Arrival Info": "IB6165",
-		"Arrival Type": "Domestic",
-		"Departure Airline Code": "IB",
-		"Departure Airline": "Iberia",
-		"Departure Info": "IB6166",
-		"Departure Type": "Domestic",
-		"Aircraft Type": "330",
-		"Color": "LIGHT PINK",
-		"Scheduled Arrival DateTime": "2019-04-06T14:35:00",
-		"Scheduled Departure DateTime": "2019-04-06T17:20:00",
-		"Projected Arrival Time": "2019-04-06T14:35:00",
-		"Projected Departure Time": "2019-04-06T17:20:00",
-		"Arrival Status": "On Time",
-		"Departure Status": "On Time",
-		"Arrival Delay": "0",
-		"Departure Delay": "0",
-		"Buffer": "2:44",
-		"": ""
+		"Buffer": "01:00"
 	},
 	{
 		"Stand Id": "E6",
@@ -4700,8 +4275,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "01:09"
 	},
 	{
 		"Stand Id": "E5",
@@ -4724,8 +4298,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:34",
-		"": ""
+		"Buffer": "00:53"
 	},
 	{
 		"Stand Id": "E10",
@@ -4748,8 +4321,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:00",
-		"": ""
+		"Buffer": "01:14"
 	},
 	{
 		"Stand Id": "E9",
@@ -4772,8 +4344,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:04",
-		"": ""
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "E1",
@@ -4796,8 +4367,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "02:07"
 	},
 	{
 		"Stand Id": "NC6A",
@@ -4820,8 +4390,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:00",
-		"": ""
+		"Buffer": "18:30"
 	},
 	{
 		"Stand Id": "E2",
@@ -4844,8 +4413,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:46",
-		"": ""
+		"Buffer": "03:23"
 	},
 	{
 		"Stand Id": "E6",
@@ -4868,8 +4436,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:34",
-		"": ""
+		"Buffer": "01:30"
 	},
 	{
 		"Stand Id": "E8",
@@ -4892,8 +4459,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:04",
-		"": ""
+		"Buffer": "00:30"
 	},
 	{
 		"Stand Id": "NC21",
@@ -4916,8 +4482,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:04",
-		"": ""
+		"Buffer": "21:55"
 	},
 	{
 		"Stand Id": "E7",
@@ -4940,8 +4505,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:29",
-		"": ""
+		"Buffer": "00:24"
 	},
 	{
 		"Stand Id": "E10",
@@ -4964,8 +4528,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:45",
-		"": ""
+		"Buffer": "01:19"
 	},
 	{
 		"Stand Id": "E9",
@@ -4988,8 +4551,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:39",
-		"": ""
+		"Buffer": "00:40"
 	},
 	{
 		"Stand Id": "E3",
@@ -5012,8 +4574,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:15",
-		"": ""
+		"Buffer": "01:24"
 	},
 	{
 		"Stand Id": "E2",
@@ -5036,8 +4597,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:59",
-		"": ""
+		"Buffer": "01:05"
 	},
 	{
 		"Stand Id": "E11",
@@ -5060,8 +4620,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:10",
-		"": ""
+		"Buffer": "01:44"
 	},
 	{
 		"Stand Id": "E6",
@@ -5084,8 +4643,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:44",
-		"": ""
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "E12",
@@ -5108,8 +4666,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:55",
-		"": ""
+		"Buffer": "00:29"
 	},
 	{
 		"Stand Id": "NC19",
@@ -5132,8 +4689,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "03:55"
 	},
 	{
 		"Stand Id": "E4",
@@ -5156,8 +4712,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:50",
-		"": ""
+		"Buffer": "00:10"
 	},
 	{
 		"Stand Id": "NC6A",
@@ -5180,8 +4735,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:59",
-		"": ""
+		"Buffer": "01:30"
 	},
 	{
 		"Stand Id": "E5",
@@ -5204,8 +4758,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:54",
-		"": ""
+		"Buffer": "00:45"
 	},
 	{
 		"Stand Id": "E10",
@@ -5228,8 +4781,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:45",
-		"": ""
+		"Buffer": "00:09"
 	},
 	{
 		"Stand Id": "E1",
@@ -5252,8 +4804,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:29",
-		"": ""
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "NC8",
@@ -5276,8 +4827,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "9:50",
-		"": ""
+		"Buffer": "14:09"
 	},
 	{
 		"Stand Id": "E8",
@@ -5300,8 +4850,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:50",
-		"": ""
+		"Buffer": "01:05"
 	},
 	{
 		"Stand Id": "E7",
@@ -5324,8 +4873,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:25",
-		"": ""
+		"Buffer": "00:10"
 	},
 	{
 		"Stand Id": "E3",
@@ -5348,8 +4896,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:35",
-		"": ""
+		"Buffer": "01:05"
 	},
 	{
 		"Stand Id": "E10",
@@ -5372,8 +4919,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:30",
-		"": ""
+		"Buffer": "00:14"
 	},
 	{
 		"Stand Id": "E12",
@@ -5396,8 +4942,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "9:19",
-		"": ""
+		"Buffer": "00:45"
 	},
 	{
 		"Stand Id": "E7",
@@ -5420,8 +4965,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "10:50",
-		"": ""
+		"Buffer": "00:08"
 	},
 	{
 		"Stand Id": "E9",
@@ -5444,8 +4988,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "9:34",
-		"": ""
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "E7",
@@ -5468,8 +5011,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:49",
-		"": ""
+		"Buffer": "01:05"
 	},
 	{
 		"Stand Id": "E9",
@@ -5492,8 +5034,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:00",
-		"": ""
+		"Buffer": "02:19"
 	},
 	{
 		"Stand Id": "E2",
@@ -5516,8 +5057,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "04:44"
 	},
 	{
 		"Stand Id": "E12",
@@ -5540,8 +5080,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "5:40",
-		"": ""
+		"Buffer": "05:49"
 	},
 	{
 		"Stand Id": "E1",
@@ -5564,8 +5103,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:20",
-		"": ""
+		"Buffer": "06:09"
 	},
 	{
 		"Stand Id": "E4",
@@ -5588,8 +5126,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:44",
-		"": ""
+		"Buffer": "02:20"
 	},
 	{
 		"Stand Id": "E6",
@@ -5612,8 +5149,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "01:09"
 	},
 	{
 		"Stand Id": "E5",
@@ -5636,8 +5172,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:34",
-		"": ""
+		"Buffer": "00:53"
 	},
 	{
 		"Stand Id": "E10",
@@ -5660,8 +5195,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:00",
-		"": ""
+		"Buffer": "01:14"
 	},
 	{
 		"Stand Id": "E7",
@@ -5684,8 +5218,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:00",
-		"": ""
+		"Buffer": "00:43"
 	},
 	{
 		"Stand Id": "E9",
@@ -5708,8 +5241,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:40",
-		"": ""
+		"Buffer": "00:45"
 	},
 	{
 		"Stand Id": "E11",
@@ -5732,8 +5264,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:04",
-		"": ""
+		"Buffer": "00:40"
 	},
 	{
 		"Stand Id": "NC6A",
@@ -5756,8 +5287,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:00",
-		"": ""
+		"Buffer": "18:30"
 	},
 	{
 		"Stand Id": "E1",
@@ -5780,8 +5310,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "01:20"
 	},
 	{
 		"Stand Id": "E2",
@@ -5804,8 +5333,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:46",
-		"": ""
+		"Buffer": "03:23"
 	},
 	{
 		"Stand Id": "E1",
@@ -5828,8 +5356,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:34",
-		"": ""
+		"Buffer": "00:05"
 	},
 	{
 		"Stand Id": "E6",
@@ -5852,8 +5379,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:34",
-		"": ""
+		"Buffer": "01:30"
 	},
 	{
 		"Stand Id": "NC21",
@@ -5876,8 +5402,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:04",
-		"": ""
+		"Buffer": "21:55"
 	},
 	{
 		"Stand Id": "E7",
@@ -5900,8 +5425,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:29",
-		"": ""
+		"Buffer": "01:09"
 	},
 	{
 		"Stand Id": "E10",
@@ -5924,8 +5448,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:45",
-		"": ""
+		"Buffer": "01:19"
 	},
 	{
 		"Stand Id": "E8",
@@ -5948,8 +5471,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:09",
-		"": ""
+		"Buffer": "01:05"
 	},
 	{
 		"Stand Id": "E9",
@@ -5972,8 +5494,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:39",
-		"": ""
+		"Buffer": "00:26"
 	},
 	{
 		"Stand Id": "E3",
@@ -5996,8 +5517,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:15",
-		"": ""
+		"Buffer": "01:24"
 	},
 	{
 		"Stand Id": "E2",
@@ -6020,8 +5540,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:59",
-		"": ""
+		"Buffer": "01:05"
 	},
 	{
 		"Stand Id": "E11",
@@ -6044,8 +5563,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:10",
-		"": ""
+		"Buffer": "01:09"
 	},
 	{
 		"Stand Id": "E6",
@@ -6068,8 +5586,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:44",
-		"": ""
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "E12",
@@ -6092,8 +5609,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:55",
-		"": ""
+		"Buffer": "00:29"
 	},
 	{
 		"Stand Id": "NC19",
@@ -6116,8 +5632,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "03:55"
 	},
 	{
 		"Stand Id": "E4",
@@ -6140,8 +5655,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:50",
-		"": ""
+		"Buffer": "00:10"
 	},
 	{
 		"Stand Id": "NC6A",
@@ -6164,8 +5678,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:59",
-		"": ""
+		"Buffer": "01:30"
 	},
 	{
 		"Stand Id": "E5",
@@ -6188,8 +5701,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:54",
-		"": ""
+		"Buffer": "00:45"
 	},
 	{
 		"Stand Id": "E10",
@@ -6212,8 +5724,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:45",
-		"": ""
+		"Buffer": "00:09"
 	},
 	{
 		"Stand Id": "E1",
@@ -6236,8 +5747,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:29",
-		"": ""
+		"Buffer": "01:11"
 	},
 	{
 		"Stand Id": "E8",
@@ -6260,8 +5770,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:50",
-		"": ""
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "E3",
@@ -6284,8 +5793,30 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:35",
-		"": ""
+		"Buffer": "01:05"
+	},
+	{
+		"Stand Id": "E10",
+		"Terminal": "E",
+		"Arrival Airline Code": "CX",
+		"Arrival Airline": "Cathay Pacific Airlines",
+		"Arrival Info": "CX812",
+		"Arrival Type": "Domestic",
+		"Departure Airline Code": "",
+		"Departure Airline": "",
+		"Departure Info": "NC3A",
+		"Departure Type": "Parking",
+		"Aircraft Type": "773",
+		"Color": "GREY",
+		"Scheduled Arrival DateTime": "2019-03-31T22:20:00",
+		"Scheduled Departure DateTime": "2019-04-01T01:50:00",
+		"Projected Arrival Time": "2019-03-31T22:20:00",
+		"Projected Departure Time": "2019-04-01T01:50:00",
+		"Arrival Status": "On Time",
+		"Departure Status": "On Time",
+		"Arrival Delay": "0",
+		"Departure Delay": "0",
+		"Buffer": "22:19"
 	},
 	{
 		"Stand Id": "E8",
@@ -6308,8 +5839,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "08:40"
 	},
 	{
 		"Stand Id": "E11",
@@ -6332,8 +5862,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:24",
-		"": ""
+		"Buffer": "13:50"
 	},
 	{
 		"Stand Id": "E9",
@@ -6356,8 +5885,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "00:45"
 	},
 	{
 		"Stand Id": "E5",
@@ -6380,8 +5908,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "00:45"
 	},
 	{
 		"Stand Id": "E4",
@@ -6404,8 +5931,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:14",
-		"": ""
+		"Buffer": "01:10"
 	},
 	{
 		"Stand Id": "E1",
@@ -6428,8 +5954,30 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "01:26"
+	},
+	{
+		"Stand Id": "E10",
+		"Terminal": "E",
+		"Arrival Airline Code": "CX",
+		"Arrival Airline": "Cathay Pacific Airlines",
+		"Arrival Info": "CX812",
+		"Arrival Type": "Domestic",
+		"Departure Airline Code": "",
+		"Departure Airline": "",
+		"Departure Info": "NC6A",
+		"Departure Type": "Parking",
+		"Aircraft Type": "773",
+		"Color": "GREY",
+		"Scheduled Arrival DateTime": "2019-04-01T22:20:00",
+		"Scheduled Departure DateTime": "2019-04-02T01:50:00",
+		"Projected Arrival Time": "2019-04-01T22:20:00",
+		"Projected Departure Time": "2019-04-02T01:50:00",
+		"Arrival Status": "On Time",
+		"Departure Status": "On Time",
+		"Arrival Delay": "0",
+		"Departure Delay": "0",
+		"Buffer": "00:14"
 	},
 	{
 		"Stand Id": "E10",
@@ -6452,8 +6000,30 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "03:39"
+	},
+	{
+		"Stand Id": "E11",
+		"Terminal": "E",
+		"Arrival Airline Code": "KE",
+		"Arrival Airline": "Korean Air",
+		"Arrival Info": "KE91",
+		"Arrival Type": "Domestic",
+		"Departure Airline Code": "",
+		"Departure Airline": "",
+		"Departure Info": "NC3A",
+		"Departure Type": "Parking",
+		"Aircraft Type": "789",
+		"Color": "GREY",
+		"Scheduled Arrival DateTime": "2019-04-02T10:50:00",
+		"Scheduled Departure DateTime": "2019-04-02T13:25:00",
+		"Projected Arrival Time": "2019-04-02T10:50:00",
+		"Projected Departure Time": "2019-04-02T13:25:00",
+		"Arrival Status": "On Time",
+		"Departure Status": "On Time",
+		"Arrival Delay": "0",
+		"Departure Delay": "0",
+		"Buffer": "11:39"
 	},
 	{
 		"Stand Id": "E11",
@@ -6476,8 +6046,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:24",
-		"": ""
+		"Buffer": "00:24"
 	},
 	{
 		"Stand Id": "E8",
@@ -6500,8 +6069,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "00:45"
 	},
 	{
 		"Stand Id": "E1",
@@ -6524,8 +6092,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "01:51"
 	},
 	{
 		"Stand Id": "E5",
@@ -6548,8 +6115,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "00:45"
 	},
 	{
 		"Stand Id": "E4",
@@ -6572,8 +6138,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:14",
-		"": ""
+		"Buffer": "01:10"
 	},
 	{
 		"Stand Id": "E8",
@@ -6596,8 +6161,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "01:15"
 	},
 	{
 		"Stand Id": "E8",
@@ -6620,8 +6184,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "09:49"
 	},
 	{
 		"Stand Id": "E11",
@@ -6644,8 +6207,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:24",
-		"": ""
+		"Buffer": "14:39"
 	},
 	{
 		"Stand Id": "E8",
@@ -6668,8 +6230,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "00:45"
 	},
 	{
 		"Stand Id": "E5",
@@ -6692,8 +6253,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "00:45"
 	},
 	{
 		"Stand Id": "E4",
@@ -6716,8 +6276,30 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:14",
-		"": ""
+		"Buffer": "01:10"
+	},
+	{
+		"Stand Id": "E10",
+		"Terminal": "E",
+		"Arrival Airline Code": "CX",
+		"Arrival Airline": "Cathay Pacific Airlines",
+		"Arrival Info": "CX812",
+		"Arrival Type": "Domestic",
+		"Departure Airline Code": "",
+		"Departure Airline": "",
+		"Departure Info": "NC6A",
+		"Departure Type": "Parking",
+		"Aircraft Type": "773",
+		"Color": "GREY",
+		"Scheduled Arrival DateTime": "2019-04-03T22:20:00",
+		"Scheduled Departure DateTime": "2019-04-04T01:50:00",
+		"Projected Arrival Time": "2019-04-03T22:20:00",
+		"Projected Departure Time": "2019-04-04T01:50:00",
+		"Arrival Status": "On Time",
+		"Departure Status": "On Time",
+		"Arrival Delay": "0",
+		"Departure Delay": "0",
+		"Buffer": "00:14"
 	},
 	{
 		"Stand Id": "E10",
@@ -6740,8 +6322,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "03:39"
 	},
 	{
 		"Stand Id": "E8",
@@ -6764,8 +6345,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "09:49"
 	},
 	{
 		"Stand Id": "E11",
@@ -6788,8 +6368,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:24",
-		"": ""
+		"Buffer": "14:39"
 	},
 	{
 		"Stand Id": "E1",
@@ -6812,8 +6391,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:55",
-		"": ""
+		"Buffer": "05:49"
 	},
 	{
 		"Stand Id": "E8",
@@ -6836,8 +6414,30 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "00:45"
+	},
+	{
+		"Stand Id": "E10",
+		"Terminal": "E",
+		"Arrival Airline Code": "LH",
+		"Arrival Airline": "Lufthansa",
+		"Arrival Info": "LH422",
+		"Arrival Type": "Domestic",
+		"Departure Airline Code": "",
+		"Departure Airline": "",
+		"Departure Info": "NC21",
+		"Departure Type": "Parking",
+		"Aircraft Type": "748",
+		"Color": "GREY",
+		"Scheduled Arrival DateTime": "2019-04-04T15:05:00",
+		"Scheduled Departure DateTime": "2019-04-04T17:05:00",
+		"Projected Arrival Time": "2019-04-04T15:05:00",
+		"Projected Departure Time": "2019-04-04T17:05:00",
+		"Arrival Status": "On Time",
+		"Departure Status": "On Time",
+		"Arrival Delay": "0",
+		"Departure Delay": "0",
+		"Buffer": "01:14"
 	},
 	{
 		"Stand Id": "E10",
@@ -6860,32 +6460,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
-	},
-	{
-		"Stand Id": "E8",
-		"Terminal": "E",
-		"Arrival Airline Code": "JL",
-		"Arrival Airline": "Japan Airlines",
-		"Arrival Info": "JL8",
-		"Arrival Type": "Domestic",
-		"Departure Airline Code": "",
-		"Departure Airline": "",
-		"Departure Info": "NC20",
-		"Departure Type": "Parking",
-		"Aircraft Type": "789",
-		"Color": "GREY",
-		"Scheduled Arrival DateTime": "2019-04-04T18:15:00",
-		"Scheduled Departure DateTime": "2019-04-04T19:30:00",
-		"Projected Arrival Time": "2019-04-04T18:15:00",
-		"Projected Departure Time": "2019-04-04T19:30:00",
-		"Arrival Status": "On Time",
-		"Departure Status": "On Time",
-		"Arrival Delay": "0",
-		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "E5",
@@ -6908,8 +6483,30 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "00:45"
+	},
+	{
+		"Stand Id": "E8",
+		"Terminal": "E",
+		"Arrival Airline Code": "JL",
+		"Arrival Airline": "Japan Airlines",
+		"Arrival Info": "JL8",
+		"Arrival Type": "Domestic",
+		"Departure Airline Code": "",
+		"Departure Airline": "",
+		"Departure Info": "NC20",
+		"Departure Type": "Parking",
+		"Aircraft Type": "789",
+		"Color": "GREY",
+		"Scheduled Arrival DateTime": "2019-04-04T18:15:00",
+		"Scheduled Departure DateTime": "2019-04-04T19:30:00",
+		"Projected Arrival Time": "2019-04-04T18:15:00",
+		"Projected Departure Time": "2019-04-04T19:30:00",
+		"Arrival Status": "On Time",
+		"Departure Status": "On Time",
+		"Arrival Delay": "0",
+		"Departure Delay": "0",
+		"Buffer": "00:14"
 	},
 	{
 		"Stand Id": "E4",
@@ -6932,8 +6529,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:14",
-		"": ""
+		"Buffer": "01:10"
 	},
 	{
 		"Stand Id": "E9",
@@ -6956,8 +6552,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:14",
-		"": ""
+		"Buffer": "01:15"
 	},
 	{
 		"Stand Id": "E1",
@@ -6980,8 +6575,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "01:00"
 	},
 	{
 		"Stand Id": "E11",
@@ -7004,8 +6598,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:24",
-		"": ""
+		"Buffer": "14:39"
 	},
 	{
 		"Stand Id": "E9",
@@ -7028,32 +6621,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
-	},
-	{
-		"Stand Id": "E8",
-		"Terminal": "E",
-		"Arrival Airline Code": "JL",
-		"Arrival Airline": "Japan Airlines",
-		"Arrival Info": "JL8",
-		"Arrival Type": "Domestic",
-		"Departure Airline Code": "",
-		"Departure Airline": "",
-		"Departure Info": "NC20",
-		"Departure Type": "Parking",
-		"Aircraft Type": "789",
-		"Color": "GREY",
-		"Scheduled Arrival DateTime": "2019-04-05T18:15:00",
-		"Scheduled Departure DateTime": "2019-04-05T19:30:00",
-		"Projected Arrival Time": "2019-04-05T18:15:00",
-		"Projected Departure Time": "2019-04-05T19:30:00",
-		"Arrival Status": "On Time",
-		"Departure Status": "On Time",
-		"Arrival Delay": "0",
-		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "00:54"
 	},
 	{
 		"Stand Id": "E5",
@@ -7076,8 +6644,30 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "00:45"
+	},
+	{
+		"Stand Id": "E8",
+		"Terminal": "E",
+		"Arrival Airline Code": "JL",
+		"Arrival Airline": "Japan Airlines",
+		"Arrival Info": "JL8",
+		"Arrival Type": "Domestic",
+		"Departure Airline Code": "",
+		"Departure Airline": "",
+		"Departure Info": "NC20",
+		"Departure Type": "Parking",
+		"Aircraft Type": "789",
+		"Color": "GREY",
+		"Scheduled Arrival DateTime": "2019-04-05T18:15:00",
+		"Scheduled Departure DateTime": "2019-04-05T19:30:00",
+		"Projected Arrival Time": "2019-04-05T18:15:00",
+		"Projected Departure Time": "2019-04-05T19:30:00",
+		"Arrival Status": "On Time",
+		"Departure Status": "On Time",
+		"Arrival Delay": "0",
+		"Departure Delay": "0",
+		"Buffer": "01:14"
 	},
 	{
 		"Stand Id": "E4",
@@ -7100,8 +6690,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:14",
-		"": ""
+		"Buffer": "01:10"
 	},
 	{
 		"Stand Id": "E1",
@@ -7124,8 +6713,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "01:00"
 	},
 	{
 		"Stand Id": "E11",
@@ -7148,8 +6736,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "09:29"
 	},
 	{
 		"Stand Id": "E11",
@@ -7172,8 +6759,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:24",
-		"": ""
+		"Buffer": "03:55"
 	},
 	{
 		"Stand Id": "E9",
@@ -7196,8 +6782,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "00:39"
 	},
 	{
 		"Stand Id": "E5",
@@ -7220,8 +6805,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "00:45"
 	},
 	{
 		"Stand Id": "E4",
@@ -7244,8 +6828,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:14",
-		"": ""
+		"Buffer": "01:10"
 	},
 	{
 		"Stand Id": "E1",
@@ -7268,8 +6851,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "01:00"
 	},
 	{
 		"Stand Id": "E8",
@@ -7292,8 +6874,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "06:39"
 	},
 	{
 		"Stand Id": "E8",
@@ -7316,8 +6897,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "01:54"
 	},
 	{
 		"Stand Id": "E11",
@@ -7340,8 +6920,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:24",
-		"": ""
+		"Buffer": "14:39"
 	},
 	{
 		"Stand Id": "E8",
@@ -7364,8 +6943,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "00:45"
 	},
 	{
 		"Stand Id": "E5",
@@ -7388,8 +6966,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "00:45"
 	},
 	{
 		"Stand Id": "E4",
@@ -7412,8 +6989,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:14",
-		"": ""
+		"Buffer": "01:10"
 	},
 	{
 		"Stand Id": "E1",
@@ -7436,8 +7012,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "07:09"
 	},
 	{
 		"Stand Id": "E2",
@@ -7460,8 +7035,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "07:26"
 	},
 	{
 		"Stand Id": "E9",
@@ -7484,8 +7058,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:19",
-		"": ""
+		"Buffer": "01:53"
 	},
 	{
 		"Stand Id": "E6",
@@ -7508,8 +7081,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:19",
-		"": ""
+		"Buffer": "12:20"
 	},
 	{
 		"Stand Id": "E5",
@@ -7532,8 +7104,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:59",
-		"": ""
+		"Buffer": "01:27"
 	},
 	{
 		"Stand Id": "E7",
@@ -7556,8 +7127,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "01:51"
 	},
 	{
 		"Stand Id": "E3",
@@ -7580,8 +7150,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:59",
-		"": ""
+		"Buffer": "13:15"
 	},
 	{
 		"Stand Id": "E8",
@@ -7604,8 +7173,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "03:24"
 	},
 	{
 		"Stand Id": "E3",
@@ -7628,8 +7196,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "00:33"
 	},
 	{
 		"Stand Id": "E11",
@@ -7652,8 +7219,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:19",
-		"": ""
+		"Buffer": "01:32"
 	},
 	{
 		"Stand Id": "E1",
@@ -7676,8 +7242,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "01:39"
 	},
 	{
 		"Stand Id": "E2",
@@ -7700,8 +7265,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "00:46"
 	},
 	{
 		"Stand Id": "E1",
@@ -7724,8 +7288,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "07:19"
 	},
 	{
 		"Stand Id": "E2",
@@ -7748,8 +7311,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "09:59"
 	},
 	{
 		"Stand Id": "E8",
@@ -7772,8 +7334,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:19",
-		"": ""
+		"Buffer": "13:24"
 	},
 	{
 		"Stand Id": "E6",
@@ -7796,8 +7357,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:19",
-		"": ""
+		"Buffer": "13:15"
 	},
 	{
 		"Stand Id": "E5",
@@ -7820,8 +7380,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:59",
-		"": ""
+		"Buffer": "01:27"
 	},
 	{
 		"Stand Id": "E7",
@@ -7844,8 +7403,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "04:06"
 	},
 	{
 		"Stand Id": "E3",
@@ -7868,8 +7426,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:59",
-		"": ""
+		"Buffer": "13:30"
 	},
 	{
 		"Stand Id": "E9",
@@ -7892,8 +7449,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "05:04"
 	},
 	{
 		"Stand Id": "E1",
@@ -7916,8 +7472,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "06:54"
 	},
 	{
 		"Stand Id": "E3",
@@ -7940,8 +7495,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "00:33"
 	},
 	{
 		"Stand Id": "E11",
@@ -7964,8 +7518,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:19",
-		"": ""
+		"Buffer": "01:32"
 	},
 	{
 		"Stand Id": "E2",
@@ -7988,8 +7541,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "00:46"
 	},
 	{
 		"Stand Id": "E1",
@@ -8012,8 +7564,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "08:39"
 	},
 	{
 		"Stand Id": "E2",
@@ -8036,8 +7587,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "09:59"
 	},
 	{
 		"Stand Id": "E8",
@@ -8060,8 +7610,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:19",
-		"": ""
+		"Buffer": "02:19"
 	},
 	{
 		"Stand Id": "E6",
@@ -8084,8 +7633,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:19",
-		"": ""
+		"Buffer": "13:15"
 	},
 	{
 		"Stand Id": "E5",
@@ -8108,8 +7656,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:59",
-		"": ""
+		"Buffer": "01:27"
 	},
 	{
 		"Stand Id": "E7",
@@ -8132,8 +7679,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "01:11"
 	},
 	{
 		"Stand Id": "E1",
@@ -8156,8 +7702,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:59",
-		"": ""
+		"Buffer": "05:20"
 	},
 	{
 		"Stand Id": "E3",
@@ -8180,8 +7725,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:59",
-		"": ""
+		"Buffer": "13:30"
 	},
 	{
 		"Stand Id": "E9",
@@ -8204,8 +7748,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "05:04"
 	},
 	{
 		"Stand Id": "E3",
@@ -8228,8 +7771,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "00:33"
 	},
 	{
 		"Stand Id": "E2",
@@ -8252,8 +7794,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "00:46"
 	},
 	{
 		"Stand Id": "E1",
@@ -8276,8 +7817,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "07:35"
 	},
 	{
 		"Stand Id": "E2",
@@ -8300,8 +7840,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "09:59"
 	},
 	{
 		"Stand Id": "E8",
@@ -8324,8 +7863,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:19",
-		"": ""
+		"Buffer": "02:19"
 	},
 	{
 		"Stand Id": "E6",
@@ -8348,8 +7886,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:19",
-		"": ""
+		"Buffer": "13:15"
 	},
 	{
 		"Stand Id": "E5",
@@ -8372,8 +7909,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:59",
-		"": ""
+		"Buffer": "01:27"
 	},
 	{
 		"Stand Id": "E7",
@@ -8396,8 +7932,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "01:51"
 	},
 	{
 		"Stand Id": "E3",
@@ -8420,8 +7955,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:59",
-		"": ""
+		"Buffer": "13:30"
 	},
 	{
 		"Stand Id": "E9",
@@ -8444,8 +7978,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "05:04"
 	},
 	{
 		"Stand Id": "E3",
@@ -8468,8 +8001,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "00:33"
 	},
 	{
 		"Stand Id": "E11",
@@ -8492,8 +8024,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:19",
-		"": ""
+		"Buffer": "01:32"
 	},
 	{
 		"Stand Id": "E1",
@@ -8516,8 +8047,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "02:33"
 	},
 	{
 		"Stand Id": "E2",
@@ -8540,8 +8070,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "00:46"
 	},
 	{
 		"Stand Id": "E1",
@@ -8564,8 +8093,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "07:35"
 	},
 	{
 		"Stand Id": "E2",
@@ -8588,8 +8116,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "09:59"
 	},
 	{
 		"Stand Id": "E7",
@@ -8612,8 +8139,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:19",
-		"": ""
+		"Buffer": "00:55"
 	},
 	{
 		"Stand Id": "E6",
@@ -8636,8 +8162,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:19",
-		"": ""
+		"Buffer": "13:15"
 	},
 	{
 		"Stand Id": "E5",
@@ -8660,8 +8185,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:59",
-		"": ""
+		"Buffer": "01:27"
 	},
 	{
 		"Stand Id": "E3",
@@ -8684,8 +8208,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:59",
-		"": ""
+		"Buffer": "13:30"
 	},
 	{
 		"Stand Id": "E8",
@@ -8708,8 +8231,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "15:10"
 	},
 	{
 		"Stand Id": "E3",
@@ -8732,8 +8254,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "00:33"
 	},
 	{
 		"Stand Id": "E1",
@@ -8756,8 +8277,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "02:04"
 	},
 	{
 		"Stand Id": "E2",
@@ -8780,8 +8300,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "00:46"
 	},
 	{
 		"Stand Id": "E1",
@@ -8804,8 +8323,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "07:35"
 	},
 	{
 		"Stand Id": "E2",
@@ -8828,8 +8346,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "09:59"
 	},
 	{
 		"Stand Id": "E8",
@@ -8852,32 +8369,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:19",
-		"": ""
-	},
-	{
-		"Stand Id": "E9",
-		"Terminal": "E",
-		"Arrival Airline Code": "DL",
-		"Arrival Airline": "Delta Air Lines",
-		"Arrival Info": "DL59",
-		"Arrival Type": "Domestic",
-		"Departure Airline Code": "",
-		"Departure Airline": "",
-		"Departure Info": "",
-		"Departure Type": "Unknown",
-		"Aircraft Type": "763",
-		"Color": "VIOLET",
-		"Scheduled Arrival DateTime": "2019-04-06T12:20:00",
-		"Scheduled Departure DateTime": "2019-04-06T13:40:00",
-		"Projected Arrival Time": "2019-04-06T12:20:00",
-		"Projected Departure Time": "2019-04-06T13:40:00",
-		"Arrival Status": "On Time",
-		"Departure Status": "On Time",
-		"Arrival Delay": "0",
-		"Departure Delay": "0",
-		"Buffer": "1:19",
-		"": ""
+		"Buffer": "03:59"
 	},
 	{
 		"Stand Id": "E6",
@@ -8900,8 +8392,30 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:19",
-		"": ""
+		"Buffer": "13:15"
+	},
+	{
+		"Stand Id": "E9",
+		"Terminal": "E",
+		"Arrival Airline Code": "DL",
+		"Arrival Airline": "Delta Air Lines",
+		"Arrival Info": "DL59",
+		"Arrival Type": "Domestic",
+		"Departure Airline Code": "",
+		"Departure Airline": "",
+		"Departure Info": "",
+		"Departure Type": "Unknown",
+		"Aircraft Type": "763",
+		"Color": "VIOLET",
+		"Scheduled Arrival DateTime": "2019-04-06T12:20:00",
+		"Scheduled Departure DateTime": "2019-04-06T13:40:00",
+		"Projected Arrival Time": "2019-04-06T12:20:00",
+		"Projected Departure Time": "2019-04-06T13:40:00",
+		"Arrival Status": "On Time",
+		"Departure Status": "On Time",
+		"Arrival Delay": "0",
+		"Departure Delay": "0",
+		"Buffer": "02:10"
 	},
 	{
 		"Stand Id": "E1",
@@ -8924,8 +8438,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:59",
-		"": ""
+		"Buffer": "04:51"
 	},
 	{
 		"Stand Id": "E5",
@@ -8948,8 +8461,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:59",
-		"": ""
+		"Buffer": "01:27"
 	},
 	{
 		"Stand Id": "E7",
@@ -8972,8 +8484,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "03:36"
 	},
 	{
 		"Stand Id": "E3",
@@ -8996,8 +8507,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:59",
-		"": ""
+		"Buffer": "13:30"
 	},
 	{
 		"Stand Id": "E3",
@@ -9020,8 +8530,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "00:33"
 	},
 	{
 		"Stand Id": "E7",
@@ -9044,8 +8553,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "00:36"
 	},
 	{
 		"Stand Id": "E1",
@@ -9068,8 +8576,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "00:34"
 	},
 	{
 		"Stand Id": "E2",
@@ -9092,8 +8599,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "00:46"
 	},
 	{
 		"Stand Id": "E1",
@@ -9116,8 +8622,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "07:19"
 	},
 	{
 		"Stand Id": "E2",
@@ -9140,8 +8645,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "09:59"
 	},
 	{
 		"Stand Id": "E8",
@@ -9164,8 +8668,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:19",
-		"": ""
+		"Buffer": "02:19"
 	},
 	{
 		"Stand Id": "E6",
@@ -9188,8 +8691,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:19",
-		"": ""
+		"Buffer": "13:15"
 	},
 	{
 		"Stand Id": "E5",
@@ -9212,8 +8714,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:59",
-		"": ""
+		"Buffer": "01:27"
 	},
 	{
 		"Stand Id": "E7",
@@ -9236,8 +8737,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "01:51"
 	},
 	{
 		"Stand Id": "E3",
@@ -9260,8 +8760,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:59",
-		"": ""
+		"Buffer": "13:30"
 	},
 	{
 		"Stand Id": "E9",
@@ -9284,8 +8783,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:15",
-		"": ""
+		"Buffer": "01:44"
 	},
 	{
 		"Stand Id": "E3",
@@ -9308,8 +8806,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "00:33"
 	},
 	{
 		"Stand Id": "E9",
@@ -9332,8 +8829,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "00:29"
 	},
 	{
 		"Stand Id": "E2",
@@ -9356,8 +8852,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:45",
-		"": ""
+		"Buffer": "00:46"
 	},
 	{
 		"Stand Id": "E4",
@@ -9380,8 +8875,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "6:01",
-		"": ""
+		"Buffer": "23:59"
 	},
 	{
 		"Stand Id": "E5",
@@ -9404,8 +8898,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:30",
-		"": ""
+		"Buffer": "05:50"
 	},
 	{
 		"Stand Id": "E9",
@@ -9428,8 +8921,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:50",
-		"": ""
+		"Buffer": "01:15"
 	},
 	{
 		"Stand Id": "E5",
@@ -9452,8 +8944,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:00",
-		"": ""
+		"Buffer": "01:14"
 	},
 	{
 		"Stand Id": "E4",
@@ -9476,8 +8967,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:49",
-		"": ""
+		"Buffer": "05:25"
 	},
 	{
 		"Stand Id": "E4",
@@ -9500,8 +8990,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "6:01",
-		"": ""
+		"Buffer": "00:13"
 	},
 	{
 		"Stand Id": "E5",
@@ -9524,8 +9013,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:30",
-		"": ""
+		"Buffer": "07:40"
 	},
 	{
 		"Stand Id": "E5",
@@ -9548,8 +9036,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:00",
-		"": ""
+		"Buffer": "01:14"
 	},
 	{
 		"Stand Id": "E4",
@@ -9572,8 +9059,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:49",
-		"": ""
+		"Buffer": "05:25"
 	},
 	{
 		"Stand Id": "E4",
@@ -9596,8 +9082,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "6:01",
-		"": ""
+		"Buffer": "00:13"
 	},
 	{
 		"Stand Id": "E5",
@@ -9620,8 +9105,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:30",
-		"": ""
+		"Buffer": "07:40"
 	},
 	{
 		"Stand Id": "E5",
@@ -9644,8 +9128,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:00",
-		"": ""
+		"Buffer": "01:14"
 	},
 	{
 		"Stand Id": "E4",
@@ -9668,8 +9151,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:49",
-		"": ""
+		"Buffer": "05:25"
 	},
 	{
 		"Stand Id": "E4",
@@ -9692,8 +9174,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "6:01",
-		"": ""
+		"Buffer": "00:13"
 	},
 	{
 		"Stand Id": "E5",
@@ -9716,8 +9197,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:30",
-		"": ""
+		"Buffer": "07:40"
 	},
 	{
 		"Stand Id": "E5",
@@ -9740,8 +9220,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:00",
-		"": ""
+		"Buffer": "01:14"
 	},
 	{
 		"Stand Id": "E4",
@@ -9764,8 +9243,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:49",
-		"": ""
+		"Buffer": "05:25"
 	},
 	{
 		"Stand Id": "E4",
@@ -9788,8 +9266,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "6:01",
-		"": ""
+		"Buffer": "00:13"
 	},
 	{
 		"Stand Id": "E5",
@@ -9812,8 +9289,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:30",
-		"": ""
+		"Buffer": "07:40"
 	},
 	{
 		"Stand Id": "E5",
@@ -9836,8 +9312,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:00",
-		"": ""
+		"Buffer": "01:14"
 	},
 	{
 		"Stand Id": "E4",
@@ -9860,8 +9335,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:49",
-		"": ""
+		"Buffer": "05:25"
 	},
 	{
 		"Stand Id": "E4",
@@ -9884,8 +9358,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "6:01",
-		"": ""
+		"Buffer": "00:13"
 	},
 	{
 		"Stand Id": "E5",
@@ -9908,8 +9381,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:30",
-		"": ""
+		"Buffer": "07:40"
 	},
 	{
 		"Stand Id": "E5",
@@ -9932,8 +9404,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:00",
-		"": ""
+		"Buffer": "01:14"
 	},
 	{
 		"Stand Id": "E4",
@@ -9956,8 +9427,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:49",
-		"": ""
+		"Buffer": "05:25"
 	},
 	{
 		"Stand Id": "E4",
@@ -9980,8 +9450,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "6:01",
-		"": ""
+		"Buffer": "00:13"
 	},
 	{
 		"Stand Id": "E5",
@@ -10004,8 +9473,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "3:30",
-		"": ""
+		"Buffer": "07:40"
 	},
 	{
 		"Stand Id": "E5",
@@ -10028,8 +9496,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:00",
-		"": ""
+		"Buffer": "01:14"
 	},
 	{
 		"Stand Id": "E4",
@@ -10052,8 +9519,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:49",
-		"": ""
+		"Buffer": "05:25"
 	},
 	{
 		"Stand Id": "E10",
@@ -10076,8 +9542,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "10:30"
 	},
 	{
 		"Stand Id": "E3",
@@ -10100,8 +9565,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "00:21"
 	},
 	{
 		"Stand Id": "E11",
@@ -10124,8 +9588,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:40",
-		"": ""
+		"Buffer": "00:50"
 	},
 	{
 		"Stand Id": "E6",
@@ -10148,8 +9611,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "E4",
@@ -10172,8 +9634,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "00:30"
 	},
 	{
 		"Stand Id": "E10",
@@ -10196,8 +9657,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "05:35"
 	},
 	{
 		"Stand Id": "E3",
@@ -10220,32 +9680,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
-	},
-	{
-		"Stand Id": "E11",
-		"Terminal": "E",
-		"Arrival Airline Code": "",
-		"Arrival Airline": "",
-		"Arrival Info": "NC3A",
-		"Arrival Type": "Parking",
-		"Departure Airline Code": "",
-		"Departure Airline": "",
-		"Departure Info": "NC3A",
-		"Departure Type": "Parking",
-		"Aircraft Type": "388",
-		"Color": "GREEN",
-		"Scheduled Arrival DateTime": "2019-04-02T21:30:00",
-		"Scheduled Departure DateTime": "2019-04-02T23:10:00",
-		"Projected Arrival Time": "2019-04-02T21:30:00",
-		"Projected Departure Time": "2019-04-02T23:10:00",
-		"Arrival Status": "On Time",
-		"Departure Status": "On Time",
-		"Arrival Delay": "0",
-		"Departure Delay": "0",
-		"Buffer": "1:40",
-		"": ""
+		"Buffer": "00:21"
 	},
 	{
 		"Stand Id": "E1",
@@ -10268,8 +9703,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:59",
-		"": ""
+		"Buffer": "00:10"
 	},
 	{
 		"Stand Id": "E6",
@@ -10292,8 +9726,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "E4",
@@ -10316,8 +9749,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "00:30"
 	},
 	{
 		"Stand Id": "E10",
@@ -10340,32 +9772,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
-	},
-	{
-		"Stand Id": "E8",
-		"Terminal": "E",
-		"Arrival Airline Code": "",
-		"Arrival Airline": "",
-		"Arrival Info": "NC19",
-		"Arrival Type": "Parking",
-		"Departure Airline Code": "JJ",
-		"Departure Airline": "LATAM Airlines",
-		"Departure Info": "JJ8165",
-		"Departure Type": "Domestic",
-		"Aircraft Type": "763",
-		"Color": "GREY",
-		"Scheduled Arrival DateTime": "2019-04-03T15:55:00",
-		"Scheduled Departure DateTime": "2019-04-03T17:25:00",
-		"Projected Arrival Time": "2019-04-03T15:55:00",
-		"Projected Departure Time": "2019-04-03T17:25:00",
-		"Arrival Status": "On Time",
-		"Departure Status": "On Time",
-		"Arrival Delay": "0",
-		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "10:30"
 	},
 	{
 		"Stand Id": "E3",
@@ -10388,32 +9795,30 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "00:21"
 	},
 	{
-		"Stand Id": "E11",
+		"Stand Id": "E8",
 		"Terminal": "E",
 		"Arrival Airline Code": "",
 		"Arrival Airline": "",
-		"Arrival Info": "NC3A",
+		"Arrival Info": "NC19",
 		"Arrival Type": "Parking",
-		"Departure Airline Code": "",
-		"Departure Airline": "",
-		"Departure Info": "NC3A",
-		"Departure Type": "Parking",
-		"Aircraft Type": "388",
-		"Color": "GREEN",
-		"Scheduled Arrival DateTime": "2019-04-03T21:30:00",
-		"Scheduled Departure DateTime": "2019-04-03T23:10:00",
-		"Projected Arrival Time": "2019-04-03T21:30:00",
-		"Projected Departure Time": "2019-04-03T23:10:00",
+		"Departure Airline Code": "JJ",
+		"Departure Airline": "LATAM Airlines",
+		"Departure Info": "JJ8165",
+		"Departure Type": "Domestic",
+		"Aircraft Type": "763",
+		"Color": "GREY",
+		"Scheduled Arrival DateTime": "2019-04-03T15:55:00",
+		"Scheduled Departure DateTime": "2019-04-03T17:25:00",
+		"Projected Arrival Time": "2019-04-03T15:55:00",
+		"Projected Departure Time": "2019-04-03T17:25:00",
 		"Arrival Status": "On Time",
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:40",
-		"": ""
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "E6",
@@ -10436,8 +9841,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "E4",
@@ -10460,8 +9864,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "00:30"
 	},
 	{
 		"Stand Id": "E7",
@@ -10484,8 +9887,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:00",
-		"": ""
+		"Buffer": "01:09"
 	},
 	{
 		"Stand Id": "E10",
@@ -10508,32 +9910,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
-	},
-	{
-		"Stand Id": "E9",
-		"Terminal": "E",
-		"Arrival Airline Code": "",
-		"Arrival Airline": "",
-		"Arrival Info": "NC19",
-		"Arrival Type": "Parking",
-		"Departure Airline Code": "JJ",
-		"Departure Airline": "LATAM Airlines",
-		"Departure Info": "JJ8165",
-		"Departure Type": "Domestic",
-		"Aircraft Type": "763",
-		"Color": "GREY",
-		"Scheduled Arrival DateTime": "2019-04-04T15:55:00",
-		"Scheduled Departure DateTime": "2019-04-04T17:25:00",
-		"Projected Arrival Time": "2019-04-04T15:55:00",
-		"Projected Departure Time": "2019-04-04T17:25:00",
-		"Arrival Status": "On Time",
-		"Departure Status": "On Time",
-		"Arrival Delay": "0",
-		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "05:35"
 	},
 	{
 		"Stand Id": "E3",
@@ -10556,8 +9933,30 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "00:21"
+	},
+	{
+		"Stand Id": "E9",
+		"Terminal": "E",
+		"Arrival Airline Code": "",
+		"Arrival Airline": "",
+		"Arrival Info": "NC19",
+		"Arrival Type": "Parking",
+		"Departure Airline Code": "JJ",
+		"Departure Airline": "LATAM Airlines",
+		"Departure Info": "JJ8165",
+		"Departure Type": "Domestic",
+		"Aircraft Type": "763",
+		"Color": "GREY",
+		"Scheduled Arrival DateTime": "2019-04-04T15:55:00",
+		"Scheduled Departure DateTime": "2019-04-04T17:25:00",
+		"Projected Arrival Time": "2019-04-04T15:55:00",
+		"Projected Departure Time": "2019-04-04T17:25:00",
+		"Arrival Status": "On Time",
+		"Departure Status": "On Time",
+		"Arrival Delay": "0",
+		"Departure Delay": "0",
+		"Buffer": "01:19"
 	},
 	{
 		"Stand Id": "E9",
@@ -10580,32 +9979,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
-	},
-	{
-		"Stand Id": "E11",
-		"Terminal": "E",
-		"Arrival Airline Code": "",
-		"Arrival Airline": "",
-		"Arrival Info": "NC3A",
-		"Arrival Type": "Parking",
-		"Departure Airline Code": "",
-		"Departure Airline": "",
-		"Departure Info": "NC3A",
-		"Departure Type": "Parking",
-		"Aircraft Type": "388",
-		"Color": "GREEN",
-		"Scheduled Arrival DateTime": "2019-04-04T21:30:00",
-		"Scheduled Departure DateTime": "2019-04-04T23:10:00",
-		"Projected Arrival Time": "2019-04-04T21:30:00",
-		"Projected Departure Time": "2019-04-04T23:10:00",
-		"Arrival Status": "On Time",
-		"Departure Status": "On Time",
-		"Arrival Delay": "0",
-		"Departure Delay": "0",
-		"Buffer": "1:40",
-		"": ""
+		"Buffer": "00:55"
 	},
 	{
 		"Stand Id": "E6",
@@ -10628,8 +10002,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "E4",
@@ -10652,8 +10025,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "00:30"
 	},
 	{
 		"Stand Id": "E7",
@@ -10676,8 +10048,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:00",
-		"": ""
+		"Buffer": "01:09"
 	},
 	{
 		"Stand Id": "E10",
@@ -10700,8 +10071,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:09",
-		"": ""
+		"Buffer": "06:00"
 	},
 	{
 		"Stand Id": "E10",
@@ -10724,8 +10094,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "03:20"
 	},
 	{
 		"Stand Id": "E3",
@@ -10748,56 +10117,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
-	},
-	{
-		"Stand Id": "E11",
-		"Terminal": "E",
-		"Arrival Airline Code": "",
-		"Arrival Airline": "",
-		"Arrival Info": "NC3A",
-		"Arrival Type": "Parking",
-		"Departure Airline Code": "",
-		"Departure Airline": "",
-		"Departure Info": "NC19",
-		"Departure Type": "Parking",
-		"Aircraft Type": "388",
-		"Color": "GREEN",
-		"Scheduled Arrival DateTime": "2019-04-05T21:30:00",
-		"Scheduled Departure DateTime": "2019-04-05T23:10:00",
-		"Projected Arrival Time": "2019-04-05T21:30:00",
-		"Projected Departure Time": "2019-04-05T23:10:00",
-		"Arrival Status": "On Time",
-		"Departure Status": "On Time",
-		"Arrival Delay": "0",
-		"Departure Delay": "0",
-		"Buffer": "1:40",
-		"": ""
-	},
-	{
-		"Stand Id": "E8",
-		"Terminal": "E",
-		"Arrival Airline Code": "",
-		"Arrival Airline": "",
-		"Arrival Info": "NC4A",
-		"Arrival Type": "Parking",
-		"Departure Airline Code": "QR",
-		"Departure Airline": "Qatar Airways",
-		"Departure Info": "QR744",
-		"Departure Type": "Domestic",
-		"Aircraft Type": "359",
-		"Color": "GREY",
-		"Scheduled Arrival DateTime": "2019-04-05T21:35:00",
-		"Scheduled Departure DateTime": "2019-04-05T23:05:00",
-		"Projected Arrival Time": "2019-04-05T21:35:00",
-		"Projected Departure Time": "2019-04-05T23:05:00",
-		"Arrival Status": "On Time",
-		"Departure Status": "On Time",
-		"Arrival Delay": "0",
-		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "00:21"
 	},
 	{
 		"Stand Id": "E6",
@@ -10820,8 +10140,30 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "00:20"
+	},
+	{
+		"Stand Id": "E8",
+		"Terminal": "E",
+		"Arrival Airline Code": "",
+		"Arrival Airline": "",
+		"Arrival Info": "NC4A",
+		"Arrival Type": "Parking",
+		"Departure Airline Code": "QR",
+		"Departure Airline": "Qatar Airways",
+		"Departure Info": "QR744",
+		"Departure Type": "Domestic",
+		"Aircraft Type": "359",
+		"Color": "GREY",
+		"Scheduled Arrival DateTime": "2019-04-05T21:35:00",
+		"Scheduled Departure DateTime": "2019-04-05T23:05:00",
+		"Projected Arrival Time": "2019-04-05T21:35:00",
+		"Projected Departure Time": "2019-04-05T23:05:00",
+		"Arrival Status": "On Time",
+		"Departure Status": "On Time",
+		"Arrival Delay": "0",
+		"Departure Delay": "0",
+		"Buffer": "00:14"
 	},
 	{
 		"Stand Id": "E4",
@@ -10844,8 +10186,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "00:30"
 	},
 	{
 		"Stand Id": "E7",
@@ -10868,8 +10209,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "0:59",
-		"": ""
+		"Buffer": "00:40"
 	},
 	{
 		"Stand Id": "E10",
@@ -10892,8 +10232,30 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "10:30"
+	},
+	{
+		"Stand Id": "E3",
+		"Terminal": "E",
+		"Arrival Airline Code": "",
+		"Arrival Airline": "",
+		"Arrival Info": "NC19",
+		"Arrival Type": "Parking",
+		"Departure Airline Code": "JJ",
+		"Departure Airline": "LATAM Airlines",
+		"Departure Info": "JJ8165",
+		"Departure Type": "Domestic",
+		"Aircraft Type": "763",
+		"Color": "GREY",
+		"Scheduled Arrival DateTime": "2019-04-06T15:55:00",
+		"Scheduled Departure DateTime": "2019-04-06T17:25:00",
+		"Projected Arrival Time": "2019-04-06T15:55:00",
+		"Projected Departure Time": "2019-04-06T17:25:00",
+		"Arrival Status": "On Time",
+		"Departure Status": "On Time",
+		"Arrival Delay": "0",
+		"Departure Delay": "0",
+		"Buffer": "00:21"
 	},
 	{
 		"Stand Id": "E11",
@@ -10916,56 +10278,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
-	},
-	{
-		"Stand Id": "E3",
-		"Terminal": "E",
-		"Arrival Airline Code": "",
-		"Arrival Airline": "",
-		"Arrival Info": "NC19",
-		"Arrival Type": "Parking",
-		"Departure Airline Code": "JJ",
-		"Departure Airline": "LATAM Airlines",
-		"Departure Info": "JJ8165",
-		"Departure Type": "Domestic",
-		"Aircraft Type": "763",
-		"Color": "GREY",
-		"Scheduled Arrival DateTime": "2019-04-06T15:55:00",
-		"Scheduled Departure DateTime": "2019-04-06T17:25:00",
-		"Projected Arrival Time": "2019-04-06T15:55:00",
-		"Projected Departure Time": "2019-04-06T17:25:00",
-		"Arrival Status": "On Time",
-		"Departure Status": "On Time",
-		"Arrival Delay": "0",
-		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
-	},
-	{
-		"Stand Id": "E11",
-		"Terminal": "E",
-		"Arrival Airline Code": "",
-		"Arrival Airline": "",
-		"Arrival Info": "NC3A",
-		"Arrival Type": "Parking",
-		"Departure Airline Code": "",
-		"Departure Airline": "",
-		"Departure Info": "NC3A",
-		"Departure Type": "Parking",
-		"Aircraft Type": "388",
-		"Color": "GREEN",
-		"Scheduled Arrival DateTime": "2019-04-06T21:30:00",
-		"Scheduled Departure DateTime": "2019-04-06T23:10:00",
-		"Projected Arrival Time": "2019-04-06T21:30:00",
-		"Projected Departure Time": "2019-04-06T23:10:00",
-		"Arrival Status": "On Time",
-		"Departure Status": "On Time",
-		"Arrival Delay": "0",
-		"Departure Delay": "0",
-		"Buffer": "1:40",
-		"": ""
+		"Buffer": "00:40"
 	},
 	{
 		"Stand Id": "E6",
@@ -10988,8 +10301,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "E4",
@@ -11012,8 +10324,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "00:30"
 	},
 	{
 		"Stand Id": "E10",
@@ -11036,32 +10347,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
-	},
-	{
-		"Stand Id": "E8",
-		"Terminal": "E",
-		"Arrival Airline Code": "",
-		"Arrival Airline": "",
-		"Arrival Info": "NC19",
-		"Arrival Type": "Parking",
-		"Departure Airline Code": "JJ",
-		"Departure Airline": "LATAM Airlines",
-		"Departure Info": "JJ8165",
-		"Departure Type": "Domestic",
-		"Aircraft Type": "763",
-		"Color": "GREY",
-		"Scheduled Arrival DateTime": "2019-04-07T15:55:00",
-		"Scheduled Departure DateTime": "2019-04-07T17:25:00",
-		"Projected Arrival Time": "2019-04-07T15:55:00",
-		"Projected Departure Time": "2019-04-07T17:25:00",
-		"Arrival Status": "On Time",
-		"Departure Status": "On Time",
-		"Arrival Delay": "0",
-		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "10:30"
 	},
 	{
 		"Stand Id": "E3",
@@ -11084,8 +10370,30 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "00:21"
+	},
+	{
+		"Stand Id": "E8",
+		"Terminal": "E",
+		"Arrival Airline Code": "",
+		"Arrival Airline": "",
+		"Arrival Info": "NC19",
+		"Arrival Type": "Parking",
+		"Departure Airline Code": "JJ",
+		"Departure Airline": "LATAM Airlines",
+		"Departure Info": "JJ8165",
+		"Departure Type": "Domestic",
+		"Aircraft Type": "763",
+		"Color": "GREY",
+		"Scheduled Arrival DateTime": "2019-04-07T15:55:00",
+		"Scheduled Departure DateTime": "2019-04-07T17:25:00",
+		"Projected Arrival Time": "2019-04-07T15:55:00",
+		"Projected Departure Time": "2019-04-07T17:25:00",
+		"Arrival Status": "On Time",
+		"Departure Status": "On Time",
+		"Arrival Delay": "0",
+		"Departure Delay": "0",
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "E11",
@@ -11108,8 +10416,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:40",
-		"": ""
+		"Buffer": "00:10"
 	},
 	{
 		"Stand Id": "E6",
@@ -11132,8 +10439,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "00:20"
 	},
 	{
 		"Stand Id": "E4",
@@ -11156,8 +10462,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "1:30",
-		"": ""
+		"Buffer": "00:30"
 	},
 	{
 		"Stand Id": "NC15",
@@ -11180,8 +10485,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "12:35",
-		"": ""
+		"Buffer": "20:00"
 	},
 	{
 		"Stand Id": "NC19",
@@ -11204,8 +10508,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "6:00",
-		"": ""
+		"Buffer": "09:55"
 	},
 	{
 		"Stand Id": "NC3A",
@@ -11228,8 +10531,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "6:15",
-		"": ""
+		"Buffer": "15:15"
 	},
 	{
 		"Stand Id": "NC4A",
@@ -11252,8 +10554,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "6:00",
-		"": ""
+		"Buffer": "15:35"
 	},
 	{
 		"Stand Id": "NC20",
@@ -11276,8 +10577,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "16:50",
-		"": ""
+		"Buffer": "19:30"
 	},
 	{
 		"Stand Id": "NC22",
@@ -11300,8 +10600,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:30",
-		"": ""
+		"Buffer": "19:45"
 	},
 	{
 		"Stand Id": "NC15",
@@ -11324,8 +10623,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "12:35",
-		"": ""
+		"Buffer": "11:24"
 	},
 	{
 		"Stand Id": "NC19",
@@ -11348,8 +10646,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "6:00",
-		"": ""
+		"Buffer": "12:34"
 	},
 	{
 		"Stand Id": "NC3A",
@@ -11372,8 +10669,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "6:15",
-		"": ""
+		"Buffer": "17:44"
 	},
 	{
 		"Stand Id": "NC4A",
@@ -11396,8 +10692,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "6:00",
-		"": ""
+		"Buffer": "18:00"
 	},
 	{
 		"Stand Id": "NC20",
@@ -11420,8 +10715,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "16:50",
-		"": ""
+		"Buffer": "07:09"
 	},
 	{
 		"Stand Id": "NC22",
@@ -11444,8 +10738,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:30",
-		"": ""
+		"Buffer": "21:29"
 	},
 	{
 		"Stand Id": "NC15",
@@ -11468,8 +10761,30 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "12:35",
-		"": ""
+		"Buffer": "11:24"
+	},
+	{
+		"Stand Id": "E11",
+		"Terminal": "E",
+		"Arrival Airline Code": "",
+		"Arrival Airline": "",
+		"Arrival Info": "NC3A",
+		"Arrival Type": "Parking",
+		"Departure Airline Code": "",
+		"Departure Airline": "",
+		"Departure Info": "NC3A",
+		"Departure Type": "Parking",
+		"Aircraft Type": "388",
+		"Color": "GREEN",
+		"Scheduled Arrival DateTime": "2019-04-02T21:30:00",
+		"Scheduled Departure DateTime": "2019-04-02T23:10:00",
+		"Projected Arrival Time": "2019-04-02T21:30:00",
+		"Projected Departure Time": "2019-04-02T23:10:00",
+		"Arrival Status": "On Time",
+		"Departure Status": "On Time",
+		"Arrival Delay": "0",
+		"Departure Delay": "0",
+		"Buffer": "00:10"
 	},
 	{
 		"Stand Id": "NC19",
@@ -11492,8 +10807,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "6:00",
-		"": ""
+		"Buffer": "12:34"
 	},
 	{
 		"Stand Id": "NC3A",
@@ -11516,8 +10830,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "6:15",
-		"": ""
+		"Buffer": "17:44"
 	},
 	{
 		"Stand Id": "NC4A",
@@ -11540,8 +10853,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "6:00",
-		"": ""
+		"Buffer": "18:00"
 	},
 	{
 		"Stand Id": "NC20",
@@ -11564,8 +10876,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "16:50",
-		"": ""
+		"Buffer": "07:09"
 	},
 	{
 		"Stand Id": "NC22",
@@ -11588,8 +10899,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:30",
-		"": ""
+		"Buffer": "21:29"
 	},
 	{
 		"Stand Id": "NC15",
@@ -11612,8 +10922,30 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "12:35",
-		"": ""
+		"Buffer": "11:24"
+	},
+	{
+		"Stand Id": "E11",
+		"Terminal": "E",
+		"Arrival Airline Code": "",
+		"Arrival Airline": "",
+		"Arrival Info": "NC3A",
+		"Arrival Type": "Parking",
+		"Departure Airline Code": "",
+		"Departure Airline": "",
+		"Departure Info": "NC3A",
+		"Departure Type": "Parking",
+		"Aircraft Type": "388",
+		"Color": "GREEN",
+		"Scheduled Arrival DateTime": "2019-04-03T21:30:00",
+		"Scheduled Departure DateTime": "2019-04-03T23:10:00",
+		"Projected Arrival Time": "2019-04-03T21:30:00",
+		"Projected Departure Time": "2019-04-03T23:10:00",
+		"Arrival Status": "On Time",
+		"Departure Status": "On Time",
+		"Arrival Delay": "0",
+		"Departure Delay": "0",
+		"Buffer": "00:10"
 	},
 	{
 		"Stand Id": "NC19",
@@ -11636,8 +10968,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "6:00",
-		"": ""
+		"Buffer": "12:34"
 	},
 	{
 		"Stand Id": "NC3A",
@@ -11660,8 +10991,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "6:15",
-		"": ""
+		"Buffer": "17:44"
 	},
 	{
 		"Stand Id": "NC4A",
@@ -11684,8 +11014,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "6:00",
-		"": ""
+		"Buffer": "18:00"
 	},
 	{
 		"Stand Id": "NC20",
@@ -11708,8 +11037,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "16:50",
-		"": ""
+		"Buffer": "07:09"
 	},
 	{
 		"Stand Id": "NC22",
@@ -11732,8 +11060,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:30",
-		"": ""
+		"Buffer": "21:29"
 	},
 	{
 		"Stand Id": "NC15",
@@ -11756,8 +11083,30 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "12:35",
-		"": ""
+		"Buffer": "11:24"
+	},
+	{
+		"Stand Id": "E11",
+		"Terminal": "E",
+		"Arrival Airline Code": "",
+		"Arrival Airline": "",
+		"Arrival Info": "NC3A",
+		"Arrival Type": "Parking",
+		"Departure Airline Code": "",
+		"Departure Airline": "",
+		"Departure Info": "NC3A",
+		"Departure Type": "Parking",
+		"Aircraft Type": "388",
+		"Color": "GREEN",
+		"Scheduled Arrival DateTime": "2019-04-04T21:30:00",
+		"Scheduled Departure DateTime": "2019-04-04T23:10:00",
+		"Projected Arrival Time": "2019-04-04T21:30:00",
+		"Projected Departure Time": "2019-04-04T23:10:00",
+		"Arrival Status": "On Time",
+		"Departure Status": "On Time",
+		"Arrival Delay": "0",
+		"Departure Delay": "0",
+		"Buffer": "00:10"
 	},
 	{
 		"Stand Id": "NC19",
@@ -11780,8 +11129,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "6:00",
-		"": ""
+		"Buffer": "12:34"
 	},
 	{
 		"Stand Id": "NC3A",
@@ -11804,8 +11152,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "6:15",
-		"": ""
+		"Buffer": "17:44"
 	},
 	{
 		"Stand Id": "NC4A",
@@ -11828,8 +11175,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "6:00",
-		"": ""
+		"Buffer": "18:00"
 	},
 	{
 		"Stand Id": "NC20",
@@ -11852,8 +11198,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "16:50",
-		"": ""
+		"Buffer": "07:09"
 	},
 	{
 		"Stand Id": "NC22",
@@ -11876,8 +11221,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:30",
-		"": ""
+		"Buffer": "21:29"
 	},
 	{
 		"Stand Id": "NC15",
@@ -11900,8 +11244,30 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "12:35",
-		"": ""
+		"Buffer": "11:24"
+	},
+	{
+		"Stand Id": "E11",
+		"Terminal": "E",
+		"Arrival Airline Code": "",
+		"Arrival Airline": "",
+		"Arrival Info": "NC3A",
+		"Arrival Type": "Parking",
+		"Departure Airline Code": "",
+		"Departure Airline": "",
+		"Departure Info": "NC19",
+		"Departure Type": "Parking",
+		"Aircraft Type": "388",
+		"Color": "GREEN",
+		"Scheduled Arrival DateTime": "2019-04-05T21:30:00",
+		"Scheduled Departure DateTime": "2019-04-05T23:10:00",
+		"Projected Arrival Time": "2019-04-05T21:30:00",
+		"Projected Departure Time": "2019-04-05T23:10:00",
+		"Arrival Status": "On Time",
+		"Departure Status": "On Time",
+		"Arrival Delay": "0",
+		"Departure Delay": "0",
+		"Buffer": "00:50"
 	},
 	{
 		"Stand Id": "NC19",
@@ -11924,8 +11290,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "6:00",
-		"": ""
+		"Buffer": "12:34"
 	},
 	{
 		"Stand Id": "NC3A",
@@ -11948,8 +11313,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "6:15",
-		"": ""
+		"Buffer": "17:44"
 	},
 	{
 		"Stand Id": "NC4A",
@@ -11972,8 +11336,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "6:00",
-		"": ""
+		"Buffer": "18:00"
 	},
 	{
 		"Stand Id": "NC20",
@@ -11996,8 +11359,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "16:50",
-		"": ""
+		"Buffer": "07:09"
 	},
 	{
 		"Stand Id": "NC22",
@@ -12020,8 +11382,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:30",
-		"": ""
+		"Buffer": "21:29"
 	},
 	{
 		"Stand Id": "NC15",
@@ -12044,8 +11405,30 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "12:35",
-		"": ""
+		"Buffer": "11:24"
+	},
+	{
+		"Stand Id": "E11",
+		"Terminal": "E",
+		"Arrival Airline Code": "",
+		"Arrival Airline": "",
+		"Arrival Info": "NC3A",
+		"Arrival Type": "Parking",
+		"Departure Airline Code": "",
+		"Departure Airline": "",
+		"Departure Info": "NC3A",
+		"Departure Type": "Parking",
+		"Aircraft Type": "388",
+		"Color": "GREEN",
+		"Scheduled Arrival DateTime": "2019-04-06T21:30:00",
+		"Scheduled Departure DateTime": "2019-04-06T23:10:00",
+		"Projected Arrival Time": "2019-04-06T21:30:00",
+		"Projected Departure Time": "2019-04-06T23:10:00",
+		"Arrival Status": "On Time",
+		"Departure Status": "On Time",
+		"Arrival Delay": "0",
+		"Departure Delay": "0",
+		"Buffer": "00:10"
 	},
 	{
 		"Stand Id": "NC19",
@@ -12068,8 +11451,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "6:00",
-		"": ""
+		"Buffer": "12:34"
 	},
 	{
 		"Stand Id": "NC3A",
@@ -12092,8 +11474,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "6:15",
-		"": ""
+		"Buffer": "17:44"
 	},
 	{
 		"Stand Id": "NC4A",
@@ -12116,8 +11497,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "6:00",
-		"": ""
+		"Buffer": "18:00"
 	},
 	{
 		"Stand Id": "NC20",
@@ -12140,8 +11520,7 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "16:50",
-		"": ""
+		"Buffer": "07:09"
 	},
 	{
 		"Stand Id": "NC22",
@@ -12164,8 +11543,145 @@ const SampleStandAssignment001 = [
 		"Departure Status": "On Time",
 		"Arrival Delay": "0",
 		"Departure Delay": "0",
-		"Buffer": "2:30",
-		"": ""
+		"Buffer": "21:29"
+	},
+	{
+		"Stand Id": "NC8",
+		"Terminal": "E",
+		"Arrival Airline Code": "PD",
+		"Arrival Airline": "Porter Airlines",
+		"Arrival Info": "PD949",
+		"Arrival Type": "Domestic",
+		"Departure Airline Code": "PD",
+		"Departure Airline": "Porter Airlines",
+		"Departure Info": "PD936",
+		"Departure Type": "Domestic",
+		"Aircraft Type": "DH4",
+		"Color": "YELLOW",
+		"Scheduled Arrival DateTime": "2019-03-31T20:34:00",
+		"Scheduled Departure DateTime": "2019-04-01T06:25:00",
+		"Projected Arrival Time": "2019-03-31T20:34:00",
+		"Projected Departure Time": "2019-04-01T06:25:00",
+		"Arrival Status": "On Time",
+		"Departure Status": "On Time",
+		"Arrival Delay": "0",
+		"Departure Delay": "0",
+		"Buffer": "20:34"
+	},
+	{
+		"Stand Id": "E12",
+		"Terminal": "E",
+		"Arrival Airline Code": "BA",
+		"Arrival Airline": "British Airways",
+		"Arrival Info": "BA239",
+		"Arrival Type": "Domestic",
+		"Departure Airline Code": "BA",
+		"Departure Airline": "British Airways",
+		"Departure Info": "BA238",
+		"Departure Type": "Domestic",
+		"Aircraft Type": "772",
+		"Color": "BLUE",
+		"Scheduled Arrival DateTime": "2019-03-31T22:25:00",
+		"Scheduled Departure DateTime": "2019-04-01T07:45:00",
+		"Projected Arrival Time": "2019-03-31T22:25:00",
+		"Projected Departure Time": "2019-04-01T07:45:00",
+		"Arrival Status": "On Time",
+		"Departure Status": "On Time",
+		"Arrival Delay": "0",
+		"Departure Delay": "0",
+		"Buffer": "22:25"
+	},
+	{
+		"Stand Id": "E7",
+		"Terminal": "E",
+		"Arrival Airline Code": "PD",
+		"Arrival Airline": "Porter Airlines",
+		"Arrival Info": "PD951",
+		"Arrival Type": "Domestic",
+		"Departure Airline Code": "PD",
+		"Departure Airline": "Porter Airlines",
+		"Departure Info": "PD936",
+		"Departure Type": "Domestic",
+		"Aircraft Type": "DH4",
+		"Color": "YELLOW",
+		"Scheduled Arrival DateTime": "2019-03-31T22:40:00",
+		"Scheduled Departure DateTime": "2019-04-01T06:25:00",
+		"Projected Arrival Time": "2019-03-31T22:40:00",
+		"Projected Departure Time": "2019-04-01T06:25:00",
+		"Arrival Status": "On Time",
+		"Departure Status": "On Time",
+		"Arrival Delay": "0",
+		"Departure Delay": "0",
+		"Buffer": "22:40"
+	},
+	{
+		"Stand Id": "E9",
+		"Terminal": "E",
+		"Arrival Airline Code": "VS",
+		"Arrival Airline": "Virgin Atlantic",
+		"Arrival Info": "VS157",
+		"Arrival Type": "Domestic",
+		"Departure Airline Code": "JL",
+		"Departure Airline": "Japan Airlines",
+		"Departure Info": "JL7",
+		"Departure Type": "Domestic",
+		"Aircraft Type": "333",
+		"Color": "VIOLET",
+		"Scheduled Arrival DateTime": "2019-03-31T22:40:00",
+		"Scheduled Departure DateTime": "2019-04-01T08:15:00",
+		"Projected Arrival Time": "2019-03-31T22:40:00",
+		"Projected Departure Time": "2019-04-01T08:15:00",
+		"Arrival Status": "On Time",
+		"Departure Status": "On Time",
+		"Arrival Delay": "0",
+		"Departure Delay": "0",
+		"Buffer": "22:40"
+	},
+	{
+		"Stand Id": "E7",
+		"Terminal": "E",
+		"Arrival Airline Code": "PD",
+		"Arrival Airline": "Porter Airlines",
+		"Arrival Info": "PD937",
+		"Arrival Type": "Domestic",
+		"Departure Airline Code": "PD",
+		"Departure Airline": "Porter Airlines",
+		"Departure Info": "PD938",
+		"Departure Type": "Domestic",
+		"Aircraft Type": "DH4",
+		"Color": "YELLOW",
+		"Scheduled Arrival DateTime": "2019-04-01T08:20:00",
+		"Scheduled Departure DateTime": "2019-04-01T09:05:00",
+		"Projected Arrival Time": "2019-04-01T08:20:00",
+		"Projected Departure Time": "2019-04-01T09:05:00",
+		"Arrival Status": "On Time",
+		"Departure Status": "On Time",
+		"Arrival Delay": "0",
+		"Departure Delay": "0",
+		"Buffer": "01:54"
+	},
+	{
+		"Stand Id": "",
+		"Terminal": "",
+		"Arrival Airline Code": "",
+		"Arrival Airline": "",
+		"Arrival Info": "",
+		"Arrival Type": "",
+		"Departure Airline Code": "",
+		"Departure Airline": "",
+		"Departure Info": "",
+		"Departure Type": "",
+		"Aircraft Type": "",
+		"Color": "",
+		"Scheduled Arrival DateTime": "",
+		"Scheduled Departure DateTime": "",
+		"Projected Arrival Time": "",
+		"Projected Departure Time": "",
+		"Arrival Status": "",
+		"Departure Status": "",
+		"Arrival Delay": "",
+		"Departure Delay": "",
+		"Buffer": ""
 	},
 	{
 		"Stand Id": ""
