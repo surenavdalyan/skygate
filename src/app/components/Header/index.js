@@ -1,33 +1,35 @@
-import React from "react";
-import moment from "moment";
-import Sidebar from "react-sidebar";
-import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
-import { applyFilter } from "../../actions";
-import LazyEvent from "../../graphics/lib/LazyEvent";
-import DateRangePicker from "../../components/DateRange/DateRangePicker";
-import NotificationList from "../../components/NotificationList";
+import React from 'react';
+import moment from 'moment';
+import Sidebar from 'react-sidebar';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { applyFilter } from '../../actions';
+import LazyEvent from '../../graphics/lib/LazyEvent';
+import DateRangePicker from '../../components/DateRange/DateRangePicker';
+import NotificationList from '../../components/NotificationList';
+import AppInfoPopup from './AppInfoPopup';
 
-import "./index.scss";
+import './index.scss';
 
-const formattedDate = date => moment(date).format("MMM DD[,] YYYY");
-const formattedDay = date => moment(date).format("DD");
+const formattedDate = date => moment(date).format('MMM DD[,] YYYY');
+const formattedDay = date => moment(date).format('DD');
 
 class Header extends React.Component {
   constructor(props) {
     super(props);
-    const refreshTime = "Today 11:10 AM";
+    const refreshTime = 'Today 11:10 AM';
     this.state = {
-      StartTime: "2019-04-01T00:00:00",
-      EndTime: "2019-04-08T00:00:00",
+      StartTime: '2019-04-01T00:00:00',
+      EndTime: '2019-04-08T00:00:00',
       refreshTime,
       showDateRange: false,
-      sidebarOpen: false
+      sidebarOpen: false,
+      showAppInfo: false,
     };
     this.lazySearch = new LazyEvent();
   }
 
-  onSetSidebarOpen = open => {
+  onSetSidebarOpen = (open) => {
     this.setState({ sidebarOpen: open });
   };
 
@@ -43,22 +45,22 @@ class Header extends React.Component {
   onDateRangeSelect = (StartTime, EndTime) => {
     this.setState({
       StartTime,
-      EndTime
+      EndTime,
     });
   };
 
-  onSearchInput = e => {
+  onSearchInput = (e) => {
     // console.log(e.target.value);
     const { value } = e.target;
     const includesInTheField = (r, val, field) =>
       r[field] && r[field].toLowerCase().includes(val.toLowerCase());
     const SearchFilterConfig = v => ({
       filterLogic: r =>
-        includesInTheField(r, v, "Aircraft Type") ||
-        includesInTheField(r, v, "Arrival Info") ||
-        includesInTheField(r, v, "Departure Info"),
-      filterKey: "SearchInput",
-      filterVisibilityFlag: true
+        includesInTheField(r, v, 'Aircraft Type') ||
+        includesInTheField(r, v, 'Arrival Info') ||
+        includesInTheField(r, v, 'Departure Info'),
+      filterKey: 'SearchInput',
+      filterVisibilityFlag: true,
     });
     this.lazySearch.lazyCall(() => {
       this.props.applyFilter(SearchFilterConfig(value));
@@ -91,6 +93,10 @@ class Header extends React.Component {
             src="../../../assets/images/SkyGATE Logo-01.png"
             alt="skygatelogo"
           />
+          <i
+            className="icon-about app-info-icon"
+            onClick={() => this.setState({ showAppInfo: true })}
+          />
         </div>
         <div className="header-area-right">
           <span>
@@ -119,13 +125,19 @@ class Header extends React.Component {
             styles={{
               sidebar: {
                 zIndex: 100,
-                background: "#093a63",
-                width: "350px"
-              }
+                background: '#093a63',
+                width: '350px',
+              },
             }}
             pullRight
           />
         )}
+        {this.state.showAppInfo &&
+        <AppInfoPopup
+          show={this.state.showAppInfo}
+          onHide={() => this.setState({ showAppInfo: false })}
+        />
+        }
       </div>
     );
   }
@@ -137,5 +149,5 @@ function mapDispatchToProps(dispatch) {
 
 export default connect(
   null,
-  mapDispatchToProps
+  mapDispatchToProps,
 )(Header);

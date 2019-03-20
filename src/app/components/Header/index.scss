@@ -39,9 +39,16 @@ $headerHeight: 50px;
   text-align: center;
 }
 
-.header-area-center img {
-  max-height: 40px;
-}
+.header-area-center {
+  img {
+    max-height: 40px;
+  }
+  .app-info-icon {
+    color: #47b5eb;
+    font-size: 20px;
+    cursor: pointer;
+  }
+} 
 
 .header-area-right {
   // border: solid red 1px;
