@@ -102,7 +102,7 @@ class PublishHistory extends Component {
         </Modal.Header>
         <Modal.Body>
           <div className="InputFromTo">
-            <span className="control-label">From</span>
+            {/* <span className="control-label">From</span> */}
             <DayPickerInput
               ref={el => (this.from = el)}
               value={from}
@@ -124,7 +124,7 @@ class PublishHistory extends Component {
             {" "}
             {/* &#45; */}
             {" "}
-            <span className="control-label">To</span>
+            {/* <span className="control-label">To</span> */}
             <span className="InputFromTo-to">
               <DayPickerInput
                 ref={el => (this.to = el)}
@@ -147,24 +147,14 @@ class PublishHistory extends Component {
                 {`
               .InputFromTo .DayPicker-Day--selected:not(.DayPicker-Day--start):not(.DayPicker-Day--end):not(.DayPicker-Day--outside) {
                 background-color: #f0f8ff !important;
-                color: #4a90e2;
+                color: #47b5eb;
               }
               .InputFromTo .DayPicker-Day {
                 border-radius: 0 !important;
-              }
-              .InputFromTo .DayPicker-Day--start {
-                border-top-left-radius: 50% !important;
-                border-bottom-left-radius: 50% !important;
-              }
-              .InputFromTo .DayPicker-Day--end {
-                border-top-right-radius: 50% !important;
-                border-bottom-right-radius: 50% !important;
-              }
+              }              
               .InputFromTo .DayPickerInput-Overlay {
-                width: 350px;
-              }
-              .InputFromTo-to .DayPickerInput-Overlay {
-                margin-left: -198px;
+                margin-top: 80px;
+                width: 500px;
               }
             `}
               </style>
@@ -173,10 +163,10 @@ class PublishHistory extends Component {
         </Modal.Body>
         <Modal.Footer>
           <ButtonToolbar>
-            <Button variant="outline-primary" onClick={this.onSubmit}>
+            <Button variant="outline-primary" className="btn-footer-submit" onClick={this.onSubmit}>
               Submit
             </Button>
-            <Button variant="outline-secondary" onClick={this.props.onHide}>
+            <Button variant="outline-secondary" className="btn-footer-cancel" onClick={this.props.onHide}>
               Cancel
             </Button>
           </ButtonToolbar>

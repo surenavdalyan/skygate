@@ -1,6 +1,7 @@
 import React from 'react';
 import { Modal } from 'react-bootstrap';
 import AppInfoGrid from '../../grids/AppInfoGrid';
+import AppFeatures from '../../../reducers/AppFeatures';
 import './index.scss';
 
 export default (props) => {
@@ -12,9 +13,9 @@ export default (props) => {
       </Modal.Header>
 
       <Modal.Body>
-        <p>List of features.</p>
+        {/* <p>List of features.</p> */}
         <div className="app-info-grid">
-          <AppInfoGrid />
+          <AppInfoGrid data={AppFeatures.filter(r => r.Id)}/>
         </div>
       </Modal.Body>
     </Modal>
