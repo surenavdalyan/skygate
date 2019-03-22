@@ -13,9 +13,6 @@ class AppInfoGrid extends React.Component {
     super(props);
     this.grid = new GridConfig();
     this.grid.config.editedRowsData = {};
-    this.state = {
-      data: [],
-    };
   }
 
   componentDidMount() {
@@ -40,7 +37,7 @@ class AppInfoGrid extends React.Component {
         <DataGrid
           columnDefs={this.grid.config.columns}
           defaultColDef={this.grid.config.defaultColDef}
-          rowData={this.state.data}
+          rowData={this.props.data}
           gridOptions={this.grid.config.gridOptions}
           getRowNodeId={this.getRowNodeId}
           config={this.grid.config}

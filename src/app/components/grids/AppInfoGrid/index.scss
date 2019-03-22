@@ -14,8 +14,17 @@
 .shaded-rows {
     opacity: 0.4;
 }
+
 .textalign-center {
     text-align: center;
+    .ag-header-cell-label{
+        justify-content: center;
+        font-weight: 600;
+    }
+}
+
+.textalign-left {
+    text-align: left;
     .ag-header-cell-label{
         justify-content: center;
         font-weight: 600;
@@ -27,6 +36,11 @@
     .ag-header-cell{
         padding-top: 6px;
         padding-bottom: 6px;
+    }
+    
+    .ag-cell-not-inline-editing {
+        padding: 4px;
+        padding-left: 10px;
     }
 }
 
